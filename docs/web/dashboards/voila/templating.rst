@@ -182,6 +182,20 @@ Sollen Konfigurationsoptionen dauerhaft gespeichert werden, so kann eine Datei `
       }
     }
 
+Ihr könnt Euer Notebook dann in eine Slideshow verwandeln in
+:menuselection:`View --> Cell Toolbar --> Slideshow`. In der Werkzeugleiste
+einer könnt Ihr auswählen zwischen
+
+Slide
+    von links nach rechts
+Sub-Slide
+    von oben nach unten
+Fragment
+    Stop innerhalb einer Folie
+Notes
+    Anmerkungen für Sprecher*innen, die beim Drücken der ``t``-Taste in einem
+    neuen Fenster geöffnet werden
+
 Eigene Templates erstellen
 --------------------------
 
