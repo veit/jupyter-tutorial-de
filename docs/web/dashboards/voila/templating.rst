@@ -135,6 +135,53 @@ Es enthält neben einem Beispiel-Widget eine Code-Zelle zum Beenden des Kernels:
     button.on_click(kill_kernel)
     button
 
+voila-reveal
+------------
+
+`voila-reveal <https://github.com/voila-dashboards/voila-reveal>`_ ist ein
+Template für Slideshows basierend auf `RevealJS <https://revealjs.com/>`_.
+
+Installation
+~~~~~~~~~~~~
+
+.. code-block:: console
+
+    $ pipenv install voila-reveal
+
+Verwendung
+~~~~~~~~~~
+
+Ihr könnt das Template nutzen mit:
+
+.. code-block:: console
+
+    $ pipenv run voila --template=reveal reveal.ipynb
+
+Durch zusätzliche Optionen können die Standardeinstellungen überschrieben
+werden, z.B. um den Standardwert für den Übergang ``Fade`` mit ``Zoom`` zu
+überschrieben mit:
+
+.. code-block:: console
+
+    $ pipenv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" reveal.ipynb
+
+Sollen Konfigurationsoptionen dauerhaft gespeichert werden, so kann eine Datei ``conf.json`` in
+``share/jupyter/voila/templates/reveal/`` angelegt werden:
+
+.. code-block:: javascript
+
+    {
+      "traitlet_configuration": {
+        "resources": {
+          "reveal": {
+            "scroll": false,
+            "theme": "simple",
+            "transition": "zoom"
+          }
+        }
+      }
+    }
+
 Eigene Templates erstellen
 --------------------------
 
