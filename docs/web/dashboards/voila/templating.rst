@@ -196,6 +196,26 @@ Notes
     Anmerkungen für Sprecher*innen, die beim Drücken der ``t``-Taste in einem
     neuen Fenster geöffnet werden
 
+Wenn Ihr Eure Vortragsfolien auf `binder <https://mybinder.org/>`_
+veröffentlichen wollt, müsst Ihr den folgenden Tag in die Metadaten Eures
+Notebooks schreiben in :menuselection:`Edit --> Edit Notebook Metadata`:
+
+.. code-block:: javascript
+
+    "rise": {
+        "autolaunch": true
+    }
+
+Ihr könnt ebenfalls das `chalkboard reveal-Plugin
+<https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard>`_
+verwenden wenn Ihr die Metadaten des Notebooks erweitert um:
+
+.. code-block:: javascript
+
+    "rise": {
+      "enable_chalkboard": true
+    }
+
 Eigene Templates erstellen
 --------------------------
 
