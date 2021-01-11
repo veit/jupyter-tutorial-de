@@ -21,6 +21,8 @@ Dashboards
 :doc:`voila/index`
     wurde von `QuantStack <http://quantstack.net/>`_ entwickelt, s.a. `And
     voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
+:doc:`jupyter-flex/index`
+    Jupyter-Erweiterung, die aus Notebooks Dashboards macht.
 
 Aktivitäten und Lizenzen
 ------------------------
