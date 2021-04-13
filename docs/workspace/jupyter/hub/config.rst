@@ -25,8 +25,14 @@ System-Service für JupyterHub
     $ pipenv --venv
     /srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W
 
-#. Konfigurieren von ``/etc/systemd/system/jupyterhub.service`` und
-   ``/lib/systemd/system/jupyterhub.service``:
+#. Hinzufügen einer neuen systemd-Unit-Datei
+   ``/etc/systemd/system/jupyterhub.service`` mit dem Befehl:
+
+   .. code-block:: console
+
+    # systemctl edit --force --full jupyterhub.service
+
+    Fügt Eure entsprechende Python-Umgebung ein.
 
    .. code-block:: ini
 
@@ -60,8 +66,8 @@ System-Service für JupyterHub
 
    .. code-block:: console
 
-    $ systemctl enable jupyterhub.service
-    systemctl enable jupyterhub.service
+    # systemctl enable jupyterhub.service
+    Created symlink /etc/systemd/system/multi-user.target.wants/jupyterhub.service → /etc/systemd/system/jupyterhub.service.
 
 TLS-Verschlüsselung
 -------------------
