@@ -55,7 +55,7 @@ versehentlich systemweite Pakete überschrieben werden:
      im Control Panel eingetragen werden.
 
 Weitere Informationen zur nutzerspezifischen Installation findet ihr in `User
-Installs <https://pip.readthedocs.io/en/latest/user_guide.html#user-installs>`_.
+Installs <https://pip.pypa.io/en/latest/user_guide/#user-installs>`_.
 
 Virtuelle Umgebung mit ``jupyter`` erstellen
 --------------------------------------------

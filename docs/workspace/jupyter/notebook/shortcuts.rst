@@ -2,7 +2,7 @@ Tastaturkürzel
 ==============
 
 Wenn ihr die `Jupyter
-<https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/>`_-Tastaturkürzel
+<https://cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/>`_-Tastaturkürzel
 kennt, könnt ihr sehr viel effizienter mit Notebooks arbeiten.
 
 Jupyter Notebooks verfügen über zwei verschiedene Tastatureingabemodi.

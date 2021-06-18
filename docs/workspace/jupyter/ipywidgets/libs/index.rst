@@ -73,7 +73,7 @@ Beliebte Widget-Bibliotheken sind
 
 ``ipympl``
     ``ipympl`` oder `jupyter-matplotlib
-    <https://github.com/matplotlib/jupyter-matplotlib>`_ bieten interaktive
+    <https://github.com/matplotlib/ipympl>`_ bieten interaktive
     Widgets für Matplotlib.
 
     .. toctree::

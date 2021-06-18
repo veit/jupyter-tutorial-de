@@ -15,8 +15,8 @@ mit:
     …
 
 Für einige der folgenden Beispiele werden zusätzliche Pakete benötigt wie
-z.B. `Holoviews <http://holoviews.org/>`_ und `hvPlot
-<https://hvplot.pyviz.org/>`_. Sie können installiert werden mit:
+z.B. `Holoviews <https://holoviews.org/>`_ und `hvPlot
+<https://hvplot.holoviz.org/>`_. Sie können installiert werden mit:
 
 .. code-block:: console
 

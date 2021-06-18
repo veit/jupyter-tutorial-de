@@ -12,14 +12,14 @@ Dashboards
     </workspace/jupyter/ipywidgets/embedding>` verwendet werden, deren Status im
     Notebook-Dokument selbst gespeichert werden.
 :doc:`panel/index`
-    wurde auf Basis von `Bokeh <https://bokeh.pydata.org/en/latest/>`_ und
-    `Param <https://github.com/pyviz/param>`_ entwickelt und bietet ein Toolkit
-    speziell zur Erstellung von Apps und Dashboards, das jedoch nicht nur
-    Bokeh-Plots unterstützt, s.a. `Panel: Ahigh-level app and dashboarding
+    wurde auf Basis von `Bokeh <https://docs.bokeh.org/>`_ und
+    `Param <https://github.com/holoviz/param>`_ entwickelt und bietet ein
+    Toolkit speziell zur Erstellung von Apps und Dashboards, das jedoch nicht
+    nur Bokeh-Plots unterstützt, s.a. `Panel: Ahigh-level app and dashboarding
     solution for the PyData ecosystem
     <https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52>`_.
 :doc:`voila/index`
-    wurde von `QuantStack <http://quantstack.net/>`_ entwickelt, s.a. `And
+    wurde von `QuantStack <https://quantstack.net/>`_ entwickelt, s.a. `And
     voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
 :doc:`jupyter-flex/index`
     Jupyter-Erweiterung, die aus Notebooks Dashboards macht.
