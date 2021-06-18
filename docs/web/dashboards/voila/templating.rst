@@ -6,7 +6,7 @@ Templating
 Voila-Gridstack
 ---------------
 
-`gridstack.js <http://gridstackjs.com/>`_ ist ein jQuery-Plugin für
+`gridstack.js <https://gridstackjs.com/>`_ ist ein jQuery-Plugin für
 Widget-Layouts. Dies ermöglicht mehrspaltige Drag & Drop-Raster und anpassbare,
 für `Bootstrap v3 <https://getbootstrap.com/docs/3.4/>`_ geeignete Layouts.
 Zudem funktioniert es  mit `knockout.js <https://knockoutjs.com/>`_ und
@@ -106,7 +106,7 @@ Installation
 Verwendung
 ~~~~~~~~~~
 
-Ihr könnt das Template :doc:`debug.ipynb` nutzen mit:
+Ihr könnt das Template :doc:`debug` nutzen mit:
 
 .. code-block:: console
 

@@ -22,7 +22,7 @@ Installation
 Pandoc installieren
 ~~~~~~~~~~~~~~~~~~~
 
-``nbconvert`` verwendet `Pandoc <http://pandoc.org/>`_ um Markdown in andere
+``nbconvert`` verwendet `Pandoc <https://pandoc.org/>`_ um Markdown in andere
 Formate als HTML zu konvertieren.
 
 * für Ubuntu und Debian:
