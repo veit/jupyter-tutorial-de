@@ -182,9 +182,9 @@ Sollen Konfigurationsoptionen dauerhaft gespeichert werden, so kann eine Datei `
       }
     }
 
-Ihr könnt Euer Notebook dann in eine Slideshow verwandeln in
+Ihr könnt euer Notebook dann in eine Slideshow verwandeln in
 :menuselection:`View --> Cell Toolbar --> Slideshow`. In der Werkzeugleiste
-einer könnt Ihr auswählen zwischen
+einer könnt ihr auswählen zwischen
 
 Slide
     von links nach rechts
@@ -196,8 +196,8 @@ Notes
     Anmerkungen für Sprecher*innen, die beim Drücken der ``t``-Taste in einem
     neuen Fenster geöffnet werden
 
-Wenn Ihr Eure Vortragsfolien auf `binder <https://mybinder.org/>`_
-veröffentlichen wollt, müsst Ihr den folgenden Tag in die Metadaten Eures
+Wenn Ihr eure Vortragsfolien auf `binder <https://mybinder.org/>`_
+veröffentlichen wollt, müsst Ihr den folgenden Tag in die Metadaten eures
 Notebooks schreiben in :menuselection:`Edit --> Edit Notebook Metadata`:
 
 .. code-block:: javascript

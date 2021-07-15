@@ -32,7 +32,7 @@ System-Service für JupyterHub
 
     # systemctl edit --force --full jupyterhub.service
 
-    Fügt Eure entsprechende Python-Umgebung ein.
+    Fügt eure entsprechende Python-Umgebung ein.
 
    .. code-block:: ini
 
