@@ -19,7 +19,7 @@ Notebook ``Untitled.ipynb`` erstellt und in einem neuen Reiter angezeigt:
 Umbenennen des Notebooks
 ------------------------
 
-Als nächstes solltet Ihr dieses Notebook umbenennen indem ihr auf den Titel
+Als nächstes solltet ihr dieses Notebook umbenennen indem ihr auf den Titel
 *Untitled* klickt:
 
 .. image:: rename-notebook.png
@@ -54,9 +54,9 @@ Es gibt zwei wichtige Begriffe, um Jupyter Notebooks zu beschreiben: *Zelle* und
             .. warning::
                 Der Output von Zellen kann später in anderen Zellen verwendet
                 werden. Daher ist das Ergebnis von der Reihenfolge abhängig.
-                Wenn Ihr eine andere Reihenfolge als die von oben nach unten
-                wählt, erhaltet Ihr später möglicherweise andere Ergebnisse,
-                wenn Ihr z.B. :menuselection:`Cell --> Run All` wählt.
+                Wenn ihr eine andere Reihenfolge als die von oben nach unten
+                wählt, erhaltet ihr später möglicherweise andere Ergebnisse,
+                wenn ihr z.B. :menuselection:`Cell --> Run All` wählt.
 
        *Markdown*
            enthält mit `Markdown
