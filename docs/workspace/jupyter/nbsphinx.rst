@@ -269,3 +269,57 @@ Javascript
         var text = document.createTextNode("Hello, I was generated with JavaScript!");
         // Content appended to "element" will be visible in the output area:
         element.appendChild(text);
+
+Galerien
+--------
+
+nbsphinx bietet Unterstützung für die Erstellung von `Thumbnail-Galerien aus
+einer Liste von Jupyter-Notebooks
+<https://nbsphinx.readthedocs.io/subdir/gallery.html>`_. Diese Funktionalität
+basiert auf `Sphinx-Gallery <https://sphinx-gallery.github.io/>`_ und erweitert
+diese, um mit Jupyter-Notebooks statt mit Python-Skripten zu arbeiten.
+
+Sphinx-Gallery unterstützt auch direkt :doc:`pyviz:matplotlib/index`,
+:doc:`pyviz:matplotlib/seaborn/index` und `Mayavi
+<https://docs.enthought.com/mayavi/mayavi/>`_.
+
+Installation
+~~~~~~~~~~~~
+
+Sphinx-Gallery lässt sich für Sphinx ≥ 1.8.3 installieren mit
+
+.. code-block:: console
+
+    $ pipenv install sphinx-gallery
+
+Konfiguration
+~~~~~~~~~~~~~
+
+Damit Sphinx-Gallery genutzt werden kann, muss sie zudem noch in die ``conf.py``
+eingetragen werden:
+
+.. code-block:: python
+
+    extensions = [
+       'nbsphinx',
+       'sphinx_gallery.load_style',
+    ]
+
+Anschließend könnt ihr Sphinx-Gallery auf zwei verschiedene Arten nutzen:
+
+#. Mit der reStructuredText-Direktive ``.. nbgallery::``.
+
+   .. seealso::
+      `Thumbnail Galleries
+      <https://nbsphinx.readthedocs.io/a-normal-rst-file.html#thumbnail-galleries>`_
+
+#. In einem Jupyter-Notizbuch, indem ein ``nbsphinx-gallery``-Tag zu den
+   Metadaten einer Zelle hinzugefügt wird:
+
+   .. code-block:: javascript
+
+      {
+          "tags": [
+              "nbsphinx-gallery"
+          ]
+      }
