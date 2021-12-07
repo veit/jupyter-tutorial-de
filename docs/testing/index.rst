@@ -1,10 +1,6 @@
 Testen
 ======
 
-.. seealso::
-   * `Python Testing and Continuous Integration
-     <http://carpentries-incubator.github.io/python-testing/>`_
-
 Konzepte
 --------
 
