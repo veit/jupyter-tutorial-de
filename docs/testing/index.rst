@@ -29,9 +29,8 @@ Notebooks
    :maxdepth: 1
 
    unittest.ipynb
-   unittest2.ipynb
    doctest.ipynb
-   ipytest.ipynb
+   mock.ipynb
 
 Tools
 -----
@@ -39,6 +38,6 @@ Tools
 .. toctree::
    :titlesonly:
    :maxdepth: 1
-
+   unittest2.ipynb
+   ipytest.ipynb
    hypothesis
-   mock
