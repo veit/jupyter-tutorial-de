@@ -38,6 +38,7 @@ Tools
 .. toctree::
    :titlesonly:
    :maxdepth: 1
+
    unittest2.ipynb
    ipytest.ipynb
-   hypothesis
+   hypothesis.ipynb
