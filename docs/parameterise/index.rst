@@ -50,7 +50,34 @@ Verwenden
 
         execute_notebook(INPUT_NOTEBOOK, OUTPUT_NOTEBOOK, DICTIONARY_OF_PARAMETERS)
 
-     z.B. für :doc:`input.ipynb <input>`:
+     z.B. für ``input.ipynb``:
+
+     .. code-block:: ipython
+
+        In [1]: import papermill as pm
+
+        In [2]: pm.execute_notebook(
+                    'PATH/TO/INPUT_NOTEBOOK.ipynb',
+                    'PATH/TO/OUTPUT_NOTEBOOK.ipynb',
+                    parameters=dict(salutation='Hello', name='pythonistas')
+                )
+
+     Das Ergebnis ist ``output.ipynb``:
+
+     .. code-block:: ipython
+
+        In [1]: salutation = None
+                name = None
+
+        In [2]: # Parameters
+                salutation = "Hello"
+                name = "pythonistas"
+
+        In [3]: from datetime import date
+                today = date.today()
+                print(salutation, name, "– welcome to our event on this " + today.strftime("%A, %d %B %Y"))
+        Out[3]: Hello pythonistas – welcome to our event on this Monday, 13 September 2021
+
 
      .. code-block:: python
 
@@ -61,8 +88,6 @@ Verwenden
             'PATH/TO/OUTPUT_NOTEBOOK.ipynb',
             parameters=dict(salutation='Hello', name='pythonistas')
         )
-
-     Das Ergebnis ist :doc:`output.ipynb <output>`.
 
      .. seealso::
         * `Workflow reference
