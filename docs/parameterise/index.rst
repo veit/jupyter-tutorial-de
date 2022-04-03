@@ -128,7 +128,8 @@ Verwenden
         $ pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
      Dies erzeugt eine Ausgabedatei, deren Dateiname einen Zeitstempel enthält,
-     z.B. :doc:`output_2021-09-13_10:42:33.ipynb <output_2021-09-13_10:42:33>`.
+     z.B. :download:`output_2021-09-13_10:42:33.ipynb
+     <output_2021-09-13_10\:42\:33.ipynb>`.
 
      Schließlich könnt ihr ``crontab -e`` verwenden, um die beiden Befehle
      automatisch zu bestimmten Zeiten auszuführen, z.B. am ersten Tag eines
