@@ -68,6 +68,12 @@ JSON
 |                       |       | :doc:`../yaml` und :doc:`../toml`.                    |
 +-----------------------+-------+-------------------------------------------------------+
 
+.. seealso::
+
+    * `JC – JSON Convert <https://github.com/kellyjonbrazil/jc>`_
+    * `fx <https://github.com/antonmedv/fx>`_
+    * `gron <https://github.com/tomnomnom/gron>`_
+
 Beispiel
 --------
 
