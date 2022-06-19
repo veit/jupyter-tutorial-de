@@ -53,8 +53,9 @@ Forschungsprojekts:
    <performance/concurrency>`.
 8. **Produkt erstellen** umfasst das :doc:`productive/testing`,
    :doc:`productive/logging/index` und :doc:`productive/documenting/index` der
-   Methoden und Funktionen sowie das :doc:`Erstellen von Paketen
-   <productive/packaging/index>`.
+   Methoden und Funktionen. Das :doc:`Erstellen von Bibliotheken und Paketen
+   <productive/packaging>` findet ihr jedoch in unserem :doc:`Python Basics
+   Tutorial <python-basics:libs/index>`.
 9. **Web-Anwendungen** können entweder aus Jupyter-Notebooks
    :doc:`web/dashboards/index` generieren oder umfassendere
    Applikationslogik benötigen, wie z.B. in
