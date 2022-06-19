@@ -23,7 +23,7 @@ Produkten unterstützen. Dies können Werkzeuge einerseits für die Versionierun
 des :doc:`Quellcodes <git/index>` und der :doc:`Trainingsdaten <dvc/index>`
 sowie für die Reproduzierbarkeit der :doc:`Ausführungsumgebungen <envs/index>`,
 andererseits für das :doc:`testing`, :doc:`logging/index`, :doc:`Dokumentieren
-<documenting/index>` und :doc:`Erstellen von Bibliotheken und Paketen
+<documenting>` und :doc:`Erstellen von Bibliotheken und Paketen
 <python-basics:libs/index>` sein.
 
 .. seealso::
@@ -49,7 +49,7 @@ andererseits für das :doc:`testing`, :doc:`logging/index`, :doc:`Dokumentieren
     dvc/index
     envs/index
     packaging
-    documenting/index
+    documenting
     licensing
     cite/index
     testing

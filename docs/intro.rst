@@ -51,11 +51,11 @@ Forschungsprojekts:
 7. **Refactoring** umfasst das Parametrisieren, Validieren und
    Performance-Optimierungen, u.a. durch :doc:`Nebenläufigkeit
    <performance/concurrency>`.
-8. **Produkt erstellen** umfasst das :doc:`productive/testing`,
-   :doc:`productive/logging/index` und :doc:`productive/documenting/index` der
-   Methoden und Funktionen. Das :doc:`Erstellen von Bibliotheken und Paketen
-   <productive/packaging>` findet ihr jedoch in unserem :doc:`Python Basics
-   Tutorial <python-basics:libs/index>`.
+8. **Produkt erstellen** umfasst das :doc:`productive/testing` und
+   :doc:`productive/logging/index`. Das :doc:`Erstellen <productive/packaging>`
+   und :doc:`python-basics:document/index` von Bibliotheken und Paketen findet
+   ihr jedoch in unserem :doc:`Python Basics Tutorial
+   <python-basics:libs/index>`.
 9. **Web-Anwendungen** können entweder aus Jupyter-Notebooks
    :doc:`web/dashboards/index` generieren oder umfassendere
    Applikationslogik benötigen, wie z.B. in
