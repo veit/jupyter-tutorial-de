@@ -1,6 +1,18 @@
 Produkt erstellen
 =================
 
+Mit Jupyter Notebooks könnt ihr schnell Prototypen für die Datenanalyse bauen.
+Ihr könnt damit auch eure Ergebnisse dokumentieren und Präsentieren. Sie sind
+jedoch nicht gut geeignet um eure Ergebnisse mit :menuselection:`Kernel -->
+Restart and Run All` in ein paar Tagen oder Jahren reproduzieren zu können. So
+enthalten die Notebooks nur sehr wenige Angaben über die Umgebnung, den
+:doc:`Kernel </workspace/jupyter/kernels/index>`, mit dem sie in der
+Vergangenheit erfolgreich ausgeführt werden konnten. Zwar könnt ihr euch
+:abbr:`z.B. (zum Beispiel)` mit ``pd.show_versions()`` 
+:ref:`/workspace/ipython/examples.ipynb#informationen-über-das-host-betriebssystem-und-die-versionen-installierter-python-pakete`
+anzeigen lassen, dies ist jedoch leider nicht hinreichend, um eine solche
+Umgebung auch reproduzieren zu können.
+
     »Nicht reproduzierbare Einzelereignisse sind für die Wissenschaft ohne
     Bedeutung.«[#]_
 
