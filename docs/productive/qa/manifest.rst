@@ -1,9 +1,9 @@
 ``check-manifest``
 ==================
 
-`check-manifest <https://pypi.org/project/check-manifest/>`_ ist ein Werkzeug, mit dem
-ihr schnell überprüfen könnt, ob die Datei ``Manifest.in`` für Pyton-Pakete
-vollständig ist.
+`check-manifest <https://pypi.org/project/check-manifest/>`_ ist ein Werkzeug,
+mit dem ihr schnell überprüfen könnt, ob die Datei ``Manifest.in`` für
+Python-Pakete vollständig ist.
 
 Installation
 ------------
