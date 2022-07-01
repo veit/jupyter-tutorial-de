@@ -9,7 +9,7 @@ mit :doc:`/productive/git/pre-commit` die Code-Qualität auch automatisiert
 überprüfen und verbessern.
 
 .. seealso::
-   * `PyCQA Meta Documentation <https://meta.pycqa.org/en/latest/>`_
+   * `PyCQA Meta Documentation <https://meta.pycqa.org/>`_
    * `github.com/PyCQA <https://github.com/PyCQA>`_
 
 Checker
