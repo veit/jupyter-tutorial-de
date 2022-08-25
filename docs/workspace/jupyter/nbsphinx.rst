@@ -2,7 +2,7 @@
 ============
 
 :doc:`nbsphinx <nbsphinx:index>` ist eine :doc:`Sphinx
-<sphinx:contents>`-Erweiterung, die einen Parser für ``*.ipynb``-Dateien
+<sphinx:index>`-Erweiterung, die einen Parser für ``*.ipynb``-Dateien
 bereitstellt: Jupyter Notebook-Code-Zellen werden sowohl in der HTML- wie auch
 in der LaTeX-Ausgabe angezeigt. Notebooks ohne gespeicherte Ausgabezellen werden
 automatisch während des Sphinx-Build-Prozesses erstellt.
