@@ -62,7 +62,7 @@ Pygments==2.13.0
 pyparsing==3.0.9
 pyrsistent==0.18.1
 python-dateutil==2.8.2
-pytz==2022.1
+pytz==2022.4
 pyzmq==22.3.0
 requests==2.27.1
 Send2Trash==1.8.0
