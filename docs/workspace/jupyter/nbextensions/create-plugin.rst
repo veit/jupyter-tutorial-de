@@ -99,7 +99,7 @@ folgender Struktur:
     :menuselection:`Nbextensions` angezeigt.
 
 .. seealso::
-   * :doc:`internals`
+   * :doc:`jupyter-contrib-nbextensions:internals`
 
 Setup Jupyter Notebook Extension
 --------------------------------
