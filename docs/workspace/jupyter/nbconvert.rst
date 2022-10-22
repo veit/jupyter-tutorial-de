@@ -25,17 +25,17 @@ Pandoc installieren
 ``nbconvert`` verwendet `Pandoc <https://pandoc.org/>`_ um Markdown in andere
 Formate als HTML zu konvertieren.
 
-* für Ubuntu und Debian:
+.. tab:: Debian/Ubuntu
 
-  .. code-block:: console
+    .. code-block:: console
 
-    $ sudo apt install pandoc
+        $ sudo apt install pandoc
 
-* für Mac OSX:
+.. tab:: macOS
 
-  .. code-block:: console
+    .. code-block:: console
 
-    $ brew install pandoc
+        $ brew install pandoc
 
 Tex installieren
 ~~~~~~~~~~~~~~~~
@@ -44,15 +44,15 @@ Für die Konvertierung in PDF verwendet ``nbconvert`` das Tex-Ökosystem zur
 Vorbereitung: Es wird eine ``.tex``-Datei erstellt, die von der XeTeX-Engine
 in ein PDF konvertiert wird.
 
-* für Ubuntu und Debian:
+.. tab:: Debian/Ubuntu
 
-  .. code-block:: console
+    .. code-block:: console
 
-    $ sudo apt install texlive-xetex
+        $ sudo apt install texlive-xetex
 
-* für Mac OSX:
+.. tab:: macOS
 
-  `MacTeX <http://tug.org/mactex/>`_
+    `MacTeX <http://tug.org/mactex/>`_
 
 Verwenden auf der Kommandozeile
 -------------------------------
