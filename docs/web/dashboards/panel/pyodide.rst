@@ -89,9 +89,6 @@ Im Folgenden erläutere ich einige der Optionen von ``panel convert``.
     verhalten, sowohl auf mobilen Geräten als auch auf dem Desktop. ``panel
     convert`` hat eine ``--pwa``-Option, die die notwendigen Dateien generiert,
     um eure Panel- und Pyodide-Anwendung in eine PWA zu verwandeln.
-    Das Web-Manifest, das Service-Worker-Skript und Assets wie Thumbnails werden
-    zusammen mit den anderen HTML- und JS-Dateien exportiert und können dann auf
-    euremstatischen Dateiserver gehostet werden.
 
 ``--skip-embed``
     Überspringt das Einbetten von vorgerenderten Inhalten in der konvertierten
