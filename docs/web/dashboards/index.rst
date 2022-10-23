@@ -15,8 +15,8 @@ Dashboards
     wurde auf Basis von `Bokeh <https://docs.bokeh.org/>`_ und
     `Param <https://github.com/holoviz/param>`_ entwickelt und bietet ein
     Toolkit speziell zur Erstellung von Apps und Dashboards, das jedoch nicht
-    nur Bokeh-Plots unterstützt, s.a. `Panel: Ahigh-level app and dashboarding
-    solution for the PyData ecosystem
+    nur Bokeh-Plots unterstützt, :abbr:`s.a. (siehe auch)` `Panel: A high-level
+    app and dashboarding solution for the PyData ecosystem
     <https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52>`_.
 :doc:`voila/index`
     wurde von `QuantStack <https://quantstack.net/>`_ entwickelt, s.a. `And
