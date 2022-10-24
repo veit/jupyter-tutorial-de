@@ -52,6 +52,10 @@ Ihr könnt nun die Datei :download:`pyodide/overview.html` in eure Github-Seiten
 :abbr:`o.ä. (oder ähnliches)` einfügen – es ist kein separater Server
 erforderlich.
 
+.. seealso::
+   * `Awesome Panel/Webassembly Apps
+     <https://awesome-panel.github.io/examples/>`_
+
 Optionen
 --------
 
