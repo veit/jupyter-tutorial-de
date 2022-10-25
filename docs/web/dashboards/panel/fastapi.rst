@@ -1,10 +1,10 @@
 FastAPI-Integration
 ===================
 
-Panel läuft üblicherweise auf enem :doc:`pyviz:bokeh/bokeh-server`, der wiederum
-auf `Tornado <https://www.tornadoweb.org/en/stable/>`_ läuft. Es ist jedoch auch
-oft nützlich, eine Panel-App in eine große Webanwendung einzubetten, wie
-:abbr:`z.B. (zum Beispiel)` einen
+Panel läuft üblicherweise auf einem :doc:`pyviz:bokeh/bokeh-server`, der
+wiederum auf `Tornado <https://www.tornadoweb.org/en/stable/>`_ läuft. Es ist
+jedoch auch oft nützlich, eine Panel-App in eine große Webanwendung einzubetten,
+wie :abbr:`z.B. (zum Beispiel)` einen
 :doc:`/data-processing/apis/fastapi/index`-Webserver. Die Integration in FastAPI
 ist einfacher im Vergleich zu anderen wie :abbr:`z.B. (zum Beispiel)`
 :doc:`Flask <pyviz:bokeh/embedding-export/flask>`, da es ein leichtgewichtigeres
