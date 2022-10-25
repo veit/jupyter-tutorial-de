@@ -25,3 +25,4 @@ unterstützt.
     pipelines.ipynb
     templates.ipynb
     pyodide
+    fastapi
