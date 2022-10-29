@@ -1,8 +1,8 @@
 Anwendungsbeispiele
 ===================
 
-In einigen Unternehmen werden Jupyter Notebooks genutzt um explorativ die immer
-größer werdenden Datenmengen zu erschließen. Hierzu gehören:
+In einigen Unternehmen werden Jupyter Notebooks genutzt, um explorativ die 
+immer größer werdenden Datenmengen zu erschließen. Hierzu gehören:
 
 * Netflix
 
