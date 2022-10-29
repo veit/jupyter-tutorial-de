@@ -2,7 +2,7 @@ Parametrisierung und Zeitplanung
 ================================
 
 Mit `papermill <https://papermill.readthedocs.io/en/latest/>`_ könnt ihr
-Notebooks parametrieren und automatisieren. Ihr könnt die Notebooks
+Notebooks parametrisieren und automatisieren. Ihr könnt die Notebooks
 zeit- oder ereignisgesteuert ablaufen lassen.
 
 Installieren
