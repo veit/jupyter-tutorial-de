@@ -43,7 +43,7 @@ Es gibt zwei wichtige Begriffe, um Jupyter Notebooks zu beschreiben: *Zelle* und
            enthält Code, der im Kernel ausgeführt werden soll und dessen Ausgabe
            unterhalb angezeigt wird.
 
-           Vor den Code-Zellen sind exkige Klammern die die Reihenfolge
+           Vor den Code-Zellen sind eckige Klammern, die die Reihenfolge
            anzeigen, in der der Code ausgeführt wurde.
 
            ``In [ ]:``
@@ -145,11 +145,11 @@ Tipps & Tricks
 --------------
 
 #. Gebt dem Notebook einen Titel (``# My title``) und ein aussagekräftiges
-   Vorwort um den Inhalt und Zweck des Notebooks zu beschreiben.
-#. Erstellt Überschriften und Dokumentationen in Markdown-Zellen um euer
+   Vorwort, um den Inhalt und Zweck des Notebooks zu beschreiben.
+#. Erstellt Überschriften und Dokumentationen in Markdown-Zellen, um euer
    Notebook zu strukturieren und eure Workflow-Schritte zu erläutern. Dabei ist
-   vollkommen egal, ob ihr das für eure Kollegen oder für euer zukünftig selbst
-   macht.
+   es vollkommen egal, ob ihr das für eure Kollegen oder für euch zukünftig 
+   selbst macht.
 #. Verwendet *Table of Contents (2)* aus der
    :doc:`/workspace/jupyter/nbextensions/list`, um ein Inhaltsverzeichnis
    zu erstellen.
