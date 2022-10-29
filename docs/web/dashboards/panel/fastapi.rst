@@ -106,11 +106,21 @@ Die Dateistruktur sollte nun folgendermaßen aussehen:
     └── templates
         └── base.html
 
-Ihr könnt den Server nun Starten mit:
+Ihr könnt den Server nun starten mit:
 
 .. code-block:: console
 
-    $ uvicorn main:app --reload
-    …
+    $ bin/uvicorn main:app --reload
+    INFO:     Will watch for changes in these directories: ['/srv/jupyter/jupyter-tutorial/docs/web/dashboards/panel/fastAPI']
     INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
-    INFO:     Started reloader process [191354] using StatReload
+    INFO:     Started reloader process [218214] using StatReload
+    Launching server at http://127.0.0.1:5000
+    INFO:     Started server process [218216]
+    INFO:     Waiting for application startup.
+    INFO:     Application startup complete.
+
+Anschließend solltet ihr im Web-Browser unter der URL ``http://127.0.0.1:8000``
+folgendes sehen:
+
+.. figure:: panel-fastapi.png
+   :alt: Widgets und Sinuskurve in Bokeh-Plot
