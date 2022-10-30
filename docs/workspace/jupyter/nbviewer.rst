@@ -23,7 +23,7 @@ Installation
 
         $ brew install libmemcached openssl pandoc libevent
 
-#. Anschließend kann der Jupyter Notebook Viewer in einem neuen virtuellen
+#. Anschließend kann der Jupyter Notebook Viewer in einer neuen virtuellen
    Umgebung installiert werden mit:
 
    .. code-block:: console
@@ -67,6 +67,6 @@ Der Notebook-Viewer lässt sich um Provider erweitern, s.
 Zugriffsbeschränkung
 --------------------
 
-Wenn der Viewer als :doc:`hub/nbviewer-service` ausgeführt wird, können nur Benutzer, die
-sich am JupyterHub authentifiziert haben, auf die Notebooks des ``nbviewer``
-zugreifen.
+Wenn der Viewer als :doc:`hub/nbviewer-service` ausgeführt wird, können 
+nur Benutzer, die sich am JupyterHub authentifiziert haben, auf die 
+Notebooks des ``nbviewer`` zugreifen.
