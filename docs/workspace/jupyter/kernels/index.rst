@@ -1,21 +1,6 @@
 Kernels
 =======
 
-.. toctree::
-    :hidden:
-    :titlesonly:
-    :maxdepth: 0
-
-    install
-    python2
-    python38.ipynb
-    python39.ipynb
-    python310.ipynb
-    r
-
-Überblick
----------
-
 Das Jupyter-Team verwaltet den `IPython-Kernel
 <https://github.com/ipython/ipykernel>`_. Zusätzlich zu Python können in
 Notebooks auch viele andere Sprachen verwendet werden. Dabei sind die folgenden
@@ -38,3 +23,15 @@ Eine Liste verfügbarer Kernel findet ihr unter `Jupyter kernels
 .. seealso::
     * `Using Wolfram Language in Jupyter: A free alternative to Mathematica
       <https://nicoguaro.github.io/posts/wolfram_jupyter/>`_
+
+.. toctree::
+    :hidden:
+    :titlesonly:
+    :maxdepth: 0
+
+    install
+    python2
+    python38.ipynb
+    python39.ipynb
+    python310.ipynb
+    r
