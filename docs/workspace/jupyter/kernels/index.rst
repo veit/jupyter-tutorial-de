@@ -34,3 +34,7 @@ Jupyter-Kernels weit verbreitet:
 
 Eine Liste verfügbarer Kernel findet ihr unter `Jupyter kernels
 <https://github.com/jupyter/jupyter/wiki/Jupyter-kernels>`_.
+
+.. seealso::
+    * `Using Wolfram Language in Jupyter: A free alternative to Mathematica
+      <https://nicoguaro.github.io/posts/wolfram_jupyter/>`_
