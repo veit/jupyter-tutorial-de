@@ -189,7 +189,7 @@ Beispiel)` folgendes hinzufügen:
 … in einer CI/CD-Pipeline
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Üblicherweise vergelicht Wily die Komplexität mit der vorherigen Revision. Ihr
+Üblicherweise vergleicht Wily die Komplexität mit der vorherigen Revision. Ihr
 könnt jedoch auch andere Referenzen angeben, z.B. ``HEAD^1`` mit
 
 .. code-block:: console
