@@ -34,7 +34,7 @@ Beste daran ist, dass diese Daten auch gemeinfrei sind:
 
 #. Laden in unsere ``postgis_db``-Datenbank
 
-   Die Dateien ``.dbf``, ``.prj``, ``.shp`` und ``.shp`` bilden ein sog.
+   Die Dateien ``.dbf``, ``.prj``, ``.shp`` und ``.shp`` bilden ein sogenanntes
    ShapeFile, ein beliebtes Geodaten-Datenformat, das von der GIS-Software
    verwendet wird. Um dies in unsere Datenbank zu laden, benötigen wir
    zusätzlich `GDAL <http://www.gdal.org/>`_, die *Geospatial Data Abstraction
