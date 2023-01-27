@@ -68,8 +68,8 @@ Installation
 
 #. Erstellen des API-Schlüssel
 
-   Für den nächsten Schritt benötigt ihr den pganalyze ``api_key``. Diesen könnt
-   ihr erstellen auf unter der Site https://app.pganalyze.com/
+   Für den nächsten Schritt benötigt ihr einen API-Key für pganalyze. Diesen könnt
+   ihr auf https://app.pganalyze.com/ erstellen.
 
 #. Konfigurieren des  *Collector*:
 
