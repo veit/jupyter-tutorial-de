@@ -112,7 +112,7 @@ Beste daran ist, dass diese Daten auch gemeinfrei sind:
          public | spatial_ref_sys           | table | postgres
         (2 rows)
 
-   #. Schließlich können wir uns bei der Datenbank abmelden mit
+   #. Schließlich melden wir uns bei der Datenbank mit diesem Kommando ab:
 
       .. code-block:: console
 
