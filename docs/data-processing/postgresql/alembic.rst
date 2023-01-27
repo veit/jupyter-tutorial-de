@@ -30,7 +30,7 @@ anschließend zusammen mit dem Quellcode der Anwendung verwaltet.
     Please edit configuration/connection/logging settings in
     '/path/to/myproject/alembic.ini' before proceeding.
 
-Die Struktur eines solchen Migrationsumgebung kann später dann  z.B. so
+Die Struktur einer solchen Migrationsumgebung kann später dann  z.B. so
 aussehen:
 
 ::
