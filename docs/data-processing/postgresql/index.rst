@@ -22,7 +22,7 @@ SQL:2011
 Datentypen
     Folgende Datentypen werden out of the box unterstützt:
 
-    * primitiven Datentypen: Integer, Numeric, String, Boolean
+    * primitive Datentypen: Integer, Numeric, String, Boolean
     * Strukturierte Datentypen: Date/Time, Array, Range, UUID
     * Dokumenttypen: JSON/JSONB, XML, Key-value (`Hstore
       <https://www.postgresql.org/docs/current/hstore.html>`_)
