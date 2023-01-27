@@ -6,7 +6,7 @@ PostgreSQL 9.1 unterstützte dies *read-only*, 9.3 dann auch schreibend.
 Seitdem sind eine Reihe von Foreign Data Wrappers (FDW) für PostgreSQL
 entwickelt worden.
 
-Im Folgenden nur eine kleine Auswahl der bekanntesten FDW:
+Im Folgenden besprechen wir nur eine kleine Auswahl der bekanntesten FDW:
 
 .. note::
    Beachtet bitte, dass die meisten dieser Wrapper nicht offiziell von der
