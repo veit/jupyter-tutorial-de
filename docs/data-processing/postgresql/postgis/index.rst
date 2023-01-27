@@ -2,7 +2,7 @@ PostGIS
 =======
 
 `PostGIS <https://postgis.net/>`_ ist eine Erweiterung für PostgreSQL, die
-geografische Objekte und Funktionen umfasst. Die Erweiterung implementiert u.a.
+geographische Objekte und Funktionen umfasst. Die Erweiterung implementiert u.a.
 die `Simple-Feature-Access <https://www.ogc.org/standards/sfa>`_-Spezifikation
 des `Open Geospatial Consortium <https://www.ogc.org/>`_. Obwohl PostgreSQL
 bereits Geometrietypen unterstützt, sind diese jedoch für geographische Aufgaben
