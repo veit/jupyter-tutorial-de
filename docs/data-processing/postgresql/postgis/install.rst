@@ -1,7 +1,7 @@
 PostGIS installieren
 ====================
 
-Für Ubuntu 22.04 könnt ihr PostGIS einfach installieren mit:
+Für Ubuntu 22.04 und ab Debian GNU/Linux Version 9 könnt ihr PostGIS einfach installieren mit:
 
 code-block:: console
 
