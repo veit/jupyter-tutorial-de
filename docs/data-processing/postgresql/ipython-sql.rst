@@ -99,8 +99,7 @@ Wenn pandas installiert ist, kann die ``DataFrame``-Methode verwendet werden:
     Argument mit dem Namen eines ``DataFrame``-Objekts, erstellt aus diesem
     einen Tabellennamen in der Datenbank.
 ``--append``
-    Argument um in einer vorhandenen Tabelle Zeilen mit diesem namen
-    hinzuzufügen.
+    Fügt in einer vorhandenen Tabelle Zeilen mit diesem Namen hinzu.
 
 PostgreSQL-Funktionen
 ---------------------
