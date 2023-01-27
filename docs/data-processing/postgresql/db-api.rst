@@ -19,7 +19,7 @@ Connection
         Diese Methode ist optional da nicht alle Datenbanken das Zurückrollen
         von Transaktionen erlauben.
     ``.cursor ()``
-        Rückgabe eines neuen Corsor-Objekts über die Verbindung
+        Rückgabe eines neuen Cursor-Objekts über die Verbindung
 
     Beispiel::
 
