@@ -48,7 +48,7 @@ Beste daran ist, dass diese Daten auch gemeinfrei sind:
 
         $ sudo apt install gdal-bin
 
-   #. Anschließend wechseln wir in den ``postgresql``-User:
+   #. Anschließend wechseln wir zum Benutzer ``postgresql``:
 
       .. code-block:: console
 
