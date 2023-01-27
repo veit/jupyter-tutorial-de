@@ -18,7 +18,7 @@ Verfahren:
 *Single Table*
     Dabei wird eine Tabelle pro Vererbungshierarchie angelegt, wobei alle
     Attribute der Basisklasse und aller davon abgeleiteten Klassen in einer
-    gemeinsamen Tabelle gespeichert wird.
+    gemeinsamen Tabelle gespeichert werden.
 *Joined Table* oder *Class Table*
     Dabei wird eine Tabelle je Unterklasse angelegt und für jede davon
     abgeleitete Unterklasse eine weitere Tabelle.
