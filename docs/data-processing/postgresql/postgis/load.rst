@@ -42,7 +42,7 @@ Beste daran ist, dass diese Daten auch gemeinfrei sind:
    Features Reference Implementation*, eine Vektordaten-Übersetzungsbibliothek,
    mit der wir das Shapefile in Daten übersetzen können.
 
-   #. GDAL kann un einfach mit dem Paketmanager installiert werden:
+   #. GDAL kann nun einfach mit dem Paketmanager installiert werden:
 
       .. code-block:: console
 
