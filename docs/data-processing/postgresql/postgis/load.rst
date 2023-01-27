@@ -5,8 +5,8 @@ Nun Laden wir einige Geodaten in unsere Datenbank, damit wir uns mit den Tools
 und Prozessen zum Abrufen dieser Daten vertraut machen können.
 
 `Natural Earth <https://www.naturalearthdata.com/>`_ bietet eine großartige
-Quelle für Basisdaten für die ganze Welt in verschiedenen Maßstäben. Und sas
-Beste ist, dass diese Daten gemeinfrei sind:
+Quelle für Basisdaten für die ganze Welt in verschiedenen Maßstäben. Und das
+Beste daran ist, dass diese Daten auch gemeinfrei sind:
 
 #. Herunterladen der Daten
 
