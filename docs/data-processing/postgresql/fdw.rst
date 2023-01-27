@@ -55,7 +55,7 @@ Oracle
     * `Docs <http://laurenz.github.io/oracle_fdw/>`__
 
 MySQL
-    FDW für MySQL ab PostgrSQL≥9.3
+    FDW für MySQL ab PostgreSQL≥9.3
 
     * `GitHub <https://github.com/EnterpriseDB/mysql_fdw>`__
     * `PGXN <https://pgxn.org/dist/mysql_fdw/>`__
