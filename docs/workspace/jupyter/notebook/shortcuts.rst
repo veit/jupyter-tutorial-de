@@ -139,10 +139,10 @@ Dieser Modus wird mit ``Enter`` verfügbar.
 Eigene Tastaturkürzel
 ---------------------
 
-Ihr könnt in :menuselection:`Help --> Edit Keyboard Shortcuts` auch eigene 
+Ihr könnt in :menuselection:`Help --> Edit Keyboard Shortcuts` auch eigene
 Tastaturkürzel definieren.
 
 .. seealso::
 
-   * `Keyboard Shortcut Customization 
+   * `Keyboard Shortcut Customization
      <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Custom%20Keyboard%20Shortcuts.html>`_
