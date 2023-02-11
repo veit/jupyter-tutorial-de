@@ -67,6 +67,6 @@ Der Notebook-Viewer lässt sich um Provider erweitern, s.
 Zugriffsbeschränkung
 --------------------
 
-Wenn der Viewer als :doc:`hub/nbviewer-service` ausgeführt wird, können 
-nur Benutzer, die sich am JupyterHub authentifiziert haben, auf die 
+Wenn der Viewer als :doc:`hub/nbviewer-service` ausgeführt wird, können
+nur Benutzer, die sich am JupyterHub authentifiziert haben, auf die
 Notebooks des ``nbviewer`` zugreifen.

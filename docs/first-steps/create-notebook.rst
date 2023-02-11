@@ -148,7 +148,7 @@ Tipps & Tricks
    Vorwort, um den Inhalt und Zweck des Notebooks zu beschreiben.
 #. Erstellt Überschriften und Dokumentationen in Markdown-Zellen, um euer
    Notebook zu strukturieren und eure Workflow-Schritte zu erläutern. Dabei ist
-   es vollkommen egal, ob ihr das für eure Kollegen oder für euch zukünftig 
+   es vollkommen egal, ob ihr das für eure Kollegen oder für euch zukünftig
    selbst macht.
 #. Verwendet *Table of Contents (2)* aus der
    :doc:`/workspace/jupyter/nbextensions/list`, um ein Inhaltsverzeichnis
