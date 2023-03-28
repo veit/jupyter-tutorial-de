@@ -22,7 +22,9 @@ sind:
 * sie importieren nur globale Module und Pakete und keine relativen Importe von
   anderen Skripten oder Modulen
 * die Bibliotheken wurden `für Pyodide kompiliert
-  <https://github.com/pyodide/pyodide/tree/main/packages>`_ oder sind als :term:`Python-Wheels <Wheel>` auf dem :term:`Python Package Index (PyPI)` verfügbar.
+  <https://github.com/pyodide/pyodide/tree/main/packages>`_ oder sind als
+  :term:`Python wheels <wheel>` auf dem :term:`Python Package Index`
+  (:term:`PyPI`) verfügbar.
 
 Beispiel
 --------
