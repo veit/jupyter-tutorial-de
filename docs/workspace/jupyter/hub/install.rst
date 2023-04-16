@@ -8,7 +8,7 @@ Installation
     # apt-get update
     # apt install python3
     # python3 -V
-    Python 3.7.3
+    Python 3.10.6
     # apt install python3-pip
 
 #. Service-User ``jupyter`` erstellen:
@@ -63,32 +63,24 @@ Installation
 
    .. code-block:: console
 
-    # apt install curl
-    # cd ~
-    # curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
-    # bash nodesource_setup.sh
-    # apt install nodejs
-    # nodejs -v
-    v10.15.3
-    # npm -v
-    6.10.2
-
-   ``10.x`` gibt dabei die Major-Version von ``nodejs`` an.
-
-#. Installieren der ``npm``-Pakete:
-
-   .. code-block:: console
-
-    # npm install
+    $ sudo apt install nodejs npm
+    $ node -v
+    v12.22.9
+    $ npm -v
+    8.5.1
 
 #. Installieren des HTTP-Proxy:
 
    .. code-block:: console
 
-    # npm install -g configurable-http-proxy
-    /usr/local/bin/configurable-http-proxy -> /usr/local/lib/node_modules/configurable-http-proxy/bin/configurable-http-proxy
-    + configurable-http-proxy@4.1.0
-    added 47 packages from 62 contributors in 6.208s
+    $ sudo npm install -g configurable-http-proxy
+
+#. Wenn JupyterLab und Notebook in derselben Umgebung laufen sollen, müssen
+   diese ebenfalls hier installiert werden:
+
+   .. code-block:: console
+
+    $  pipenv install jupyterlab notebook
 
 #. Testen der Installation:
 
