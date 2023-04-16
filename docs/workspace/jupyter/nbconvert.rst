@@ -77,7 +77,7 @@ Verwenden auf der Kommandozeile
 ``pdf``
     erzeugt ein PDF über Latex. Unterstützt die gleichen Vorlagen wie ``latex``.
 
- ``slides``
+``slides``
     erstellt `Reveal.js <https://revealjs.com/>`_-Slides.
 
 ``script``
