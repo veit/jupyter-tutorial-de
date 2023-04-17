@@ -1,30 +1,29 @@
 Installation
 ============
 
-#. Python≥3.5 und pip installieren:
+#. Python≥3.6 und :term:`pip` installieren:
 
    .. code-block:: console
 
-    # apt-get update
-    # apt install python3
-    # python3 -V
+    $ sudo apt update
+    $ sudo apt install python3
+    $ python3 -V
     Python 3.10.6
-    # apt install python3-pip
+    # sudo apt install python3-pip
 
 #. Service-User ``jupyter`` erstellen:
 
    .. code-block:: console
 
-    # useradd -s /bin/bash -rmd /srv/jupyter jupyter
+    $ sudo useradd -s /bin/bash -rmd /srv/jupyter jupyter
 
-#. Als Service-User ``jupyter`` das Repository klonen:
+#. Zum Service-User ``jupyter`` wechseln:
 
    .. code-block:: console
 
-    # su - jupyter
-    $ git clone https://github.com/veit/jupyter-tutorial.git
+    # sudo -u jupyter -i
 
-#. `Pipenv <https://pipenv.pypa.io/en/latest/>`_ installieren:
+#. :term:`Pipenv` installieren:
 
    .. code-block:: console
 
@@ -56,8 +55,9 @@ Installation
 
    .. code-block:: console
 
-    $  cd jupyter-tutorial/
-    $  pipenv install
+    $ mkdir jupyterhub_env
+    $ cd jupyterhub_env
+    $ pipenv install jupyterhub
 
 #. ``nodejs`` und ``npm`` installieren:
 
