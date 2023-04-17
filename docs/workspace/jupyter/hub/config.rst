@@ -30,9 +30,9 @@ System-Service für JupyterHub
 
    .. code-block:: console
 
-    # systemctl edit --force --full jupyterhub.service
+    $ sudo systemctl edit --force --full jupyterhub.service
 
-    Fügt eure entsprechende Python-Umgebung ein.
+   Fügt eure entsprechende Python-Umgebung ein.
 
    .. code-block:: ini
 
@@ -53,20 +53,20 @@ System-Service für JupyterHub
 
    .. code-block:: console
 
-    # systemctl daemon-reload
+    $ sudo systemctl daemon-reload
 
 #. Der JupyterHub lässt sich verwalten mit:
 
    .. code-block:: console
 
-    # systemctl <start|stop|status> jupyterhub
+    $ sudo systemctl <start|stop|status> jupyterhub
 
 #. Um sicherzustellen, dass der Dienst auch bei einem Systemstart mitgeladen
    wird, wird folgendes aufgerufen:
 
    .. code-block:: console
 
-    # systemctl enable jupyterhub.service
+    $ sudo systemctl enable jupyterhub.service
     Created symlink /etc/systemd/system/multi-user.target.wants/jupyterhub.service → /etc/systemd/system/jupyterhub.service.
 
 TLS-Verschlüsselung
