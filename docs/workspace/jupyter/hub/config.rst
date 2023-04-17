@@ -25,6 +25,13 @@ System-Service für JupyterHub
     $ pipenv --venv
     /srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W
 
+#. Konfigurieren des absoluten Pfades zu :file:`jupyterhub-singleuser` in der
+   :file:`jupyterhub_config.py`-Datei:
+
+   .. code-block:: python
+
+    c.Spawner.cmd = ['/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91/bin/jupyterhub-singleuser']
+
 #. Hinzufügen einer neuen systemd-Unit-Datei
    ``/etc/systemd/system/jupyterhub.service`` mit dem Befehl:
 
