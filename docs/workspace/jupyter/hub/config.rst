@@ -78,6 +78,10 @@ System-Service für JupyterHub
     $ sudo systemctl enable jupyterhub.service
     Created symlink /etc/systemd/system/multi-user.target.wants/jupyterhub.service → /etc/systemd/system/jupyterhub.service.
 
+#. Um den ``jupyterhub-singleuser``-Spawner nutzen und einen eigenen Server
+   starten zu können, müssen die ix-User in der Gruppe ``jupyter`` eingetragen
+   werden, :abbr:`z.B. (zum Beispiel)` mit :samp:`usermod -aG jupyter {VEIT}`.
+
 TLS-Verschlüsselung
 -------------------
 
