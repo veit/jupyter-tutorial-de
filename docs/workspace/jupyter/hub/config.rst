@@ -4,6 +4,8 @@ Konfiguration
 JupyterHub-Konfiguration
 ------------------------
 
+Konfigurationsdatei erstellen:
+
 .. code-block:: console
 
     $  pipenv run jupyterhub --generate-config
