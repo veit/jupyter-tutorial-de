@@ -9,7 +9,7 @@ Installation
     $ sudo apt install python3
     $ python3 -V
     Python 3.10.6
-    # sudo apt install python3-pip
+    $ sudo apt install python3-pip
 
 #. Service-User ``jupyter`` erstellen:
 
@@ -21,7 +21,7 @@ Installation
 
    .. code-block:: console
 
-    # sudo -u jupyter -i
+    $ sudo -u jupyter -i
 
 #. :term:`Pipenv` installieren:
 
