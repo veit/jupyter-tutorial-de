@@ -128,3 +128,10 @@ Kernel starten
     In [1]:
 
 Mit ``ctrl`` + ``d`` könnt ihr den Kernel wieder beenden.
+
+Kernel löschen
+--------------
+
+.. code-block:: console
+
+   $ pipenv run jupyter kernelspec uninstall python3
