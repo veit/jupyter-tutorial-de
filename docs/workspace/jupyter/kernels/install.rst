@@ -5,10 +5,11 @@ Kernel installieren
 -------------------
 
 Kernel werden :abbr:`z.B. (zum Beispiel)` in folgenden Verzeichnissen gesucht:
-:samp:`/srv/jupyter/.local/share/jupyter/kernels`,
-:samp:`'/usr/local/share/jupyter/kernels`,
-:samp:`/usr/share/jupyter/kernels`,
-:samp:`/srv/jupyter/.ipython/kernels`.
+
+* :samp:`/srv/jupyter/.local/share/jupyter/kernels`
+* :samp:`'/usr/local/share/jupyter/kernels`
+* :samp:`/usr/share/jupyter/kernels`
+* :samp:`/srv/jupyter/.ipython/kernels`
 
 Um eure neue Umgebung in einem der Verzeichnisse als Jupyter Kernel verfügbar
 zu machen, solltet ihr ipykernel installieren:
