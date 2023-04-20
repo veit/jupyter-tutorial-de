@@ -64,10 +64,10 @@ aktuelle Python-Umgebung erstellt, :abbr:`z.B. (zum Beispiel)`:
     Eine Liste von Befehlszeilenargumenten, die zum Starten des Kernels
     verwendet werden.
 
-    :samp:`{connection_file}` verweist auf eine Datei, die die die IP-Adresse,
-    die Ports und den Authentifizierungsschlüssel enthält, die für die
-    Verbindung benötigt werden. Üblicherweise wird diese JSON-Datei an einem
-    sicheren Ort des aktuellen Profils gespeichert:
+    :samp:`{connection_file}` verweist auf eine Datei, die die IP-Adresse, die
+    Ports und den Authentifizierungsschlüssel enthält, die für die Verbindung
+    benötigt werden. Üblicherweise wird diese JSON-Datei an einem sicheren Ort
+    des aktuellen Profils gespeichert:
 
     .. code-block:: json
 
