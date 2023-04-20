@@ -56,9 +56,7 @@ System-Service für JupyterHub
     [Install]
     WantedBy=multi-user.target
 
-#. Laden der Konfiguration
-
-   mit:
+#. Laden der Konfiguration mit:
 
    .. code-block:: console
 
