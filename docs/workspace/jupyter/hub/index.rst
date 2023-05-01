@@ -13,4 +13,5 @@ als Proxy fungiert.
 
     install
     config
+    systemdspawner
     nbviewer-service
