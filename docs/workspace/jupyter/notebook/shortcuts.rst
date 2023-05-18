@@ -1,148 +1,179 @@
 Tastaturkürzel
 ==============
 
-Wenn ihr die `Jupyter
-<https://cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/>`_-Tastaturkürzel
-kennt, könnt ihr sehr viel effizienter mit Notebooks arbeiten.
+Wenn ihr die Jupyter-Tastaturkürzel kennt, könnt ihr viel effizienter mit
+Notebooks arbeiten.
 
-Jupyter Notebooks verfügen über zwei verschiedene Tastatureingabemodi.
+Jupyter-Notizbücher haben zwei verschiedene Tastatureingabemodi:
 
-Im **Bearbeitungsmodus**  könnt ihr Code oder Text in eine Zelle eingeben. Dies
-wird durch einen grünen Zellenrand angezeigt.
+Im **Bearbeitungsmodus** könntn ihr Code oder Text in eine Zelle eingeben. Dies
+wird durch einen grünen Zellrand angezeigt.
 
-Der **Befehlsmodus** bindet die Tastatur an Befehle auf Notebook-Ebene und wird
-durch einen grauen Zellenrand mit einem blauen linken Rand angezeigt.
+Der **Befehlsmodus** bindet die Tastatur an Befehle auf Notebooktiefe und wird
+durch einen grauen Zellrand mit einem blauen linken Rand angezeigt.
 
-Befehlsmodus
-------------
++---------------------------------------------------------+
+| Befehlsmodus                                            |
++=========================================================+
+| Dieser Modus ist mit :kbd:`␛` verfügbar.                |
++----------------+----------------------------------------+
+| :kbd:`f`       | Suchen und Ersetzen                    |
++----------------+----------------------------------------+
+| :kbd:`↩`       | Bearbeitungsmodus aufrufen             |
++----------------+----------------------------------------+
+| :kbd:`⌘-⇧-f`,  | die Befehlspalette öffnen              |
+| :kbd:`⌘-⇧-p`,  |                                        |
+| :kbd:`p`       |                                        |
++----------------+----------------------------------------+
+| :kbd:`⇧-↩`     | Zelle ausführen, unten auswählen       |
++----------------+----------------------------------------+
+| :kbd:`⌃-↩`,    | Ausgewählte Zellen ausführen           |
+| :kbd:`⌘-↩`     |                                        |
++----------------+----------------------------------------+
+| :kbd:`⌥-↩`     | Zelle ausführen und unten einfügen     |
++----------------+----------------------------------------+
+| :kbd:`y`       | Zelle in Code ändern                   |
++----------------+----------------------------------------+
+| :kbd:`m`       | Zelle in Markdown ändern               |
++----------------+----------------------------------------+
+| :kbd:`r`       | Zelle in Rohdaten ändern               |
++----------------+----------------------------------------+
+| :kbd:`1`,      | Zelle in Überschrift 1, Überschrift2,  |
+| :kbd:`2` etc.  | etc. ändern                            |
++----------------+----------------------------------------+
+| :kbd:`k`,      | Zelle oben auswählen                   |
+| :kbd:`↑`       |                                        |
++----------------+----------------------------------------+
+| :kbd:`j`,      | Zelle unten auswählen                  |
+| :kbd:`↓`       |                                        |
++----------------+----------------------------------------+
+| :kbd:`⇧-k`,    | markierte Zellen oben erweitern        |
+| :kbd:`⇧-↑`     |                                        |
++----------------+----------------------------------------+
+| :kbd:`⇧-j`,    | markierte Zellen nach unten erweitern  |
+| :kbd:`⇧-↓`     |                                        |
++----------------+----------------------------------------+
+| :kbd:`⌘-a`     | alle Zellen auswählen                  |
++----------------+----------------------------------------+
+| :kbd:`a`       | Zelle oben einfügen                    |
++----------------+----------------------------------------+
+| :kbd:`b`       | Zelle unten einfügen                   |
++----------------+----------------------------------------+
+| :kbd:`x`       | ausgewählte Zellen ausschneiden        |
++----------------+----------------------------------------+
+| :kbd:`c`       | markierte Zellen kopieren              |
++----------------+----------------------------------------+
+| :kbd:`⇧-v`     | Zellen oben einfügen                   |
++----------------+----------------------------------------+
+| :kbd:`v`       | Zellen unten einfügen                  |
++----------------+----------------------------------------+
+| :kbd:`z`       | Löschen von Zellen rückgängig machen   |
++----------------+----------------------------------------+
+| :kbd:`d d`     | Ausgewählte Zellen löschen             |
++----------------+----------------------------------------+
+| :kbd:`⇧-m`     | Rmarkierte Zellen zusammenführen, oder |
+|                | aktuelle Zelle mit darunter liegender  |
+|                | Zelle, wenn nur eine Zelle markiert ist|
++----------------+----------------------------------------+
+| :kbd:`⌘-s`,    | Speichern und Checkpoint               |
+| :kbd:`s`       |                                        |
++----------------+----------------------------------------+
+| :kbd:`l`       | Zeilennummern ein- und ausschalten     |
++----------------+----------------------------------------+
+| :kbd:`o`       | Ausgabe der ausgewählten Zellen        |
+|                | umschalten                             |
++----------------+----------------------------------------+
+| :kbd:`⇧-o`     | Blättern in der Ausgabe ausgewählter   |
+|                | Zellen ein- und ausschalten            |
++----------------+----------------------------------------+
+| :kbd:`h`       | Tastaturkürzel anzeigen                |
++----------------+----------------------------------------+
+| :kbd:`i i`     | den Kernel unterbrechen                |
++----------------+----------------------------------------+
+| :kbd:`0 0`     | den Kernel neu starten (mit Dialog)    |
++----------------+----------------------------------------+
+| :kbd:`⌘-v`     | Dialog zum Einfügen aus der            |
+|                | Systemzwischenablage                   |
++----------------+----------------------------------------+
+| :kbd:`␛`,      | den Pager schließen                    |
+| :kbd:`q`       |                                        |
++----------------+----------------------------------------+
 
-Dieser Modus wird mit ``esc`` verfügbar.
-
++---------------------------------------------------------+
+| Bearbeitungsmodus                                       |
++=========================================================+
+| Dieser Modus ist mit :kbd:`↩` verfügbar.                |
 +----------------+----------------------------------------+
-| ``↩``          | Bearbeitungsmodus aufrufen             |
+| :kbd:`⇥`       | Code-Vervollständigung oder Einrückung |
 +----------------+----------------------------------------+
-| ``⇧↩``         | Zelle ausführen, unten auswählen       |
+| :kbd:`⇧-⇥`     | Tooltip                                |
 +----------------+----------------------------------------+
-| ``⌃↩``         | Zelle ausführen                        |
+| :kbd:`⌘-]`     | Einrücken                              |
 +----------------+----------------------------------------+
-| ``⌥↩``         | Zelle ausführen, unten einfügen        |
+| :kbd:`⌘-[`     | Ausrücken                              |
 +----------------+----------------------------------------+
-| ``Y``          | zur Code-Zelle                         |
+| :kbd:`⌘-a`     | alles markieren                        |
 +----------------+----------------------------------------+
-| ``M``          | zur Markdown-Zelle                     |
+| :kbd:`⌘-z`     | rückgängig machen                      |
 +----------------+----------------------------------------+
-| ``R``          | zur *Raw*-Ansicht                      |
+| :kbd:`⌘-/`     | kommentieren                           |
 +----------------+----------------------------------------+
-| ``1``, ``2``   | Ändern der Zelle zu ``h1``, ``h2``     |
-| etc.           | etc.                                   |
+| :kbd:`⌘-d`     | ganze Zeile löschen                    |
 +----------------+----------------------------------------+
-| ``↑``, ``K``   | zur darüberliegenden Zelle             |
+| :kbd:`⌘-u`     | Auswahl rückgängig machen              |
 +----------------+----------------------------------------+
-| ``↓``, ``J``   | zur nächsten Zelle                     |
+| :kbd:`⎀`       | Überschreibmarkierung umschalten       |
 +----------------+----------------------------------------+
-| ``A``, ``B``   | Zelle darüber oder darunter einfügen   |
+| :kbd:`⌘-↑`     | zum Zellenanfang gehen                 |
 +----------------+----------------------------------------+
-| ``X``          | Markierte Zelle ausschneiden           |
+| :kbd:`⌘-↓`     | Gehe zum Zellenende                    |
 +----------------+----------------------------------------+
-| ``C``          | Markierte Zelle kopieren               |
+| :kbd:`⌥-←`     | Gehe ein Wort nach links               |
 +----------------+----------------------------------------+
-| ``⇧V``         | Zeile oben einfügen                    |
+| :kbd:`⌥-→`     | gehe ein Wort nach rechts              |
 +----------------+----------------------------------------+
-| ``V``          | Zelle darunter einfügen                |
+| :kbd:`⌥-⌫`     | lösche ein Wort vorher                 |
 +----------------+----------------------------------------+
-| ``Z``          | Zelle löschen rückgängig machen        |
+| :kbd:`⌥-⌦`     | lösche ein Wort nachher                |
 +----------------+----------------------------------------+
-| ``D``-``D``    | Zelle löschen                          |
+| :kbd:`⌘-⇧-z`   | wiederholen                            |
 +----------------+----------------------------------------+
-| ``⇧M``         | Zelle mit nächster zusammenführen      |
+| :kbd:`⌘-⇧-u`   | Auswahl wiederholen                    |
 +----------------+----------------------------------------+
-| ``⌘S``         | Speichern und Checkpoint               |
+| :kbd:`⌃-k`     | Zeilen löschen im Emacs-Stil           |
 +----------------+----------------------------------------+
-| ``L``          | Zeilennummern umschalten               |
+| :kbd:`⌘-⌫`     | Zeile links vom Cursor löschen         |
 +----------------+----------------------------------------+
-| ``O``          | Ausgabe umschalten                     |
+| :kbd:`⌘-⌦`     | Zeile rechts vom Cursor löschen        |
 +----------------+----------------------------------------+
-| ``⇧O``         | Scrollen des Outputs umschalten        |
+| :kbd:`⌃-m`,    | Kommandomodus aufrufen                 |
+| :kbd:`␛`       |                                        |
 +----------------+----------------------------------------+
-| ``Esc``, ``Q`` | Befehlsmodus verlassen                 |
+| :kbd:`⌘-⇧-f`,  | Öffnen der Befehlspalette              |
+| :kbd:`⌘-⇧-p`   |                                        |
 +----------------+----------------------------------------+
-| ``H``          | Hilfedialog für Tastaturkürzel         |
+| :kbd:`⇧-↩`     | Zelle ausführen, unten auswählen       |
 +----------------+----------------------------------------+
-| ``I``-``I``    | Kernel unterbrechen                    |
+| :kbd:`⌃-↩`     | Ausgewählte Zellen ausführen           |
+| :kbd:`⌘-↩`     |                                        |
 +----------------+----------------------------------------+
-| ``0``-``0``    | Kernel neu starten                     |
+| :kbd:`⌥-↩`     | Zelle ausführen und unten einfügen     |
 +----------------+----------------------------------------+
-| ``␣``          | runterscrollen                         |
+| :kbd:`⌃-⇧--`   | Zelle an der/den Schreibmarke(n) teilen|
 +----------------+----------------------------------------+
-| ``⇧␣``         | hochscrollen                           |
+| :kbd:`⌘-s`     | Speichern und Checkpoint               |
 +----------------+----------------------------------------+
-| ``⇧``          | ignorieren                             |
+| :kbd:`↓`       | Cursor nach unten bewegen              |
 +----------------+----------------------------------------+
-
-Bearbeitungsmodus
------------------
-
-Dieser Modus wird mit ``Enter`` verfügbar.
-
-+----------------+----------------------------------------+
-| ``⇥``          | Code-Vervollständigung oder Einzug     |
-+----------------+----------------------------------------+
-| ``⇧⇥``         | Tooltip                                |
-+----------------+----------------------------------------+
-| ``⌘]``         | Einrücken                              |
-+----------------+----------------------------------------+
-| ``⌘[``         | Ausrücken                              |
-+----------------+----------------------------------------+
-| ``⌘A``         | Alles auswählen                        |
-+----------------+----------------------------------------+
-| ``⌘Z``         | Rückgängig machen                      |
-+----------------+----------------------------------------+
-| ``⌘⇧Z``, ``⌘Y``| Wiederholen                            |
-+----------------+----------------------------------------+
-| ``⌘↑``         | zum Zellenanfang                       |
-+----------------+----------------------------------------+
-| ``⌘↓``         | zum Zellenende                         |
-+----------------+----------------------------------------+
-| ``⌥←``         | ein Wort nach links                    |
-+----------------+----------------------------------------+
-| ``⌥→``         | ein Wort nach rechts                   |
-+----------------+----------------------------------------+
-| ``⌥⌫``         | voriges Wort löschen                   |
-+----------------+----------------------------------------+
-| ``⌥⌦``         | folgendes Wort löschen                 |
-+----------------+----------------------------------------+
-| ``⌘⇧Z``        | Wiederholen                            |
-+----------------+----------------------------------------+
-| ``⌘⇧U``        | Auswahl wiederholen                    |
-+----------------+----------------------------------------+
-| ``⌘⌫``         | bis zum Anfang der Zeile löschen       |
-+----------------+----------------------------------------+
-| ``⌘⌦``         | bis zum Ende der Zeile löschen         |
-+----------------+----------------------------------------+
-| ``⌃M``, ``Esc``| Befehlsmodus                           |
-+----------------+----------------------------------------+
-| ``⇧↩``         | Zelle ausführen, unten auswählen       |
-+----------------+----------------------------------------+
-| ``⌃↩``         | Ausgewählte Zellen ausführen           |
-+----------------+----------------------------------------+
-| ``⌥↩``         | Zelle ausführen, unten einfügen        |
-+----------------+----------------------------------------+
-| ``⌃⇧-``        | Zelle am Cursor teilen                 |
-+----------------+----------------------------------------+
-| ``⌘S``         | Speichern und Checkpoint               |
-+----------------+----------------------------------------+
-| ``↓``          | Cursor nach unten                      |
-+----------------+----------------------------------------+
-| ``↑``          | Cursor nach oben                       |
+| :kbd:`↑`       | Cursor nach oben bewegen               |
 +----------------+----------------------------------------+
 
 Eigene Tastaturkürzel
 ---------------------
 
-Ihr könnt in :menuselection:`Help --> Edit Keyboard Shortcuts` auch eigene
-Tastaturkürzel definieren.
+Ihr könnt auch eure eigenen Tastenkombinationen unter :menuselection:`Help -->
+Edit Keyboard Shortcuts` definieren.
 
 .. seealso::
-
    * `Keyboard Shortcut Customization
      <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Custom%20Keyboard%20Shortcuts.html>`_
