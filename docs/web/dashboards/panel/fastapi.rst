@@ -21,6 +21,9 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
 #. Zunächst importieren wir alle erforderlichen Elemente:
 
    .. literalinclude:: fastAPI/main.py
+      :caption: fastAPI/main.py
+      :name: fastAPI/main.py
+
       :linenos:
       :lines: 1-3, 5-7
 
@@ -44,6 +47,8 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
    (zum Beispiel)` folgenden Inhalt haben:
 
    .. literalinclude:: fastAPI/templates/base.html
+      :caption: fastAPI/templates/base.html
+      :name: fastAPI/templates/base.html
       :language: html
       :linenos:
       :lines: 1-
@@ -52,6 +57,9 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
    ``pn.serve()`` unseren Bokeh-Server zu starten:
 
    .. literalinclude:: fastAPI/main.py
+      :caption: fastAPI/main.py
+      :name: fastAPI/main.py
+
       :lineno-start: 22
       :lines: 22-
 
@@ -77,6 +85,8 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
        darstellt:
 
        .. literalinclude:: fastAPI/sliders/sinewave.py
+          :caption: fastAPI/sliders/sinewave.py
+          :name: fastAPI/sliders/sinewave.py
           :linenos:
           :lines: 1-
 
@@ -84,6 +94,8 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
        erstellt eine App-Funktion aus der ``SineWave``-Klasse:
 
        .. literalinclude:: fastAPI/sliders/pn_app.py
+          :caption: fastAPI/sliders/pn_app.py
+          :name: fastAPI/sliders/pn_app.py
           :linenos:
           :lines: 1-
 
@@ -91,6 +103,8 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
    importieren die ``createApp``-Funktion:
 
    .. literalinclude:: fastAPI/main.py
+      :caption: fastAPI/main.py
+      :name: fastAPI/main.py
       :lineno-start: 4
       :lines: 4
 
