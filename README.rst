@@ -48,17 +48,17 @@ Installation
 
    .. code-block:: console
 
-    $ cd jupyter-tutorial-main
-    $ pipenv install
-    Creating a virtualenv for this project…
-    …
+    $ cd jupyter-tutorial-de-main
+    $ python3 -m venv .
+    $ . bin/activate
+    $ python -m pip install -r docs/requirements.txt
 
 #. Installieren der `Jupyter Notebook Extensions
    <https://jupyter-contrib-nbextensions.readthedocs.io/>`_:
 
    .. code-block:: console
 
-    $ pipenv run jupyter contrib nbextension install --user
+    $ jupyter contrib nbextension install --user
     jupyter contrib nbextension install --user
     Installing jupyter_contrib_nbextensions nbextension files to jupyter data directory
     …
@@ -66,7 +66,7 @@ Installation
     jupyter-highlight-selected-word-0.2.0 jupyter-latex-envs-1.4.6
     jupyter-nbextensions-configurator-0.4.1
     …
-    $ pipenv run jupyter nbextension enable latex_envs --user --py
+    $ jupyter nbextension enable latex_envs --user --py
     Enabling notebook extension latex_envs/latex_envs...
           - Validating: OK
 
@@ -74,10 +74,8 @@ Installation
 
    .. code-block:: console
 
-    $ python3 -m venv .
-    $ bin/python -m pip install --upgrade pip
-    $ bin/python -m pip install -r docs/constraints.txt
-    $ bin/sphinx-build -ab html docs/ docs/_build/
+    $ cd docs/
+    $ make html
 
 #. PDF erstellen:
 
@@ -87,7 +85,7 @@ Installation
 
    .. code-block:: console
 
-    $ sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
+    $ sudo apt install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk
 
    oder für macOS mit:
 
@@ -106,8 +104,7 @@ Installation
 
    .. code-block:: console
 
-    $ cd docs/
-    $ pipenv run make latexpdf
+    $ make latexpdf
     …
     The LaTeX files are in _build/latex.
     Run 'make' in that directory to run these through (pdf)latex

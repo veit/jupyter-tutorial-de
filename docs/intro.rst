@@ -11,53 +11,22 @@ Zielgruppen sehr unterschiedlich. Eine der großen Stärken von Jupyter-Notebook
 ist jedoch, dass sie eine enge Zusammenarbeit dieser unterschiedlichen
 Fachgruppen in funktionsübergreifenden Teams ermöglichen.
 
-* **Data Scientists** erforschen Daten mit verschiedenen Parametern und fassen
-  die Ergebnisse zusammen.
-* **Data-Engineers** überprüfen die Qualität des Codes und machen den Code
-  robuster, effizienter und skalierbar.
-* **Data-Analysts** verwenden den von Data-Engineers bereitgestellten Code, um
-  systematisch die Daten zu analysieren.
-* **System-Engineers** stellen die Forschungsplattform auf Basis des
-  :doc:`workspace/jupyter/hub/index` bereit, auf der die anderen Rollen ihre
-  Arbeit ausführen können.
+Data-Scientists
+    untersuchen Daten mit verschiedenen Parametern und fassen die Ergebnisse
+    zusammen.
+Data-Engineers
+    prüfen die Qualität des Codes und machen ihn robuster, effizienter und
+    skalierbar.
+Data-Analysts
+    nutzen den von Data-Engineers bereitgestellten Code, um die Daten
+    systematisch zu analysieren.
+System-Engineers
+    stellen die Forschungsplattform auf Basis von :doc:`hub/index` bereit, auf
+    der die anderen Rollen ihre Arbeit verrichten können.
 
-Im ersten Teil dieses Tutorial wenden wir uns zunächst an das
-System-Engineering, das eine Plattform auf Basis von Jupyter-Notebooks aufbauen
-und betreiben will. In der Folge erläutern wir dann, wie diese Plattform
-effektiv von den Fachgruppen in den Datenwissenschaften, im Data-Engineering und
-und in der Datenanalyse genutzt werden kann.
-
-Aufbau des Jupyter-Tutorial
----------------------------
-
-Das Jupyter-Tutorial folgt ab Kapitel 3 dem prototypischen Verlauf eines
-Forschungsprojekts:
-
-3. **Arbeitsbereich einrichten** mit der Installation und Konfiguration von
-   :doc:`workspace/ipython/index`, :doc:`workspace/jupyter/index` mit
-   :doc:`workspace/jupyter/nbextensions/index` und
-   :doc:`workspace/jupyter/ipywidgets/index`.
-4. **Daten sammeln**, entweder durch eine :doc:`Rest-API
-   <data-processing/requests/index>` oder direkt von einer :doc:`HTML-Seite
-   <data-processing/serialisation-formats/xml-html/beautifulsoup>`.
-5. **Daten bereinigen** ist eine wiederkehrende Aufgabe, die u.a. redundante,
-   inkonsistente oder falsch formatierte Daten entfernen oder modifizieren soll.
-6. **Erschließen der Daten –** :doc:`viz/index` umfasst explorative Analysen und
-   das Visualisieren von Daten.
-7. **Refactoring** umfasst das Parametrisieren, Validieren und
-   :doc:`Performance-Optimierungen <performance/index>`.
-8. **Produkt erstellen** umfasst :doc:`productive/testing`,
-   :doc:`productive/logging/index` und :doc:`productive/documenting` der
-   Methoden und Funktionen. Das :doc:`Erstellen von Bibliotheken und Paketen
-   <productive/packaging>` findet ihr in unserem our :doc:`Python Basics
-   Tutorial <python-basics:libs/index>`.
-9. **Web-Anwendungen** können entweder aus Jupyter-Notebooks
-   :doc:`web/dashboards/index` generieren oder umfassendere
-   Applikationslogik benötigen, wie z.B. in
-   :doc:`pyviz:bokeh/embedding-export/flask` demonstriert, oder Daten über eine
-   `RESTful API
-   <https://de.wikipedia.org/wiki/Representational_State_Transfer>`_
-   bereitstellen.
+In diesem Tutorial wenden wir uns an System-Engineers, die eine auf
+Jupyter-Notebooks basierende Plattform aufbauen und betreiben wollen. Wir
+erklären dann, wie diese Plattform von Data-Scientists, Data-Engineersund -Analysts effektiv genutzt werden kann.
 
 Warum Jupyter?
 --------------
@@ -92,7 +61,7 @@ Interactive Computing Protocol
     Protocol*, einem offenen Netzwerkprotokoll basierend auf JSON-Daten über
     `ZMQ <https://zeromq.org/>`_ und `WebSockets
     <https://de.wikipedia.org/wiki/WebSocket>`_.
-:doc:`workspace/jupyter/kernels/index`
+:doc:`/kernels/index`
     Rechenkernel sind Prozesse, die interaktiven Code in einer bestimmten
     Programmiersprache ausführen und die Ausgabe an den Benutzer zurückgeben.
 
@@ -116,9 +85,10 @@ Pipelines* und *Domain Driven Data Stores* erweitern lässt.
 Die Beispiele des Jupyter-Tutorials könnt ihr jedoch auch lokal erstellen und
 ausführen.
 
-.. include:: ../README.rst
-   :start-after: badges
-   :end-before: first-steps
+Arbeitsbereich
+--------------
 
-.. include:: ../README.rst
-   :start-after: follow-us
+Die Einrichtung des Arbeitsbereichs umfasst die Installation und Konfiguration
+von :doc:`python4datascience:workspace/ipython/index` und
+:doc:`Jupyter-Notebooks <notebook/install>`, :doc:`nbextensions/index` und
+:doc:`ipywidgets/index`.
