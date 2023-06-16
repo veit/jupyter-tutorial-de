@@ -23,11 +23,10 @@ und neue Verwendungsmöglichkeiten eröffnen.
             label="Was wollt ihr machen?",
             tooltip="Jupyter bietet euch verschiedene Möglichkeiten, wie ihr die Notebooks nutzen könnt"]
         // Second Level
-        jupyter [
-            label="Jupyter-\nNotebook",
-            tooltip="Jupyter lokal installieren",
-            target="_top",
-            href="../workspace/jupyter/notebook/index.html"]
+        singleuser [
+            shape=plaintext,
+            label=" ",
+            tooltip="Single user"]
         hub [
             label="JupyterHub",
             tooltip="JupyterHub\ninstallieren",
@@ -62,6 +61,16 @@ und neue Verwendungsmöglichkeiten eröffnen.
             target="_top",
             href="../use-cases.html"]
         // 3rd Level
+        notebook [
+            label="Jupyter-\nNotebook",
+            tooltip="Notebook lokal installieren",
+            target="_top",
+            href="../notebook/index.html"]
+        jupyterlab [
+            label="JupyterLab",
+            tooltip="JupyterLab lokal installieren",
+            target="_top",
+            href="../jupyterlab/index.html"]
         widgets [
             label="Widgets",
             tooltip="ipywidgets installieren und nutzen",
@@ -73,7 +82,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
             target="_top",
             href="../nbextensions/index.html"]
         viz [
-            label="Daten visualisieren",
+            label="Daten\nvisualisieren",
             tooltip="Bibliotheken zur Datenvisualisierung",
             target="_top",
             href="../viz/index.html"]
@@ -93,7 +102,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
             target="_top",
             href="../nbsphinx.html"]
         // Edges
-        what -> jupyter [label="Einzel-\nnutzer"]
+        what -> singleuser [label="Einzel-\nnutzer"]
         what -> hub [label="Team-\narbeit"]
         what -> nbconvert [label="Konvertieren"]
         nbconvert -> nbviewer [label="Konvertier-\nservice"]
@@ -101,12 +110,13 @@ und neue Verwendungsmöglichkeiten eröffnen.
         what -> extensions [label="Notebook\nerweitern"]
         what -> embed [label="Notebooks\neinbetten"]
         what -> examples [label="Beispiele"]
+        singleuser -> {notebook jupyterlab}
         extensions -> {widgets extend viz dash}
         embed -> {html sphinx}
         // Arrangement
         {rank = same; what;}
-        {rank = same; jupyter; hub; nbconvert; kernels; extensions; embed; examples;}
-        {rank = same; widgets; extend; viz; dash;}
+        {rank = same; singleuser; hub; nbconvert; kernels; extensions; embed; examples;}
+        {rank = same; notebook; jupyterlab; widgets; extend; viz; dash;}
         {rank = same; html; sphinx}
     }
 
@@ -117,6 +127,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
 
     intro
     notebook/index
+    jupyterlab/index
     hub/index
     nbconvert
     nbviewer

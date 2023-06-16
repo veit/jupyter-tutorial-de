@@ -1,9 +1,10 @@
 Parametrisierung und Zeitplanung
 ================================
 
-Mit `papermill <https://papermill.readthedocs.io/en/latest/>`_ könnt ihr
-Notebooks parametrisieren und automatisieren. Ihr könnt die Notebooks
-zeit- oder ereignisgesteuert ablaufen lassen.
+Mit :doc:`../../jupyterlab/index` könnt ihr den :doc:`Jupyter Scheduler
+<../../jupyterlab/scheduler>` zum Parametrisieren und zeitgesteuertem Ausführen
+verwenden. Für Jupyter Notebooks steht euch `papermill
+<https://papermill.readthedocs.io/en/latest/>`_ zur Verfügung.
 
 Installieren
 ------------
