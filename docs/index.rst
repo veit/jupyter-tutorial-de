@@ -13,9 +13,12 @@ und neue Verwendungsmöglichkeiten eröffnen.
 .. graphviz::
 
     digraph decide_jupyter {
-        graph [fontname = "Calibri", fontsize="16"];
-        node [fontname = "Calibri", fontsize="16"];
-        edge [fontname = "Calibri", fontsize="16"];
+        graph [fontname = "Calibri", fontsize="10", penwidth="1px",
+               overlap=false];
+        node [fontname = "Calibri", fontsize="10", style="bold",
+              penwidth="1px", fontcolor="#640FFB"; color="#640FFB";];
+        edge [fontname = "Calibri", fontsize="10", style="bold",
+              penwidth="1px", fontcolor="#640FFB"; color="#640FFB";];
         tooltip="Wie entscheide ich, welche Jupyter-Pakete ich benötige?";
         // Top Level
         what [
@@ -102,7 +105,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
             target="_top",
             href="../nbsphinx.html"]
         // Edges
-        what -> singleuser [label="Einzel-\nnutzer"]
+        what -> singleuser [label="Einzel-\narbeit"]
         what -> hub [label="Team-\narbeit"]
         what -> nbconvert [label="Konvertieren"]
         nbconvert -> nbviewer [label="Konvertier-\nservice"]
@@ -114,8 +117,10 @@ und neue Verwendungsmöglichkeiten eröffnen.
         extensions -> {widgets extend viz dash}
         embed -> {html sphinx}
         // Arrangement
+        rankdir="LR"
         {rank = same; what;}
-        {rank = same; singleuser; hub; nbconvert; kernels; extensions; embed; examples;}
+        {rank = same; singleuser; hub; nbconvert; kernels; extensions; embed;
+                examples;}
         {rank = same; notebook; jupyterlab; widgets; extend; viz; dash;}
         {rank = same; html; sphinx}
     }
