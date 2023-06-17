@@ -99,11 +99,16 @@ und neue Verwendungsmöglichkeiten eröffnen.
             tooltip="Einbinden von Notebooks in statisches HTML",
             target="_top",
             href="../ipywidgets/embedding.html"]
-        sphinx [
-            label="Sphinx",
+        nbsphinx [
+            label="nbsphinx",
             tooltip="Einbinden von Notebooks in den Sphinx Document Generator",
             target="_top",
-            href="../nbsphinx.html"]
+            href="../sphinx/nbsphinx.html"]
+        executablebooks [
+            label="Executable Books",
+            tooltip="Bücher aus Jupyter Notebooks und MyST",
+            target="_top",
+            href="../sphinx/executablebooks.html"]
         // Edges
         what -> singleuser [label="Einzel-\narbeit"]
         what -> hub [label="Team-\narbeit"]
@@ -115,7 +120,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
         what -> examples [label="Beispiele"]
         singleuser -> {notebook jupyterlab}
         extensions -> {widgets extend viz dash}
-        embed -> {html sphinx}
+        embed -> {html nbsphinx executablebooks}
         // Arrangement
         rankdir="LR"
         {rank = same; what;}
@@ -141,7 +146,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
     nbextensions/index
     viz/index
     dashboards/index
-    nbsphinx
+    sphinx/index
     use-cases
     genindex
 

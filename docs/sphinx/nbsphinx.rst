@@ -1,5 +1,5 @@
-Sphinx
-======
+``nbsphinx``
+============
 
 :doc:`nbsphinx <nbsphinx:index>` ist eine :doc:`Sphinx
 <sphinx:index>`-Erweiterung, die einen Parser für ``*.ipynb``-Dateien
@@ -17,7 +17,7 @@ Installation
 Requirements
 ~~~~~~~~~~~~
 
-* :doc:`nbconvert`
+* :doc:`../nbconvert`
 
 Konfiguration
 -------------
