@@ -13,6 +13,15 @@ The versions follow `Semantic Versioning <https://semver.org/lang/de/>`_:
 
 .. _changelog
 
+1.1.0
+-----
+
+* 🔖 Jupyter-Tutorial 1.1.0
+* 📝 Add ‘What’s new’ section
+* 📝 Add Executable Books
+* 💄 Beautify the Jupyter overview
+* 📝 Add JupyterLab documentation
+
 1.0.0
 -----
 
