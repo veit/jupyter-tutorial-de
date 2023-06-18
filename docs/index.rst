@@ -30,21 +30,15 @@ und neue Verwendungsmöglichkeiten eröffnen.
             shape=plaintext,
             label=" ",
             tooltip="Single user"]
-        hub [
-            label="JupyterHub",
-            tooltip="JupyterHub\ninstallieren",
-            target="_top",
-            href="../hub/index.html"]
+        team [
+            shape=plaintext,
+            label=" ",
+            tooltip="Team"]
         nbconvert [
             label="nbconvert",
             tooltip="nbconvert installieren und nutzen",
             target="_top",
             href="../nbconvert.html"]
-        nbviewer [
-            label="nbviewer",
-            tooltip="nbviewer installieren und nutzen",
-            target="_top",
-            href="../nbviewer.html"]
         kernels [
             label="Kernels",
             tooltip="Kernels installieren, anzeigen und starten",
@@ -74,6 +68,21 @@ und neue Verwendungsmöglichkeiten eröffnen.
             tooltip="JupyterLab lokal installieren",
             target="_top",
             href="../jupyterlab/index.html"]
+        hub [
+            label="JupyterHub",
+            tooltip="JupyterHub\ninstallieren",
+            target="_top",
+            href="../hub/index.html"]
+        binder [
+            label="Binder",
+            tooltip="Binder tools",
+            target="_top",
+            href="../binder.html"]
+        nbviewer [
+            label="nbviewer",
+            tooltip="nbviewer installieren und nutzen",
+            target="_top",
+            href="../nbviewer.html"]
         widgets [
             label="Widgets",
             tooltip="ipywidgets installieren und nutzen",
@@ -111,7 +120,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
             href="../sphinx/executablebooks.html"]
         // Edges
         what -> singleuser [label="Einzel-\narbeit"]
-        what -> hub [label="Team-\narbeit"]
+        what -> team [label="Team-\narbeit"]
         what -> nbconvert [label="Konvertieren"]
         nbconvert -> nbviewer [label="Konvertier-\nservice"]
         what -> kernels [label="Java, R,\nJulia etc."]
@@ -119,15 +128,16 @@ und neue Verwendungsmöglichkeiten eröffnen.
         what -> embed [label="Notebooks\neinbetten"]
         what -> examples [label="Beispiele"]
         singleuser -> {notebook jupyterlab}
+        team -> {hub binder}
         extensions -> {widgets extend viz dash}
         embed -> {html nbsphinx executablebooks}
         // Arrangement
         rankdir="LR"
         {rank = same; what;}
-        {rank = same; singleuser; hub; nbconvert; kernels; extensions; embed;
+        {rank = same; singleuser; team; nbconvert; kernels; extensions; embed;
                 examples;}
-        {rank = same; notebook; jupyterlab; widgets; extend; viz; dash;}
-        {rank = same; html; sphinx}
+        {rank = same; notebook; jupyterlab; hub; binder; widgets; extend; viz;
+                dash; html}
     }
 
 .. toctree::
@@ -139,6 +149,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
     notebook/index
     jupyterlab/index
     hub/index
+    binder
     nbconvert
     nbviewer
     kernels/index
