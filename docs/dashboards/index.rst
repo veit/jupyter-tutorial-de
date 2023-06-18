@@ -24,9 +24,6 @@ Dashboards
 :doc:`jupyter-flex/index`
     Jupyter-Erweiterung, die aus Notebooks Dashboards macht.
 
-Aktivitäten und Lizenzen
-------------------------
-
 Mit diesem tabellarischen Überblick könnt ihr schnell die Aktivitäten und
 Lizenzen der verschiedenen Bibliotheken vergleichen.
 

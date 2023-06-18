@@ -14,7 +14,6 @@ The versions follow `Semantic Versioning <https://semver.org/lang/de/>`_:
 .. _changelog
 
 1.1.0
------
 
 * 🔖 Jupyter-Tutorial 1.1.0
 * 📝 Add ‘What’s new’ section
@@ -23,7 +22,6 @@ The versions follow `Semantic Versioning <https://semver.org/lang/de/>`_:
 * 📝 Add JupyterLab documentation
 
 1.0.0
------
 
 * 🔧 Moving the Data Science content into Python4DataScience
 
