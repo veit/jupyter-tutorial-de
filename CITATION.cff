@@ -11,7 +11,7 @@ authors:
     affiliation: cusy GmbH
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8047111
+    value: 10.5281/zenodo.8052609
 repository-code: 'https://github.com/veit/jupyter-tutorial-de'
 url: 'https://jupyter-tutorial.readthedocs.io/de/latest/'
 abstract: >-
@@ -19,12 +19,21 @@ abstract: >-
   Forschungsinfrastruktur auf Basis von Jupyter Notebooks.
 keywords:
   - Jupyter
+  - JupyterLab
   - Notebook
   - iPython
   - Jupyter-Notebook
   - JupyterHub
+  - Binder
   - iPython-Widget
   - ipywidget
+  - Dashboard
+  - nbviewer
+  - Panel
+  - Voilà
+  - Sphinx
+  - Executable Books
+  - MyST
 license: BSD-3-Clause
-version: 1.0.0
-date-released: '2023-06-16'
+version: 1.1.1
+date-released: '2023-06-18'

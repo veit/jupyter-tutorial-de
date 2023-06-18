@@ -13,6 +13,11 @@ The versions follow `Semantic Versioning <https://semver.org/lang/de/>`_:
 
 .. _changelog
 
+1.1.1
+
+* 🔖 Jupyter-Tutorial 1.1.1
+* ✏️ Fix PDF structure
+
 1.1.0
 
 * 🔖 Jupyter-Tutorial 1.1.0
