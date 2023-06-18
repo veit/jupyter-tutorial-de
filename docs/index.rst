@@ -146,6 +146,7 @@ und neue Verwendungsmöglichkeiten eröffnen.
     :maxdepth: 0
 
     intro
+    whatsnew
     notebook/index
     jupyterlab/index
     hub/index
