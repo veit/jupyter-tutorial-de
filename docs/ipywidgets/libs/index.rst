@@ -51,15 +51,6 @@ Beliebte Widget-Bibliotheken sind
 
        ipysheet.ipynb
 
-``qgrid``
-    Widget auf Basis von `SlickGrid <https://github.com/mleibman/SlickGrid>`_
-    zum Rendern von pandas DataFrames in Jupyter-Notebooks
-
-    .. toctree::
-       :maxdepth: 1
-
-       qgrid.ipynb
-
 ``ipydatagrid``
     `ipydatagrid <https://github.com/bloomberg/ipydatagrid>`_ ist ein schnelles
     und vielfältiges Datagrid-Widget.
