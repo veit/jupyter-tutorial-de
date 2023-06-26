@@ -29,7 +29,7 @@ Sphinx konfigurieren
 
    .. code-block:: console
 
-    $ pipenv run python3 -m sphinx.cmd.quickstart
+    $ pipenv run python -m sphinx.cmd.quickstart
 
 #. Danach befindet sich im neu erstellten Verzeichnis die
    Sphinx-Konfigurationsdatei ``conf.py``. In dieser  wird ``nbsphinx`` als
@@ -56,11 +56,7 @@ Ihr könnt noch weitere Konfigurationen für ``nbsphinx`` vornehmen.
 Timeout
     In der Standardeinstellung von ``nbsphinx`` ist der Timeout für eine Zelle
     auf 30 Sekunden eingestellt. Ihr könnt dies für euer Sphinx-Projekt in der
-    ``conf.py``-Datei ändern mit
-
-    .. code-block:: python
-
-        nbsphinx_timeout = 60
+    ``conf.py``-Datei ändern mit :samp:`nbsphinx_timeout = {60}`.
 
     Alternativ könnt ihr dies auch für einzelne Code-Zellen in den Metadaten der
     Code-Zelle angeben:
@@ -81,19 +77,21 @@ Timeout
     Soll das Timeout deaktiviert werden, kann ``-1`` angegeben werden.
 
 Benutzerdefinierte Formate
-    Bibliotheken wie z.B. `jupytext <https://github.com/mwouts/jupytext>`_
-    speichern Notebooks in anderen Formaten ab, z.B. als *R-Markdown* mit dem
-    Suffix ``Rmd``. Damit diese von ``nbsphinx`` ebenfalls ausgeführt werden
-    können, können in der Sphinx-Konfigurationsdatei ``conf.py`` mit
-    ``nbsphinx_custom_formats`` weitere Formate angegeben werden, z.B.
+    Bibliotheken wie :abbr:`z.B. (zum Beispiel)` `jupytext
+    <https://github.com/mwouts/jupytext>`_ speichern Notebooks in anderen
+    Formaten ab, :abbr:`z.B. (zum Beispiel)` als *R-Markdown* mit dem Suffix
+    ``Rmd``. Damit diese von ``nbsphinx`` ebenfalls ausgeführt werden können,
+    können in der Sphinx-Konfigurationsdatei ``conf.py`` mit
+    ``nbsphinx_custom_formats`` weitere Formate angegeben werden, :abbr:`z.B.
+    (zum Beispiel)`
 
-        .. code-block:: python
+    .. code-block:: python
 
-            import jupytext
+       import jupytext
 
-            nbsphinx_custom_formats = {
-                '.Rmd': lambda s: jupytext.reads(s, '.Rmd'),
-            }
+       nbsphinx_custom_formats = {
+           '.Rmd': lambda s: jupytext.reads(s, '.Rmd'),
+       }
 
 Zellen konfigurieren
 ~~~~~~~~~~~~~~~~~~~~
@@ -114,7 +112,7 @@ Zelle nicht anzeigen
 
 ``nbsphinx-toctree``
     Mit dieser Anweisung könnt ihr innerhalb einer Notebook-Zelle von Sphinx ein
-    Inhaltsverzeichnis erstellen lassen, z.B.
+    Inhaltsverzeichnis erstellen lassen, :abbr:`z.B. (zum Beispiel)`
 
     .. code-block:: json
 
@@ -150,39 +148,26 @@ Build
    ``*.ipynb``-Datei hinzufügen, siehe z.B. `jupyter-tutorial/ipython/index.rst
    <https://jupyter-tutorial.readthedocs.io/de/latest/_sources/ipython/index.rst.txt>`_.
 
-#. Schließlich könnt ihr die Seiten generieren, z.B. HTML mit
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx <source-dir> <build-dir>
-
-   oder
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx <source-dir> <build-dir> -j <number-of-processes>
+#. Schließlich könnt ihr die Seiten generieren, :abbr:`z.B. (zum Beispiel)` HTML
+   mit :samp:`$ pipenv run python -m sphinx {SOURCE_DIR} {BUILD_DIR}` oder
+   :samp:`$ pipenv run python -m sphinx {SOURCE_DIR} {BUILD_DIR} -j
+   {NUMBER_OF_PROCESSES}`.
 
    wobei ``-j`` die Zahl der Prozesse angibt, die parallel ausgeführt werden
    sollen.
 
-   Wenn ihr eine LaTeX-Datei erzeugen wollt, könnt ihr dies mit
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx <source-dir> <build-dir> -b latex
+   Wenn ihr eine LaTeX-Datei erzeugen wollt, könnt ihr dies mit :samp:`$ pipenv
+   run python -m sphinx {SOURCE_DIR} {BUILD_DIR} -b latex}`.
 
 #. Alternativ könnt ihr euch mit ``sphinx-autobuild`` die Dokumentation auch
-   automatisch generieren lassen. Es kann installiert werden it
+   automatisch generieren lassen. Es kann installiert werden mit
 
    .. code-block:: console
 
-    $ pipenv run python3 -m pip install sphinx-autobuild
+    $ pipenv run python -m pip install sphinx-autobuild
 
-   Anschließend kann die automatische Erstellung gestartet werden mit
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx_autobuild <source-dir> <build-dir>
+   Anschließend kann die automatische Erstellung gestartet werden mit :samp:`$
+   pipenv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR}`.
 
    Dadurch wird ein lokaler Webserver gestartet, der die generierten HTML-Seiten
    unter ``http://localhost:8000/`` bereitstellt. Und jedes Mal, wenn ihr
@@ -190,10 +175,8 @@ Build
    HTML-Seiten neu generiert und die Browseransicht aktualisiert.
 
    Ihr könnt dies auch nutzen, um die LaTeX-Ausgabe automatisch zu erstellen:
-
-   .. code-block:: console
-
-    $ pipenv run python3 -m sphinx_autobuild <source-dir> <build-dir> -b latex
+   :samp:`$ pipenv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR} -b
+   latex`.
 
 #. Eine andere Alternative ist die Publikation auf `readthedocs.org
    <https://readthedocs.org/>`_.
@@ -205,13 +188,15 @@ Markdown-Zellen
 ~~~~~~~~~~~~~~~
 
 Gleichungen
-    Gleichungen können *inline* zwischen ``$``-Zeichen angegeben werden, z.B.
+    Gleichungen können *inline* zwischen ``$``-Zeichen angegeben werden,
+    :abbr:`z.B. (zum Beispiel)`
 
     .. code-block:: latex
 
         $\text{e}^{i\pi} = -1$
 
-    Und auch zeilenweise können Gleichungen ausgedrückt werden z.B.
+    Und auch zeilenweise können Gleichungen ausgedrückt werden :abbr:`z.B. (zum
+    Beispiel)`
 
     .. code-block:: latex
 
@@ -239,19 +224,16 @@ Info- und Warnboxen
         </div>
 
 Links zu anderen Notebooks
-
     .. code-block:: md
 
         a link to a notebook in a subdirectory](subdir/notebook-in-a-subdir.ipynb)
 
 Links zu ``*.rst``-Dateien
-
     .. code-block:: md
 
         [reStructuredText file](rst-file.rst)
 
 Links zu lokalen Dateien
-
     .. code-block:: md
 
         [Pipfile](Pipfile)
@@ -260,7 +242,8 @@ Code-Zellen
 ~~~~~~~~~~~
 
 Javascript
-    Für das generierte HTML kann Javascript verwendet werden, z.B.:
+    Für das generierte HTML kann Javascript verwendet werden, :abbr:`z.B. (zum
+    Beispiel)`:
 
     .. code-block:: javascript
 
