@@ -49,7 +49,14 @@ in ein PDF konvertiert wird.
 
 .. tab:: macOS
 
-    `MacTeX <http://tug.org/mactex/>`_
+    .. code-block:: console
+
+        $ eval "$(/usr/libexec/path_helper)"
+        $ brew install --cask mactex
+
+    .. seealso::
+
+        `MacTeX <http://tug.org/mactex/>`_
 
 Verwenden auf der Kommandozeile
 -------------------------------
