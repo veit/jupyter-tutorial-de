@@ -7,23 +7,18 @@ Voilà
 Features
 --------
 
-* Voilà unterstützt :doc:`interaktive Jupyter-Widgets
-  </ipywidgets/index>`, einschließlich der Roundtrips zum
-  Kernel. Auch benutzerdefinierte Widgets wie
-  :doc:`pyviz:d3js/bqplot/index`,
-  :doc:`pyviz:js/ipyleaflet`,
-  :doc:`pyviz:js/ipyvolume`,
-  `ipympl <https://github.com/matplotlib/ipympl>`_,
-  :doc:`ipysheet </ipywidgets/libs/ipysheet>`,
-  `plotly <https://github.com/plotly/plotly.py>`_,
-  `ipywebrtc <https://github.com/maartenbreddels/ipywebrtc>`_ usw. werden
-  unterstützt.
+* Voilà unterstützt :doc:`interaktive Jupyter-Widgets </ipywidgets/index>`,
+  einschließlich der Roundtrips zum Kernel. Auch benutzerdefinierte Widgets wie
+  :doc:`pyviz:d3js/bqplot/index`, :doc:`pyviz:js/ipyleaflet`,
+  :doc:`pyviz:js/ipyvolume`, `ipympl <https://github.com/matplotlib/ipympl>`_,
+  :doc:`ipysheet </ipywidgets/libs/ipysheet>`, `plotly
+  <https://github.com/plotly/plotly.py>`_, `ipywebrtc
+  <https://github.com/maartenbreddels/ipywebrtc>`_ usw. werden unterstützt.
 * Voilà erlaubt keine willkürliche Ausführung von Code durch Nutzer von
   Dashboards.
 * Voilà basiert auf Jupyter-Standardprotokollen und -Dateiformaten und
-  funktioniert mit jedem
-  :doc:`Jupyter-Kernel </kernels/index>`: C++, Python, Julia.
-  Dies macht es zu einem sprachunabhängigen Dashboard-System.
+  funktioniert mit jedem :doc:`Jupyter-Kernel </kernels/index>`: C++, Python,
+  Julia. Dies macht es zu einem sprachunabhängigen Dashboard-System.
 * Voilà ist erweiterbar. Es enthält ein flexibles :doc:`Template
   <templating>`-System zur Erstellung
   umfangreicher Layouts.
@@ -100,23 +95,23 @@ des gerenderten Notizbuchs noch nicht einmal an das Frontend. Die Voilà-Instanz
 des ``jupyter_server`` erlaubt standardmäßig keine Ausführungsanforderungen.
 
 .. warning::
-    Die aktuelle Version von Voilà antwortet auf den ersten ``GET``-Request
-    erst, wenn alle Zellen ausgeführt wurden. Dies kann länger dauern. Es wird
-    jedoch daran gearbeitet, progressives Rendern zu ermöglichen, s. `feat:
-    progressive cell rendering
-    <https://github.com/maartenbreddels/voila/commit/cfd0204231313ebe5dd110c488a5cc6254c85a65>`_.
+   Die aktuelle Version von Voilà antwortet auf den ersten ``GET``-Request
+   erst, wenn alle Zellen ausgeführt wurden. Dies kann länger dauern. Es wird
+   jedoch daran gearbeitet, progressives Rendern zu ermöglichen, :abbr:`s.
+   (siehe)` `feat: progressive cell rendering
+   <https://github.com/maartenbreddels/voila/commit/cfd0204231313ebe5dd110c488a5cc6254c85a65>`_.
 
 .. seealso::
 
-    * `Voilà Gallery <https://voila-gallery.org/>`_
-    * `And voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_
+   * `Voilà Gallery <https://voila-gallery.org/>`_
+   * `And voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_
 
 .. toctree::
-    :hidden:
-    :titlesonly:
-    :maxdepth: 0
+   :hidden:
+   :titlesonly:
+   :maxdepth: 0
 
-    install
-    templating
-    bqplot_vuetify_example.ipynb
-    debug.ipynb
+   install
+   templating
+   bqplot_vuetify_example.ipynb
+   debug.ipynb

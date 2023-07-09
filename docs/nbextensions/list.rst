@@ -26,9 +26,9 @@ Notebook-Erweiterungen.
     Das Notebook kann anschließend als HTML oder LaTeX-Dokument exportiert
     werden.
 
-    Die Konfiguration der LaTeX-Umgebungen erfolgt in ``user_envs.json`` und für
-    die Stile in ``latex_env.css``. Weitere Umgebungen können in
-    ``user_envs.json`` oder in ``thmsInNb4.js`` hinzugefügt werden
+    Die Konfiguration der LaTeX-Umgebungen erfolgt in :file:`user_envs.json` und
+    für die Stile in :file:`latex_env.css`. Weitere Umgebungen können in
+    :file:`user_envs.json` oder in :file:`thmsInNb4.js` hinzugefügt werden
     (→ `LaTeX-Environments doc
     <https://rawgit.com/jfbercher/jupyter_latex_envs/master/src/latex_envs/static/doc/documentation.pdf>`_).
 
@@ -48,10 +48,12 @@ Notebook-Erweiterungen.
     ausgibt. Dies unterbricht auch Endlosschleifen. Ihr könnt die Anzahl der
     Zeichen mit dem ``ConfigManager`` festlegen:
 
-    .. code-block::
+    .. code-block:: python
 
-        from notebook.services.config import ConfigManager
-        cm = ConfigManager().update('notebook', {'limit_output': 1000})
+       from notebook.services.config import ConfigManager
+
+
+       cm = ConfigManager().update("notebook", {"limit_output": 1000})
 
 `Nbextensions edit menu item <https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator>`_
     fügt ein Bearbeitungsmenü hinzu, um die Konfigurationsseite für
@@ -65,12 +67,14 @@ Notebook-Erweiterungen.
     fügt ein Lineal nach einer bestimmten Anzahl von Zeichen hinzu. Die Anzahl
     der Zeichen lässt sich mit dem  ``ConfigManager`` festlegen:
 
-    .. code-block::
+    .. code-block:: python
 
-        from notebook.services.config import ConfigManager
-        ip = get_ipython()
-        cm = ConfigManager(parent=ip)
-        cm.update('notebook', {"ruler_column": [80]})
+       from notebook.services.config import ConfigManager
+
+
+       ip = get_ipython()
+       cm = ConfigManager(parent=ip)
+       cm.update("notebook", {"ruler_column": [80]})
 
 :doc:`jupyter-contrib-nbextensions:nbextensions/scratchpad/README`
     fügt dem Notizbuch eine Notizzelle hinzu. In dieser Zelle könnt ihr Code
@@ -83,7 +87,7 @@ Notebook-Erweiterungen.
     .. image:: snippets-menu.png
        :alt: Snippets-Menü
 
-    Ihr könnt auch eigene Menüeinträge definieren, s.
+    Ihr könnt auch eigene Menüeinträge definieren, :abbr:`s. (siehe)`
     :doc:`jupyter-contrib-nbextensions:nbextensions/snippets/README`.
 
 :doc:`jupyter-contrib-nbextensions:nbextensions/toc2/README`
@@ -95,14 +99,14 @@ Notebook-Erweiterungen.
 
     .. code-block:: HTML
 
-        ## My title <a class="tocSkip">
+       ## My title <a class="tocSkip">
 
     Das Inhaltsverzeichnis lässt sich auch exportieren indem ein entsprechendes
     Template angegeben wird, also z.B.
 
     .. code-block:: console
 
-        $ jupyter nbconvert mynotebook.ipynb --template toc2
+       $ jupyter nbconvert mynotebook.ipynb --template toc2
 
     Eine allgemeine Dokumentation zu Vorlagen findet ihr in
     :label:`nbconvert:external_exporters`.
@@ -126,13 +130,13 @@ Notebook-Erweiterungen.
 
     .. code-block:: python
 
-        c.CodeFoldingPreprocessor.remove_folded_code=True = True
+       c.CodeFoldingPreprocessor.remove_folded_code=True = True
 
     oder auf der Kommandozeile mit
 
     .. code-block:: console
 
-        $ jupyter nbconvert --to html --CodeFoldingPreprocessor.remove_folded_code=True mynotebook.ipynb
+       $ jupyter nbconvert --to html --CodeFoldingPreprocessor.remove_folded_code=True mynotebook.ipynb
 
 :doc:`jupyter-contrib-nbextensions:nbextensions/collapsible_headings/readme`
     ermöglicht Notebooks, zusammenklappbare Abschnitte zu haben, die durch
@@ -150,4 +154,4 @@ Notebook-Erweiterungen.
 
 :doc:`jupyter-contrib-nbextensions:nbextensions/load_tex_macros/readme`
     lädt automatisch eine Reihe von Latex-Befehlen aus der Datei
-    ``latexdefs.tex`` wenn ein Notizbuch geöffnet wird.
+    :file:`latexdefs.tex` wenn ein Notizbuch geöffnet wird.

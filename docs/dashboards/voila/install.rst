@@ -18,7 +18,7 @@ Starten
 … als eigenständige Anwendung
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ihr könnt die Installation überprüfen,z.B. mit:
+Ihr könnt die Installation überprüfen, :abbr:`z.B. (zum Beispiel)` mit:
 
 .. code-block:: console
 
@@ -76,5 +76,5 @@ Alternativ könnt ihr voilà auch als Erweiterung des Jupyter-Server starten:
     $ pipenv run jupyter notebook
     ...
 
-Anschließend könnt ihr voilà aufrufen, z.B. unter der URL
+Anschließend könnt ihr voilà aufrufen, :abbr:`z.B. (zum Beispiel)` unter der URL
 ``http://localhost:8888/voila``.

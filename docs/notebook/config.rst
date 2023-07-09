@@ -41,7 +41,7 @@ anlegen mit :samp:`jupyter {APPLICATION} --generate-config`.
 … durch Bearbeiten der Konfigurationsdatei
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-z.B. in ``jupyter_notebook_config.py``:
+:abbr:`z.B. (zum Beispiel)` in ``jupyter_notebook_config.py``:
 
 .. code-block:: python
 
@@ -49,11 +49,11 @@ z.B. in ``jupyter_notebook_config.py``:
 
 Sofern die Werte als ``list``, ``dict`` oder ``set`` gespeichert werden, können
 diese auch ergänzt werden mit ``append``, ``extend``, ``prepend``, ``add`` und
-``update``, z.B.:
+``update``, :abbr:`z.B. (zum Beispiel)`:
 
 .. code-block:: python
 
-    c.TemplateExporter.template_path.append('./templates')
+    c.TemplateExporter.template_path.append("./templates")
 
 … mit der Befehlszeile
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -64,8 +64,8 @@ diese auch ergänzt werden mit ``append``, ``extend``, ``prepend``, ``add`` und
 
     $ jupyter notebook --NotebookApp.port=8754
 
-Dabei gibt es für häufig verwendete Optionen Aliase wie z.B. für ``--port``
-oder ``--no-browser``.
+Dabei gibt es für häufig verwendete Optionen Aliase wie :abbr:`z.B. (zum
+Beispiel)` für ``--port`` oder ``--no-browser``.
 
 Die Befehlszeilenoptionen überschreiben die in einer Konfigurationsdatei
 festgelegten Optionen.

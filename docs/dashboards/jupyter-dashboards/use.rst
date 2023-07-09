@@ -27,8 +27,8 @@ zusätzliche Informationen angezeigt zu bekommen:
    :scale: 53%
    :alt: Dashboard-Info
 
-Mit :menuselection:`Dashboard Preview` bekommt ihr eine Vorschau angezeigt, z.B.
-für :doc:`matplotlib-example`:
+Mit :menuselection:`Dashboard Preview` bekommt ihr eine Vorschau angezeigt,
+:abbr:`z.B. (zum Beispiel)` für :doc:`matplotlib-example`:
 
 .. image:: dashboard-matplotlib-example.png
    :scale: 53%

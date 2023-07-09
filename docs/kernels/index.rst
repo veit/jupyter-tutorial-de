@@ -8,7 +8,8 @@ Jupyter-Kernels weit verbreitet:
 
 * R
 
-  * IRKernel: `Docs <https://irkernel.github.io/>`__ | `GitHub <https://github.com/IRkernel/IRkernel>`__
+  * IRKernel: `Docs <https://irkernel.github.io/>`__ | `GitHub
+    <https://github.com/IRkernel/IRkernel>`__
   * IRdisplay: `GitHub <https://github.com/IRkernel/IRdisplay>`__
   * Repr: `GitHub <https://github.com/IRkernel/repr>`__
 

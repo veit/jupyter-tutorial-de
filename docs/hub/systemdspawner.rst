@@ -36,7 +36,8 @@ Kernel-Optionen zur Verfügung stehen. Dies können mit dem `check-kernel.bash
 Wenn die Standardeinstellung :samp:`c.SystemdSpawner.dynamic_users = False`
 verwendet wird, wird der Server mit dem lokalen Unix-User-Account gestartet.
 Daher erfordert dieser Spawner, dass alle User, bereits ein lokales Konto auf
-der Maschine haben. Mit :samp:`c.SystemdSpawner.dynamic_users = True` sind hingegen keine lokalen User-Accounts erforderlich; sie werden durch systemd bei
+der Maschine haben. Mit :samp:`c.SystemdSpawner.dynamic_users = True` sind
+hingegen keine lokalen User-Accounts erforderlich; sie werden durch systemd bei
 Bedarf dynamisch erstellt.
 
 Installation und Konfiguration
@@ -52,7 +53,7 @@ Anschließend kann er in der :file:`jupyterhub_config.py` aktiviert werden mit
 
 .. code-block:: python
 
-   c.JupyterHub.spawner_class = 'systemdspawner.SystemdSpawner'
+   c.JupyterHub.spawner_class = "systemdspawner.SystemdSpawner"
 
 Es stehen euch viele weitere Konfigurationsmöglichkeiten offen, :abbr:`z.B. (zum
 Beispiel)`

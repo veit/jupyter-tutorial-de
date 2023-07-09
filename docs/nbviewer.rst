@@ -28,38 +28,26 @@ Installation
 
    .. code-block:: console
 
-    $ mkdir nbviewer
-    $ cd !$
-    cd nbviewer
-
-   .. note::
-        Die Notebook-App gibt bei aktuellen Versionen von `Tornado
-        <https://www.tornadoweb.org/en/stable/>`_ den Fehler ``AttributeError:
-        module 'tornado.gen' has no attribute 'Task'`` aus. Mit ``tornado<6.0``
-        tritt dieser Fehler jedoch nicht auf, s.a. `Delete Terminal Not Working
-        with Tornado version 6.0.1
-        <https://github.com/jupyter/terminado/issues/62>`_:
-
-        .. code-block:: console
-
-            $ pipenv install "tornado<6.0"
+      $ mkdir nbviewer
+      $ cd !$
+      cd nbviewer
 
    Nun kann dann auch ``nbviewer`` installiert werden:
 
    .. code-block:: console
 
-    $ pipenv install nbviewer
+      $ pipenv install nbviewer
 
 #. Zum Testen kann der Server gestartet werden mit:
 
    .. code-block:: console
 
-    $ pipenv run python -m nbviewer --debug --no-cache
+      $ pipenv run python -m nbviewer --debug --no-cache
 
 Erweitern des Notebook-Viewers
 ------------------------------
 
-Der Notebook-Viewer lässt sich um Provider erweitern, s.
+Der Notebook-Viewer lässt sich um Provider erweitern, :abbr:`s. (siehe)`
 `Extending the Notebook Viewer
 <https://github.com/jupyter/nbviewer#extending-the-notebook-viewer>`_.
 

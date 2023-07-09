@@ -58,9 +58,9 @@ Verwenden
         In [1]: import papermill as pm
 
         In [2]: pm.execute_notebook(
-                    'PATH/TO/INPUT_NOTEBOOK.ipynb',
-                    'PATH/TO/OUTPUT_NOTEBOOK.ipynb',
-                    parameters=dict(salutation='Hello', name='pythonistas')
+                    "PATH/TO/INPUT_NOTEBOOK.ipynb",
+                    "PATH/TO/OUTPUT_NOTEBOOK.ipynb",
+                    parameters=dict(salutation="Hello", name="pythonistas"),
                 )
 
      Das Ergebnis ist ``output.ipynb``:
@@ -75,19 +75,26 @@ Verwenden
                 name = "pythonistas"
 
         In [3]: from datetime import date
-                today = date.today()
-                print(salutation, name, "– welcome to our event on this " + today.strftime("%A, %d %B %Y"))
-        Out[3]: Hello pythonistas – welcome to our event on this Monday, 13 September 2021
 
+
+                today = date.today()
+                print(
+                    salutation,
+                    name,
+                    "– welcome to our event on this " + today.strftime("%A, %d %B %Y"),
+                )
+
+        Out[3]: Hello pythonistas – welcome to our event on this Monday, 26 June 2023
 
      .. code-block:: python
 
         import papermill as pm
 
+
         pm.execute_notebook(
-            'PATH/TO/INPUT_NOTEBOOK.ipynb',
-            'PATH/TO/OUTPUT_NOTEBOOK.ipynb',
-            parameters=dict(salutation='Hello', name='pythonistas')
+            "PATH/TO/INPUT_NOTEBOOK.ipynb",
+            "PATH/TO/OUTPUT_NOTEBOOK.ipynb",
+            parameters=dict(salutation="Hello", name="pythonistas"),
         )
 
      .. seealso::
@@ -131,8 +138,7 @@ Verwenden
         $ pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
      Dies erzeugt eine Ausgabedatei, deren Dateiname einen Zeitstempel enthält,
-     z.B. :download:`output_2021-09-13_10:42:33.ipynb
-     <output_2021-09-13_10\:42\:33.ipynb>`.
+     :abbr:`z.B. (zum Beispiel)` :download:`output_2023-06-26_15:57:33.ipynb`.
 
      Schließlich könnt ihr ``crontab -e`` verwenden, um die beiden Befehle
      automatisch zu bestimmten Zeiten auszuführen, z.B. am ersten Tag eines

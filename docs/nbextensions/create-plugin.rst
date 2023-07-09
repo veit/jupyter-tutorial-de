@@ -20,8 +20,8 @@ hinzugefügt werden. Das Verzeichnis, in dem
     Requires: lxml, jupyter-contrib-core, nbconvert, jupyter-latex-envs, jupyter-core, pyyaml, jupyter-nbextensions-configurator, notebook, traitlets, jupyter-highlight-selected-word, tornado, ipython-genutils
     Required-by:
 
-In diesem Verzeichnis liegen die einzelnen Notebook-Erweiterungen, z.B. mit
-folgender Struktur:
+In diesem Verzeichnis liegen die einzelnen Notebook-Erweiterungen, :abbr:`z.B.
+(zum Beispiel)` mit folgender Struktur:
 
 .. code-block:: console
 
@@ -32,7 +32,7 @@ folgender Struktur:
     └── readme.md
 
 ``main.js``
-    enthält die eigentliche Logik der Erweiterung, z.B.:
+    enthält die eigentliche Logik der Erweiterung, :abbr:`z.B. (zum Beispiel)`:
 
 
     .. code-block:: javascript

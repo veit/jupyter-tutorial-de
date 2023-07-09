@@ -2,8 +2,9 @@ Dashboards
 ==========
 
 :doc:`Jupyter Dashboards Layout Extension <jupyter-dashboards/index>`
-    Add-On für Jupyter-Notebooks, womit Outputs (Text, Plots, Widgets usw.) in
-    einem Gestaltungsraster oder in Berichtform angeordnet werden können.
+    Add-On für Jupyter-Notebooks, womit Outputs (Text, Plots, Widgets
+    :abbr:`usw. (und so weiter)`) in einem Gestaltungsraster oder in Berichtform
+    angeordnet werden können.
 :doc:`appmode/index`
     Jupyter-Erweiterung, die aus Notebooks Webanwendungen macht.
 :doc:`/nbviewer`
@@ -19,8 +20,9 @@ Dashboards
     app and dashboarding solution for the PyData ecosystem
     <https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52>`_.
 :doc:`voila/index`
-    wurde von `QuantStack <https://quantstack.net/>`_ entwickelt, s.a. `And
-    voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
+    wurde von `QuantStack <https://quantstack.net/>`_ entwickelt, :abbr:`s.a.
+    (siehe auch)` `And voilà!
+    <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_.
 :doc:`jupyter-flex/index`
     Jupyter-Erweiterung, die aus Notebooks Dashboards macht.
 

@@ -46,8 +46,8 @@ Beispiele
 
 #. Betrachten
 
-   Anschließend könnt ihr euch die Beispiele anschauen, z.B.
-   ``Introduction.ipynb`` mit
+   Anschließend könnt ihr euch die Beispiele anschauen, :abbr:`z.B. (zum
+   Beispiel)` ``Introduction.ipynb`` mit
 
    .. code-block:: console
 

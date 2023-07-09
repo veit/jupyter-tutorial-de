@@ -25,7 +25,7 @@ Binder bietet einen vollständigen Open-Source-Infrastruktur-Stack. Die
 wichtigsten Tools sind
 
 ``BinderHub``
-    stellt den Binder-Dienst in der Cloud bereit.
+    stellt den Binder-Dienst in der Cloud bereit
 
     .. seealso::
        * `Repository <https://github.com/jupyterhub/binderhub>`_
@@ -33,11 +33,11 @@ wichtigsten Tools sind
        * `Examples <https://github.com/binder-examples>`_
 
 ``repo2docker``
-    erzeugt reproduzierbare Docker-Images aus einem Git-Repository.
+    erzeugt reproduzierbare Docker-Images aus einem Git-Repository
 
     .. seealso::
        * `Repository <https://github.com/jupyter/repo2docker>`__
        * `Docs <https://repo2docker.readthedocs.io/en/latest/>`__
 
 `mybinder.org <https://mybinder.org/>`_
-    öffentliches BinderHub-Deployment.
+    öffentliches BinderHub-Deployment

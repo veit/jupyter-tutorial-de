@@ -38,7 +38,7 @@ Tex installieren
 ~~~~~~~~~~~~~~~~
 
 Für die Konvertierung in PDF verwendet ``nbconvert`` das Tex-Ökosystem zur
-Vorbereitung: Es wird eine ``.tex``-Datei erstellt, die von der XeTeX-Engine
+Vorbereitung: Es wird eine :file:`.tex`-Datei erstellt, die von der XeTeX-Engine
 in ein PDF konvertiert wird.
 
 .. tab:: Debian/Ubuntu
@@ -66,9 +66,9 @@ Verwenden auf der Kommandozeile
     $ jupyter nbconvert --to FORMAT mynotebook.ipynb
 
 ``latex``
-    erzeugt eine Datei ``NOTEBOOK_NAME.tex`` und ggf. Bilder als PNG-Dateien in
-    einem Ordner. Mit ``--template`` kann zwischen einem von zwei Vorlagen
-    ausgewählt werden:
+    erzeugt eine Datei :file:`{NOTEBOOK_NAME}.tex` und ggf. Bilder als
+    PNG-Dateien in einem Ordner. Mit ``--template`` kann zwischen einem von zwei
+    Vorlagen ausgewählt werden:
 
     ``--template article``
         Standard
@@ -92,8 +92,10 @@ Verwenden auf der Kommandozeile
         Enthält ein Notebook *Magics*, so können dies möglicherweise nur in einer
         Jupyter-Session ausgeführt werden.
 
-    Wir können z.B. `docs/ipython/mypackage/foo.ipynb
-    <../ipython/mypackage/foo.ipynb>`_ in ein Python-Skript verwandeln mit:
+    Wir können :abbr:`z.B. (zum Beispiel)`
+    `Python4DataScience/docs/workspace/ipython/mypackage/foo.ipynb
+    <https://github.com/veit/Python4DataScience/blob/main/docs/workspace/ipython/mypackage/foo.ipynb>`_
+    in ein Python-Skript verwandeln mit:
 
     .. code-block:: console
 
@@ -101,7 +103,7 @@ Verwenden auf der Kommandozeile
         [NbConvertApp] Converting notebook docs/basics/ipython/mypackage/foo.ipynb to script
         [NbConvertApp] Writing 245 bytes to docs/basics/ipython/mypackage/foo.py
 
-    Das Ergebnis ist dann ``foo.py`` mit:
+    Das Ergebnis ist dann :file:`foo.py` mit:
 
     .. code-block:: python
 
@@ -132,7 +134,7 @@ Verwenden auf der Kommandozeile
 .. note::
     Für Vortragsnotizen ist eine lokale Kopie von ``reveal.js``
     erforderlich. Damit ``nbconvert`` diese findet, kann folgende Option
-    angegeben werden: ``--reveal-prefix /path/to/reveal.js``.
+    angegeben werden: :samp:`--reveal-prefix {/PATH/TO/REVEAL.JS}`.
 
 Weitere Angaben für ``FORMAT`` sind ``asciidoc``, ``custom``, ``html``,
 ``markdown``, ``notebook``, und ``rst``.
@@ -141,7 +143,7 @@ nb2xls
 ------
 
 `nb2xls <https://github.com/ideonate/nb2xls>`_ konvertiert Jupyter-Notebooks
-in Excel-Dateien (``.xlsx``) unter Berücksichtigung von pandas DataFrames und
+in Excel-Dateien :file:`.xlsx`) unter Berücksichtigung von pandas DataFrames und
 Matplotlib-Ausgaben. Die Eingabezellen werden jedoch nicht konvertiert und
 Markdown nur zum Teil.
 

@@ -23,12 +23,12 @@ mit
 
 .. code-block:: console
 
-    $ pipenv run python -m ipykernel install --prefix=/srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
+   $ pipenv run python -m ipykernel install --prefix=/srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
 
 :samp:`--prefix={/PATH/TO/KERNEL}`
     gibt den Pfad an, in dem der Jupyter-Kernel installiert werden soll.
 :samp:`--user`
-    installiert den Kernel für den aktuellen Nutzer und nicht systemweit
+    installiert den Kernel für den aktuellen Nutzer und nicht systemweit.
 :samp:`name {NAME}`
     gibt einen Namen für die ``kernelspec`` an. Dieser wird benötigt, um
     mehrere IPython-Kernel gleichzeitig verwenden zu können.
@@ -90,9 +90,11 @@ aktuelle Python-Umgebung erstellt, :abbr:`z.B. (zum Beispiel)`:
     die Ausführung einer Zelle auf diesem Kernel unterbrechen soll.
 
     ``signal``
-        sendet ein Interrupt, z.B. ``SIGINT`` auf *POSIX*-Systemen
+        sendet ein Interrupt, :abbr:`z.B. (zum Beispiel)` :samp:`SIGINT` auf
+        *POSIX*-Systemen
     ``message``
-        sendet einen ``interrupt_request``, s.a. `Kernel Interrupt
+        sendet einen ``interrupt_request``, :abbr:`s.a. (siehe auch)` `Kernel
+        Interrupt
         <https://jupyter-client.readthedocs.io/en/latest/messaging.html#kernel-interrupt>`_.
 
 :samp:`env`
@@ -128,7 +130,7 @@ Kernel starten
 
     In [1]:
 
-Mit ``ctrl`` + ``d`` könnt ihr den Kernel wieder beenden.
+Mit :kpd:`ctrl-d` könnt ihr den Kernel wieder beenden.
 
 Kernel löschen
 --------------

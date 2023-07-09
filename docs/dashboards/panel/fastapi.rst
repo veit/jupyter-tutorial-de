@@ -33,7 +33,7 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
       :lines: 10-11
 
 #. Nun erstellen wir unsere erste Routine über eine asynchrone Funktion und
-   verweisen sie an unseren BokehServer:
+   verweisen sie an unseren Bokeh-Server:
 
    .. literalinclude:: fastAPI/main.py
       :lineno-start: 14

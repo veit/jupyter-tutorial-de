@@ -67,17 +67,17 @@ Der Server kann mit folgenden drei Optionen konfiguriert werden:
     ``True``
 
 ``Appmode.show_other_buttons``
-    zeigt andere Schaltflächen im App-Modus an, z.B. :menuselection:`Logout`;
-    Voreinstellung: ``True``
+    zeigt andere Schaltflächen im App-Modus an, :abbr:`z.B. (zum Beispiel)`
+    :menuselection:`Logout`; Voreinstellung: ``True``
 
 Weitere Infos zur Server-Konfiguration erhaltet ihr in :doc:`/notebook/config`.
 
-Clientseitige Konfiguration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Client-seitige Konfiguration
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die UI-Elemente können auch clientseitig in der `custom.js
 <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/JavaScript%20Notebook%20Extensions.html#custom.js>`_-Datei
-angepasst werden, z.B. mit:
+angepasst werden, :abbr:`z.B. (zum Beispiel)` mit:
 
 .. code-block:: Javascript
 

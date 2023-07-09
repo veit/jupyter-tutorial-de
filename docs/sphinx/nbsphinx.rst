@@ -2,7 +2,7 @@
 ============
 
 :doc:`nbsphinx <nbsphinx:index>` ist eine :doc:`Sphinx
-<sphinx:index>`-Erweiterung, die einen Parser für ``*.ipynb``-Dateien
+<sphinx:index>`-Erweiterung, die einen Parser für :file:`*.ipynb`-Dateien
 bereitstellt: Jupyter Notebook-Code-Zellen werden sowohl in der HTML- wie auch
 in der LaTeX-Ausgabe angezeigt. Notebooks ohne gespeicherte Ausgabezellen werden
 automatisch während des Sphinx-Build-Prozesses erstellt.
@@ -32,7 +32,7 @@ Sphinx konfigurieren
     $ pipenv run python -m sphinx.cmd.quickstart
 
 #. Danach befindet sich im neu erstellten Verzeichnis die
-   Sphinx-Konfigurationsdatei ``conf.py``. In dieser  wird ``nbsphinx`` als
+   Sphinx-Konfigurationsdatei :file:`conf.py`. In dieser  wird ``nbsphinx`` als
    Erweiterung hinzugefügt und generierte Notebooks ausgeschlossen:
 
    .. code-block:: python
@@ -47,9 +47,8 @@ Sphinx konfigurieren
         '**/.ipynb_checkpoints',
     ]
 
-   Ein Beispiel findet ihr in der `conf.py
-   <https://github.com/veit/jupyter-tutorial/blob/main/docs/conf.py>`_-Datei
-   des Jupyter-Tutorials.
+   Ein Beispiel findet ihr in der :download:`/conf.py`-Datei dieses
+   Jupyter-Tutorials.
 
 Ihr könnt noch weitere Konfigurationen für ``nbsphinx`` vornehmen.
 
@@ -81,17 +80,18 @@ Benutzerdefinierte Formate
     <https://github.com/mwouts/jupytext>`_ speichern Notebooks in anderen
     Formaten ab, :abbr:`z.B. (zum Beispiel)` als *R-Markdown* mit dem Suffix
     ``Rmd``. Damit diese von ``nbsphinx`` ebenfalls ausgeführt werden können,
-    können in der Sphinx-Konfigurationsdatei ``conf.py`` mit
+    können in der Sphinx-Konfigurationsdatei :file:`conf.py` mit
     ``nbsphinx_custom_formats`` weitere Formate angegeben werden, :abbr:`z.B.
     (zum Beispiel)`
 
     .. code-block:: python
 
-       import jupytext
+        import jupytext
 
-       nbsphinx_custom_formats = {
-           '.Rmd': lambda s: jupytext.reads(s, '.Rmd'),
-       }
+
+        nbsphinx_custom_formats = {
+            ".Rmd": lambda s: jupytext.reads(s, ".Rmd"),
+        }
 
 Zellen konfigurieren
 ~~~~~~~~~~~~~~~~~~~~
@@ -145,8 +145,9 @@ Build
 -----
 
 #. Nun könnt ihr im Inhaltsverzeichnis eurer ``index.rst``-Datei eure
-   ``*.ipynb``-Datei hinzufügen, siehe z.B. `jupyter-tutorial/ipython/index.rst
-   <https://jupyter-tutorial.readthedocs.io/de/latest/_sources/ipython/index.rst.txt>`_.
+   :file:`*.ipynb`-Datei hinzufügen, siehe :abbr:`z.B. (zum Beispiel)`
+   `jupyter-tutorial/notebook/testing/index.rst
+   <https://jupyter-tutorial.readthedocs.io/de/latest/_sources/notebook/testing/index.rst.txt>`_.
 
 #. Schließlich könnt ihr die Seiten generieren, :abbr:`z.B. (zum Beispiel)` HTML
    mit :samp:`$ pipenv run python -m sphinx {SOURCE_DIR} {BUILD_DIR}` oder
@@ -228,7 +229,7 @@ Links zu anderen Notebooks
 
         a link to a notebook in a subdirectory](subdir/notebook-in-a-subdir.ipynb)
 
-Links zu ``*.rst``-Dateien
+Links zu :file:`*.rst`-Dateien
     .. code-block:: md
 
         [reStructuredText file](rst-file.rst)

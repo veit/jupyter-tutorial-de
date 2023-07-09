@@ -34,14 +34,13 @@ System-Service für JupyterHub
 
    .. code-block:: python
 
-    c.Spawner.cmd = ['/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91/bin/jupyterhub-singleuser']
+    c.Spawner.cmd = [
+        "/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91/bin/jupyterhub-singleuser"
+    ]
 
 #. Hinzufügen einer neuen systemd-Unit-Datei
-   ``/etc/systemd/system/jupyterhub.service`` mit dem Befehl:
-
-   .. code-block:: console
-
-    $ sudo systemctl edit --force --full jupyterhub.service
+   :file:`/etc/systemd/system/jupyterhub.service` mit dem Befehl :samp:`$ sudo
+   systemctl edit --force --full jupyterhub.service`
 
    Fügt eure entsprechende Python-Umgebung ein.
 
@@ -58,17 +57,10 @@ System-Service für JupyterHub
     [Install]
     WantedBy=multi-user.target
 
-#. Laden der Konfiguration mit:
+#. Laden der Konfiguration mit ``sudo systemctl daemon-reload``.
 
-   .. code-block:: console
-
-    $ sudo systemctl daemon-reload
-
-#. Der JupyterHub lässt sich verwalten mit:
-
-   .. code-block:: console
-
-    $ sudo systemctl <start|stop|status> jupyterhub
+#. Der JupyterHub lässt sich verwalten mit :samp:`sudo systemctl
+   {START}|{STOP}|{STATUS} jupyterhub`
 
 #. Um sicherzustellen, dass der Dienst auch bei einem Systemstart mitgeladen
    wird, wird folgendes aufgerufen:
@@ -144,13 +136,10 @@ Apache Webserver.
        CustomLog ${APACHE_LOG_DIR}/jupyter.cusy.io_access.log combined
      </VirtualHost>
 
-#. Dieser VirtualHost wird aktiviert mit
+#. Dieser VirtualHost wird aktiviert mit :samp:`# a2ensite
+   {JUPYTER.CUSY.IO}.conf`.
 
-   .. code-block:: console
-
-     # a2ensite jupyter.cusy.io.conf
-
-#. Schließlich wird der Status des Apache-Webserver überprüft mit
+#. Schließlich könnt ihr den Status des Apache-Webserver überprüfen mit
 
    .. code-block:: console
 
@@ -178,19 +167,19 @@ Authentifizierung verwendet werden.
 
    .. code-block:: console
 
-    $ openssl rand -hex 32 > /srv/jupyterhub/venv/jupyterhub_cookie_secret
+    $ openssl rand -hex 32 > /srv/jupyter/venv/jupyterhub_cookie_secret
 
 #. Die Datei sollte weder für ``group`` noch für ``anonymous`` lesbar sein:
 
    .. code-block:: console
 
-    $ chmod 600 /srv/jupyterhub/venv/jupyterhub_cookie_secret
+    $ chmod 600 /srv/jupyter/venv/jupyterhub_cookie_secret
 
 #. Schließlich wird es in die ``jupyterhub_config.py``-Datei eingetragen:
 
    .. code-block:: python
 
-    c.JupyterHub.cookie_secret_file = 'jupyterhub_cookie_secret'
+    c.JupyterHub.cookie_secret_file = "jupyterhub_cookie_secret"
 
 Proxy authentication token
 --------------------------
@@ -212,4 +201,6 @@ Unterprozess des Hubs ist.
 
    .. code-block:: python
 
-    c.JupyterHub.proxy_auth_token = '18a0335b7c2e7edeaf7466894a32bea8d1c3cff4b07860298dbe353ecb179fc6'
+    c.JupyterHub.proxy_auth_token = (
+        "18a0335b7c2e7edeaf7466894a32bea8d1c3cff4b07860298dbe353ecb179fc6"
+    )

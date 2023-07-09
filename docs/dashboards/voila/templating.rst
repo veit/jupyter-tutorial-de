@@ -14,8 +14,7 @@ Touch-Geräten.
 
 Das Gridstack-Voilà-Template verwendet die Metadaten der Notebook-Zellen, um das
 Layout des Notebooks zu gestalten. Es soll die gesamte Spezifikation für die
-veralteten :doc:`../jupyter-dashboards/index`
-unterstützen.
+veralteten :doc:`../jupyter-dashboards/index` unterstützen.
 
 .. image:: voila-gridstack.png
    :scale: 53%
@@ -45,30 +44,42 @@ Um ``voila-vuetify`` in einem Notebook zu verwenden, müsst ihr zunächst
 
     import ipyvuetify as v
 
-Anschließend könnt ihr ein Layout erstellen z.B mit:
+Anschließend könnt ihr ein Layout erstellen :abbr:`z.B. (zum Beispiel)` mit:
 
 .. code-block:: python
 
-    v.Tabs(_metadata={'mount_id': 'content-main'}, children=[
-        v.Tab(children=['Tab1']),
-        v.Tab(children=['Tab2']),
-        v.TabItem(children=[
-            v.Layout(row=True, wrap=True, align_center=True, children=[
-                v.Flex(xs12=True, lg6=True, xl4=True, children=[
-                    fig, slider
-                ]),
-                v.Flex(xs12=True, lg6=True, xl4=True, children=[
-                    figHist2, sliderHist2
-                ]),
-                v.Flex(xs12=True, xl4=True, children=[
-                    fig2
-                ]),
-            ])
-        ]),
-        v.TabItem(children=[
-            v.Container(children=['Lorum ipsum'])
-        ])
-    ])
+    v.Tabs(
+        _metadata={"mount_id": "content-main"},
+        children=[
+            v.Tab(children=["Tab1"]),
+            v.Tab(children=["Tab2"]),
+            v.TabItem(
+                children=[
+                    v.Layout(
+                        row=True,
+                        wrap=True,
+                        align_center=True,
+                        children=[
+                            v.Flex(
+                                xs12=True,
+                                lg6=True,
+                                xl4=True,
+                                children=[fig, slider],
+                            ),
+                            v.Flex(
+                                xs12=True,
+                                lg6=True,
+                                xl4=True,
+                                children=[figHist2, sliderHist2],
+                            ),
+                            v.Flex(xs12=True, xl4=True, children=[fig2]),
+                        ],
+                    )
+                ]
+            ),
+            v.TabItem(children=[v.Container(children=["Lorum ipsum"])]),
+        ],
+    )
 
 :doc:`bqplot_vuetify_example`. könnt ihr nutzen mit:
 
@@ -158,15 +169,15 @@ Ihr könnt das Template nutzen mit:
     $ pipenv run voila --template=reveal reveal.ipynb
 
 Durch zusätzliche Optionen können die Standardeinstellungen überschrieben
-werden, z.B. um den Standardwert für den Übergang ``Fade`` mit ``Zoom`` zu
-überschrieben mit:
+werden, :abbr:`z.B. (zum Beispiel)` um den Standardwert für den Übergang
+``Fade`` mit ``Zoom`` zu überschrieben mit:
 
 .. code-block:: console
 
     $ pipenv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" reveal.ipynb
 
-Sollen Konfigurationsoptionen dauerhaft gespeichert werden, so kann eine Datei ``conf.json`` in
-``share/jupyter/voila/templates/reveal/`` angelegt werden:
+Sollen Konfigurationsoptionen dauerhaft gespeichert werden, so kann eine Datei
+``conf.json`` in ``share/jupyter/voila/templates/reveal/`` angelegt werden:
 
 .. code-block:: javascript
 
@@ -220,7 +231,8 @@ Eigene Templates erstellen
 --------------------------
 
 Ein Voilà-Template ist ein Ordner, der sich im Virtual-environment unter
-``share/jupyter/voila/templates`` befindet und z.B. Folgendes enthält:
+``share/jupyter/voila/templates`` befindet und :abbr:`z.B. (zum Beispiel)`
+Folgendes enthält:
 
 .. code-block:: console
 
@@ -239,7 +251,8 @@ Ein Voilà-Template ist ein Ordner, der sich im Virtual-environment unter
         └── tree.html
 
 ``conf.json``
-    Konfigurationsdatei, die z.B. auf das Basis-Template verweist:
+    Konfigurationsdatei, die :abbr:`z.B. (zum Beispiel)` auf das Basis-Template
+    verweist:
 
     .. code-block:: json
 
