@@ -52,7 +52,7 @@ dem Web teilt.
 Um zu verstehen, warum Jupyter-Notebooks so erfolgreich sind, schauen wir uns
 die Kernfunktionen einmal genauer an:
 
-`Jupyter Notebook Format <https://nbformat.readthedocs.io/>`_
+`Jupyter Notebook Format <https://nbformat.readthedocs.io/en/latest/>`_
     Jupyter Notebooks sind ein offenes, auf JSON basierendes Dokumentenformat
     mit vollständigen Aufzeichnungen der Sitzungen des Benutzers und des
     enthaltenen Codes.

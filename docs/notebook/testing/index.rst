@@ -14,7 +14,7 @@ Konzepte
 
         .. seealso::
             * `pytest fixtures
-              <https://docs.pytest.org/en/stable/fixture.html>`_
+              <https://docs.pytest.org/en/stable/explanation/fixtures.html>`_
 
     Test Suite
         ist eine Sammlung mehrerer Test Cases.

@@ -1,7 +1,7 @@
 ``nbconvert``
 =============
 
-`nbconvert <https://nbconvert.readthedocs.io/>`_
+`nbconvert <https://nbconvert.readthedocs.io/en/latest/>`_
     konvertiert Notebooks in andere Formate
 
 Installation
@@ -56,7 +56,7 @@ in ein PDF konvertiert wird.
 
     .. seealso::
 
-        `MacTeX <http://tug.org/mactex/>`_
+        `MacTeX <https://tug.org/mactex/>`_
 
 Verwenden auf der Kommandozeile
 -------------------------------

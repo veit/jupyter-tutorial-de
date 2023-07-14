@@ -2,7 +2,7 @@ Voilà
 =====
 
 `Voilà <https://github.com/voila-dashboards/voila>`_ wurde von `QuantStack
-<http://quantstack.net/>`_ entwickelt.
+<https://quantstack.net/>`_ entwickelt.
 
 Features
 --------

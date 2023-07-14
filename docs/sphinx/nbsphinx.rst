@@ -259,9 +259,10 @@ Galerien
 
 nbsphinx bietet Unterstützung für die Erstellung von `Thumbnail-Galerien aus
 einer Liste von Jupyter-Notebooks
-<https://nbsphinx.readthedocs.io/subdir/gallery.html>`_. Diese Funktionalität
-basiert auf `Sphinx-Gallery <https://sphinx-gallery.github.io/>`_ und erweitert
-diese, um mit Jupyter-Notebooks statt mit Python-Skripten zu arbeiten.
+<https://nbsphinx.readthedocs.io/en/0.9.2/subdir/gallery.html>`_. Diese
+Funktionalität basiert auf `Sphinx-Gallery <https://sphinx-gallery.github.io/>`_
+und erweitert diese, um mit Jupyter-Notebooks statt mit Python-Skripten zu
+arbeiten.
 
 Sphinx-Gallery unterstützt auch direkt :doc:`pyviz:matplotlib/index`,
 :doc:`pyviz:matplotlib/seaborn/index` und `Mayavi
@@ -295,7 +296,7 @@ Anschließend könnt ihr Sphinx-Gallery auf zwei verschiedene Arten nutzen:
 
    .. seealso::
       `Thumbnail Galleries
-      <https://nbsphinx.readthedocs.io/a-normal-rst-file.html#thumbnail-galleries>`_
+      <https://nbsphinx.readthedocs.io/en/0.9.2/a-normal-rst-file.html#thumbnail-galleries>`_
 
 #. In einem Jupyter-Notizbuch, indem ein ``nbsphinx-gallery``-Tag zu den
    Metadaten einer Zelle hinzugefügt wird:

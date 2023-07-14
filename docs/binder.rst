@@ -36,7 +36,7 @@ wichtigsten Tools sind
     erzeugt reproduzierbare Docker-Images aus einem Git-Repository
 
     .. seealso::
-       * `Repository <https://github.com/jupyter/repo2docker>`__
+       * `Repository <https://github.com/jupyterhub/repo2docker>`__
        * `Docs <https://repo2docker.readthedocs.io/en/latest/>`__
 
 `mybinder.org <https://mybinder.org/>`_

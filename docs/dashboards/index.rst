@@ -13,7 +13,7 @@ Dashboards
     verwendet werden, deren Status im Notebook-Dokument selbst gespeichert
     werden.
 :doc:`panel/index`
-    wurde auf Basis von `Bokeh <https://docs.bokeh.org/>`_ und
+    wurde auf Basis von `Bokeh <https://docs.bokeh.org/en/latest/>`_ und
     `Param <https://github.com/holoviz/param>`_ entwickelt und bietet ein
     Toolkit speziell zur Erstellung von Apps und Dashboards, das jedoch nicht
     nur Bokeh-Plots unterstützt, :abbr:`s.a. (siehe auch)` `Panel: A high-level

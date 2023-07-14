@@ -1,8 +1,8 @@
 Sphinx
 ======
 
-`Sphinx <https://www.sphinx-doc.org/>`_ ein Dokumentationswerkzeug, das
-:doc:`python-basics:document/rest` in HTML oder PDF, EPub und Man-Pages
+`Sphinx <https://www.sphinx-doc.org/en/master/>`_ ein Dokumentationswerkzeug,
+das :doc:`python-basics:document/rest` in HTML oder PDF, EPub und Man-Pages
 umwandelt. Auch das Jupyter-Tutorial wird mit Sphinx erstellt.
 
 Ursprünglich wurde Sphinx für die Dokumentation von Python entwickelt und wird
@@ -10,7 +10,7 @@ heute in fast allen Python-Projekten verwendet, darunter `NumPy and SciPy
 <https://docs.scipy.org/doc/>`_, `Matplotlib
 <https://matplotlib.org/users/index.html>`_, `Pandas
 <https://pandas.pydata.org/docs/>`_ und `SQLAlchemy
-<https://docs.sqlalchemy.org/>`_.
+<https://docs.sqlalchemy.org/en/20/>`_.
 
 Mit :doc:`nbsphinx` können auch Jupyter Notebooks in Sphinx integriert werden.
 :doc:`executablebooks` ist hingegen eine Sammlung von Open-Source-Tools, die

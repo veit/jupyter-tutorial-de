@@ -13,7 +13,7 @@ Jupyter-Erweiterung, die aus Notebooks Dashboards macht:
 * Unterstützung von :doc:`/ipywidgets/index`
 
 .. seealso::
-   * `Docs <https://jupyter-flex.extrapolations.dev/>`_
+   * `Docs <https://jupyter-flex.danielfrg.com>`_
    * `GitHub <https://github.com/danielfrg/jupyter-flex>`_
 
 Beispiele
@@ -25,11 +25,11 @@ Beispiele
 
 .. figure:: data-scoring.png
    :alt: NBA scoring
-   :target: https://jupyter-flex.extrapolations.dev/examples/nba-scoring.html
+   :target: https://jupyter-flex.danielfrg.com/examples/nba-scoring.html
 
 .. figure:: altair.png
    :alt: Altair plots
-   :target: https://jupyter-flex.extrapolations.dev/examples/altair.html
+   :target: https://jupyter-flex.danielfrg.com/examples/altair.html
 
 Installation
 ------------

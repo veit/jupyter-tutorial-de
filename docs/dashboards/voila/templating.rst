@@ -23,9 +23,9 @@ veralteten :doc:`../jupyter-dashboards/index` unterstützen.
 voila-vuetify
 -------------
 
-`voila-vuetify <https://github.com/QuantStack/voila-vuetify>`_ ist ein Template
-zur Verwendung von Voilà mit dem `Material Design Component Framework
-<https://material.io/>`_ `Vuetify.js <https://vuetifyjs.com/>`_.
+`voila-vuetify <https://github.com/voila-dashboards/voila-vuetify>`_ ist ein
+Template zur Verwendung von Voilà mit dem `Material Design Component Framework
+<https://m3.material.io>`_ `Vuetify.js <https://vuetifyjs.com/>`_.
 
 Installation
 ~~~~~~~~~~~~
@@ -104,8 +104,9 @@ Beispiel für Voilà-vuetify mit der Monitorauflösung eine iPhone X:
 voila-debug
 -----------
 
-`voila-debug <https://github.com/QuantStack/voila-debug>`_ ist ein Template zum
-Anzeigen von Debug-Informationen bei der Arbeit an Voilà-Anwendungen.
+`voila-debug <https://github.com/voila-dashboards/voila-debug>`_ ist ein
+Template zum Anzeigen von Debug-Informationen bei der Arbeit an
+Voilà-Anwendungen.
 
 Installation
 ~~~~~~~~~~~~

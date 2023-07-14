@@ -30,7 +30,7 @@ euch verfügbar ist mit
 
 Zum Limitieren der Speicher- und CPU-Zuweisungen müssen zudem bestimmte
 Kernel-Optionen zur Verfügung stehen. Dies können mit dem `check-kernel.bash
-<https://github.com/jupyterhub/systemdspawner/blob/master/check-kernel.bash>`_
+<https://github.com/jupyterhub/systemdspawner/blob/main/check-kernel.bash>`_
 überprüft werden.
 
 Wenn die Standardeinstellung :samp:`c.SystemdSpawner.dynamic_users = False`
