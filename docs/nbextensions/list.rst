@@ -40,8 +40,8 @@ Notebook-Erweiterungen.
 :doc:`jupyter-contrib-nbextensions:nbextensions/code_prettify/README_code_prettify`
     formatiert/verschönert Code in Notebook-Code-Zellen. Dabei wird der aktuelle
     Notebook-Kernel verwendet, weswegen das verwendete Prettifier-Paket in
-    diesem Kernel verfügbar sein muss. Beispielimplementierungen werden für
-    ipython-, R- und Javascript-Kernel bereitgestellt.
+    diesem Kernel verfügbar sein muss. Beispiel-Implementierungen werden für
+    IPython-, R- und Javascript-Kernel bereitgestellt.
 
 :doc:`jupyter-contrib-nbextensions:nbextensions/limit_output/readme`
     begrenzt die Anzahl der Zeichen, die eine Codezelle als Text oder HTML

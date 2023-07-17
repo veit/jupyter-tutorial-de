@@ -68,12 +68,12 @@ Im Folgenden erläutere ich einige der Optionen von ``panel convert``.
     jeweils unterschiedliche Vor- und Nachteile haben:
 
     ``pyodide`` (Standard)
-        Die Anwendung wird mit Pyodide im Hauptthread ausgeführt. Diese Option
+        Die Anwendung wird mit Pyodide im Haupt-Thread ausgeführt. Diese Option
         ist weniger performant als ``pyodide-worker``, erzeugt aber eine völlig
         eigenständige HTML-Datei, die nicht auf einem statischen Dateiserver,
         wie :abbr:`z.B. (zum Beispiel)` Github Pages, gehostet werden müssen.
     ``pyodide-worker``
-        erzeugt HTML- und JS-Dateien, die jedoch einen Web-Worker enthälten, der
+        erzeugt HTML- und JS-Dateien, die jedoch einen Web-Worker enthält, der
         in einem separaten Thread läuft. Dies ist die leistungsfähigste Option,
         aber die Dateien müssen auf einem statischen Dateiserver gehostet
         werden.
