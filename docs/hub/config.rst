@@ -88,7 +88,7 @@ Apache Webserver.
 
    .. code-block:: apacheconf
 
-    # a2enmod ssl rewrite proxy proxy_http proxy_wstunnel
+      # a2enmod ssl rewrite proxy proxy_http proxy_wstunnel
 
 #. Anschließend kann der VirtualHost in
    ``/etc/apache2/sites-available/jupyter.cusy.io.conf`` konfiguriert
@@ -96,45 +96,45 @@ Apache Webserver.
 
    .. code-block:: console
 
-     # redirect HTTP to HTTPS
-     <VirtualHost 172.31.50.170:80>
-         ServerName jupyter.cusy.io
-         ServerAdmin webmaster@cusy.io
+      # redirect HTTP to HTTPS
+      <VirtualHost 172.31.50.170:80>
+          ServerName jupyter.cusy.io
+          ServerAdmin webmaster@cusy.io
 
-         ErrorLog ${APACHE_LOG_DIR}/jupyter.cusy.io_error.log
-         CustomLog ${APACHE_LOG_DIR}/jupyter.cusy.io_access.log combined
+          ErrorLog ${APACHE_LOG_DIR}/jupyter.cusy.io_error.log
+          CustomLog ${APACHE_LOG_DIR}/jupyter.cusy.io_access.log combined
 
-         Redirect / https://jupyter.cusy.io/
-     </VirtualHost>
+          Redirect / https://jupyter.cusy.io/
+      </VirtualHost>
 
-     <VirtualHost 172.31.50.170:443>
-       ServerName jupyter.cusy.io
-       ServerAdmin webmaster@cusy.io
+      <VirtualHost 172.31.50.170:443>
+        ServerName jupyter.cusy.io
+        ServerAdmin webmaster@cusy.io
 
-       # configure SSL
-       SSLEngine On
-       SSLCertificateFile /etc/ssl/certs/jupyter.cusy.io_cert.pem
-       SSLCertificateKeyFile /etc/ssl/private/jupyter.cusy.io_sec_key.pem
-       # for an up-to-date SSL configuration see e.g.
-       # https://ssl-config.mozilla.org/
+        # configure SSL
+        SSLEngine On
+        SSLCertificateFile /etc/ssl/certs/jupyter.cusy.io_cert.pem
+        SSLCertificateKeyFile /etc/ssl/private/jupyter.cusy.io_sec_key.pem
+        # for an up-to-date SSL configuration see e.g.
+        # https://ssl-config.mozilla.org/
 
-       # Use RewriteEngine to handle websocket connection upgrades
-       RewriteEngine On
-       RewriteCond %{HTTP:Connection} Upgrade [NC]
-       RewriteCond %{HTTP:Upgrade} websocket [NC]
-       RewriteRule /(.*) ws://127.0.0.1:8000/$1 [P,L]
+        # Use RewriteEngine to handle websocket connection upgrades
+        RewriteEngine On
+        RewriteCond %{HTTP:Connection} Upgrade [NC]
+        RewriteCond %{HTTP:Upgrade} websocket [NC]
+        RewriteRule /(.*) ws://127.0.0.1:8000/$1 [P,L]
 
-       <Location "/">
-         # preserve Host header to avoid cross-origin problems
-         ProxyPreserveHost on
-         # proxy to JupyterHub
-         ProxyPass         http://127.0.0.1:8000/
-         ProxyPassReverse  http://127.0.0.1:8000/
-       </Location>
+        <Location "/">
+          # preserve Host header to avoid cross-origin problems
+          ProxyPreserveHost on
+          # proxy to JupyterHub
+          ProxyPass         http://127.0.0.1:8000/
+          ProxyPassReverse  http://127.0.0.1:8000/
+        </Location>
 
-       ErrorLog ${APACHE_LOG_DIR}/jupyter.cusy.io_error.log
-       CustomLog ${APACHE_LOG_DIR}/jupyter.cusy.io_access.log combined
-     </VirtualHost>
+        ErrorLog ${APACHE_LOG_DIR}/jupyter.cusy.io_error.log
+        CustomLog ${APACHE_LOG_DIR}/jupyter.cusy.io_access.log combined
+      </VirtualHost>
 
 #. Dieser VirtualHost wird aktiviert mit :samp:`# a2ensite
    {JUPYTER.CUSY.IO}.conf`.
@@ -143,19 +143,19 @@ Apache Webserver.
 
    .. code-block:: console
 
-    # systemctl status apache2
-    ● apache2.service - The Apache HTTP Server
-       Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
-       Active: active (running) (Result: exit-code) since Mon 2019-03-25 16:50:26 CET; 1 day 22h ago
-      Process: 31773 ExecReload=/usr/sbin/apachectl graceful (code=exited, status=0/SUCCESS)
-     Main PID: 20273 (apache2)
-        Tasks: 55 (limit: 4915)
-       CGroup: /system.slice/apache2.service
-               ├─20273 /usr/sbin/apache2 -k start
-               ├─31779 /usr/sbin/apache2 -k start
-               └─31780 /usr/sbin/apache2 -k start
+      # systemctl status apache2
+      ● apache2.service - The Apache HTTP Server
+         Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
+         Active: active (running) (Result: exit-code) since Mon 2019-03-25 16:50:26 CET; 1 day 22h ago
+        Process: 31773 ExecReload=/usr/sbin/apachectl graceful (code=exited, status=0/SUCCESS)
+       Main PID: 20273 (apache2)
+          Tasks: 55 (limit: 4915)
+         CGroup: /system.slice/apache2.service
+                 ├─20273 /usr/sbin/apache2 -k start
+                 ├─31779 /usr/sbin/apache2 -k start
+                 └─31780 /usr/sbin/apache2 -k start
 
-    Mar 27 06:25:01 jupyter.cusy.io systemd[1]: Reloaded The Apache HTTP Server.
+      Mar 27 06:25:01 jupyter.cusy.io systemd[1]: Reloaded The Apache HTTP Server.
 
 Cookie-Secret
 -------------

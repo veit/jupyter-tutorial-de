@@ -8,7 +8,7 @@ wie :abbr:`z.B. (zum Beispiel)` einen FastAPI-Webserver. Die Integration in
 FastAPI ist einfacher im Vergleich zu anderen wie :abbr:`z.B. (zum Beispiel)`
 :doc:`Flask <pyviz:bokeh/embedding-export/flask>`, da es ein leichtgewichtigeres
 Framework ist. Die Verwendung von Panel mit FastAPI erfordert nur ein wenig mehr
-Aufwandals bei Notebooks und Bokeh-Servern.
+Aufwand als bei Notebooks und Bokeh-Servern.
 
 Konfiguration
 -------------

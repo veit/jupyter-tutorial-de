@@ -26,7 +26,8 @@ System-Engineers
 
 In diesem Tutorial wenden wir uns an System-Engineers, die eine auf
 Jupyter-Notebooks basierende Plattform aufbauen und betreiben wollen. Wir
-erklären dann, wie diese Plattform von Data-Scientists, Data-Engineersund -Analysts effektiv genutzt werden kann.
+erklären dann, wie diese Plattform von Data-Scientists, Data-Engineers und
+-Analysts effektiv genutzt werden kann.
 
 Warum Jupyter?
 --------------

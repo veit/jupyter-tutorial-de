@@ -58,47 +58,46 @@ Jupyter Sphinx
 ~~~~~~~~~~~~~~
 
 `jupyter_sphinx <https://github.com/jupyter/jupyter-sphinx>`_ ermöglicht
-jupyter-spezifische Funktionen in Sphinx. Es kann mit ``pip`` installiert
+Jupyter-spezifische Funktionen in Sphinx. Es kann mit ``pip`` installiert
 werden.
 
 Konfiguration
 :::::::::::::
 
-Fügt in der ``conf.py``-Datei ``jupyter_sphinx.embed_widgets`` in der Liste der
-Erweiterungen hinzu.
+Fügt in der :file:`conf.py`-Datei ``jupyter_sphinx.embed_widgets`` in der Liste
+der Erweiterungen hinzu.
 
 Anschließend könnt ihr in reStructuredText folgende Direktiven verwenden:
 
 ``ipywidgets-setup``
-    ::
+    .. code-block:: python
 
         from ipywidgets import VBox, jsdlink, IntSlider, Button
 
 ``ipywidgets-display``
-    ::
+    .. code-block:: python
 
         s1, s2 = IntSlider(max=200, value=100), IntSlider(value=40)
-        b = Button(icon='legal')
-        jsdlink((s1, 'value'), (s2, 'max'))
+        b = Button(icon="legal")
+        jsdlink((s1, "value"), (s2, "max"))
         VBox([s1, s2, b])
-
 
 Beispiel
 ::::::::
 
-::
+.. code-block:: rst
 
     .. ipywidgets-setup::
 
-        from ipywidgets import VBox, jsdlink, IntSlider, Button
+       from ipywidgets import VBox, jsdlink, IntSlider, Button
 
     .. ipywidgets-display::
-        :hide-code:
+       :hide-code:
 
-        s1, s2 = IntSlider(max=200, value=100), IntSlider(value=40)
-        b = Button(icon='legal')
-        jsdlink((s1, 'value'), (s2, 'max'))
-        VBox([s1, s2, b])
+       s1, s2 = IntSlider(max=200, value=100), IntSlider(value=40)
+       b = Button(icon='legal')
+       jsdlink((s1, 'value'), (s2, 'max'))
+       VBox([s1, s2, b])
 
 Optionen
 ::::::::

@@ -18,7 +18,8 @@ Konfigurationsdatei angelegt, üblicherweise in
       [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_parallel/ipcluster_config.py
 
 ``--parallel``
-    schließt die Konfigurationsdateien für *Parallel Computing* (``ipengine``, ``ipcontroller`` etc.) ein.
+    schließt die Konfigurationsdateien für *Parallel Computing* (``ipengine``,
+    ``ipcontroller`` :abbr:`etc. (et cetera)`) ein.
 
 #. Beim Starten des IPython-Controller und der -Engines werden die Dateien
    :file:`ipcontroller-engine.json` und :file:`ipcontroller-client.json` dann in
@@ -38,7 +39,7 @@ Konfigurationsdatei angelegt, üblicherweise in
       [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipengine_config.py'
       [ProfileCreate] Generating default config file: '/Users/veit/.ipython/profile_mpi/ipcluster_config.py'
 
-#. Editieren von ``ipcluster_config.py``:
+#. Editieren von :file:`ipcluster_config.py`:
 
    #. Damit die MPI-Launcher verwendet werden:
 
