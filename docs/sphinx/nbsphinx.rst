@@ -217,12 +217,35 @@ Zitate
 
         <cite data-cite="kluyver2016jupyter">Kluyver et al. (2016)</cite>
 
-Info- und Warnboxen
+Alarmierungsboxen
     .. code-block:: html
 
-        <div class="alert alert-info">
-        **Note:** This is a note!
-        </div>
+       <div class="alert alert-block alert-info">
+
+       **Note**
+
+       This is a notice!
+       </div>
+
+       <div class="alert alert-block alert-success">
+
+       **Success**
+
+       This is a success notice!
+       </div>
+
+       <div class="alert alert-block alert-warning">
+
+       **Warning**
+
+       This is a warning!
+       </div>
+
+       <div class="alert alert-block alert-danger">
+
+       **Danger**
+
+       This is a danger notice!
 
 Links zu anderen Notebooks
     .. code-block:: md
