@@ -7,7 +7,7 @@ Kernel installieren
 Kernel werden :abbr:`z.B. (zum Beispiel)` in folgenden Verzeichnissen gesucht:
 
 * :samp:`/srv/jupyter/.local/share/jupyter/kernels`
-* :samp:`'/usr/local/share/jupyter/kernels`
+* :samp:`/usr/local/share/jupyter/kernels`
 * :samp:`/usr/share/jupyter/kernels`
 * :samp:`/srv/jupyter/.ipython/kernels`
 
