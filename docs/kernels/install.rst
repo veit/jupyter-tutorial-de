@@ -130,7 +130,7 @@ Kernel starten
 
     In [1]:
 
-Mit :kpd:`ctrl-d` könnt ihr den Kernel wieder beenden.
+Mit :kbd:`ctrl-d` könnt ihr den Kernel wieder beenden.
 
 Kernel löschen
 --------------
