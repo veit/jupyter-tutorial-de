@@ -83,8 +83,9 @@ Beispiel)`
     Liste der Pfade, die der Umgebungsvariablen ``PATH`` für den gespawnten
     Notebook-Server vorangestellt werden sollen. Dies ist einfacher als das
     Setzen der ``env``-Eigenschaft, da ihr ``PATH`` hinzufügen und nicht
-    komplett ersetzen wollt. Dies ist sehr nützlich, wenn ihr eine virtualenv-
-    oder conda-Installation standardmäßig in ``PATH`` des Users aufnehmen wollt.
+    komplett ersetzen wollt. Dies ist sehr nützlich, wenn ihr eine
+    virtualenv- oder conda-Installation standardmäßig in ``PATH`` des Users
+    aufnehmen wollt.
 :samp:`c.SystemdSpawner.unit_name_template = 'jupyter-{USERNAME}-singleuser'`
     Namensvorlage der Systemd-Service-Einheit für jeden User-Notebook-Server.
     Dies ermöglicht die Unterscheidung zwischen mehreren JupyterHubs mit

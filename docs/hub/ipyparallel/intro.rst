@@ -124,7 +124,7 @@ Starten
     siehe `Starting the controller and engine on your local machine
     <https://ipyparallel.readthedocs.io/en/latest/tutorial/process.html#starting-a-cluster-with-ssh>`_,
     die ``LocalControllerLauncher`` und ``LocalEngineSetLauncher`` starten, gibt
-    es auch noch die Profile ``MPI``, ``PBS``, `SGE``, ``LSF``, ``HTCondor``,
+    es auch noch die Profile ``MPI``, ``PBS``, ``SGE``, ``LSF``, ``HTCondor``,
     ``Slurm``, ``SSH`` und ``WindowsHPC``.
 
     Dies kann konfiguriert werden in ``ipcluster_config.py`` z.B. mit
