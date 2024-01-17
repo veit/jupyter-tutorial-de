@@ -162,7 +162,7 @@ intersphinx_mapping = {
         None,
     ),
     "python4datascience": (
-        "https://python4datascience.readthedocs.io/de/latest/",
+        "https://www.python4data.science/de/latest/",
         None,
     ),
 }
