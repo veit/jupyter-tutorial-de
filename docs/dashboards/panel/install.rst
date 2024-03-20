@@ -41,8 +41,13 @@ Beispiele
 
    .. code-block:: console
 
-    $ pipenv run panel examples
-    Copied examples to /Users/veit/jupyter-tutorial/panel-examples
+    $ pipenv run panel sampledata
+    Creating /Users/veit/.bokeh/data directory
+    Using data directory: /Users/veit/.bokeh/data
+    Fetching 'CGM.csv'
+    Downloading: CGM.csv (1589982 bytes)
+     1589982   [100.00%%]
+    …
 
 #. Betrachten
 
