@@ -5,14 +5,14 @@
     "dateCreated": "2023-06-18",
     "datePublished": "2023-06-18",
     "dateModified": "2023-06-18",
-    "downloadUrl": "https://github.com/veit/jupyter-tutorial-de/archive/refs/tags/v1.1.1.tar.gz",
+    "downloadUrl": "https://github.com/veit/jupyter-tutorial-de/archive/refs/tags/24.1.0.tar.gz",
     "issueTracker": "https://github.com/veit/jupyter-tutorial-de/issues",
     "name": "Jupyter-Tutorial",
     "version": "1.1.1",
     "description": "Schulungsmaterialen für den Aufbau und die Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks.",
     "developmentStatus": "active",
     "isPartOf": "https://www.python4data.science/de/latest/",
-    "referencePublication": "https://doi.org/10.5281/zenodo.8052609",
+    "referencePublication": "https://doi.org/10.5281/zenodo.10961431",
     "keywords": [
         "Jupyter",
         "JupyterLab",
@@ -32,7 +32,7 @@
         "MyST"
     ],
     "relatedLink": [
-        "https://jupyter-tutorial.readthedocs.io/de/latest/"
+        "https://jupyter-tutorial.readthedocs.io/de/24.1.0/"
     ],
     "author": [
         {

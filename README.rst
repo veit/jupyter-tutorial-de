@@ -21,9 +21,9 @@ Status
 .. image:: https://pyup.io/repos/github/veit/jupyter-tutorial/shield.svg
    :alt: Pyup
    :target: https://pyup.io/repos/github/veit/jupyter-tutorial/
-.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.8052609.svg
+.. image:: https://zenodo.org/badge/doi/10.5281/zenodo.10961431.svg
    :alt: DOI
-   :target: https://doi.org/10.5281/zenodo.8052609
+   :target: https://doi.org/10.5281/zenodo.10961431
 .. image:: https://img.shields.io/badge/dynamic/json?label=Mastodon&query=totalItems&url=https%3A%2F%2Fmastodon.social%2F@JupyterTutorial%2Ffollowers.json&logo=mastodon
    :alt: Mastodon
    :target: https://mastodon.social/@JupyterTutorial

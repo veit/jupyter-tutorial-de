@@ -11,9 +11,9 @@ authors:
     affiliation: cusy GmbH
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8052609
+    value: 10.5281/zenodo.10961431
 repository-code: 'https://github.com/veit/jupyter-tutorial-de'
-url: 'https://jupyter-tutorial.readthedocs.io/de/latest/'
+url: 'https://jupyter-tutorial.readthedocs.io/de/24.1.0/'
 abstract: >-
   Schulungsmaterialen für den Aufbau und die Nutzung einer
   Forschungsinfrastruktur auf Basis von Jupyter Notebooks.
@@ -35,5 +35,5 @@ keywords:
   - Executable Books
   - MyST
 license: BSD-3-Clause
-version: 1.1.1
-date-released: '2023-06-18'
+version: 24.1.0
+date-released: '2024-01-11'
