@@ -31,7 +31,6 @@ Eine Liste verfügbarer Kernel findet ihr unter `Jupyter kernels
     :maxdepth: 0
 
     install
-    python2
     python38.ipynb
     python39.ipynb
     python310.ipynb
