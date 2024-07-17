@@ -18,9 +18,6 @@ Status
 .. image:: https://readthedocs.org/projects/jupyter-tutorial-de/badge/?version=latest
    :alt: Docs
    :target: https://jupyter-tutorial.readthedocs.io/de/latest/
-.. image:: https://pyup.io/repos/github/veit/jupyter-tutorial/shield.svg
-   :alt: Pyup
-   :target: https://pyup.io/repos/github/veit/jupyter-tutorial/
 .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.10961431.svg
    :alt: DOI
    :target: https://doi.org/10.5281/zenodo.10961431
