@@ -39,6 +39,16 @@ Lizenzen der verschiedenen Bibliotheken vergleichen.
     "`Voilà <https://github.com/voila-dashboards/voila>`_",".. image:: https://raster.shields.io/github/stars/voila-dashboards/voila",".. image:: https://raster.shields.io/github/contributors/voila-dashboards/voila",".. image:: https://raster.shields.io/github/commit-activity/y/voila-dashboards/voila",".. image:: https://raster.shields.io/github/license/voila-dashboards/voila"
     "`jupyter-flex <https://github.com/danielfrg/jupyter-flex>`_",".. image:: https://raster.shields.io/github/stars/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/contributors/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/commit-activity/y/danielfrg/jupyter-flex",".. image:: https://raster.shields.io/github/license/danielfrg/jupyter-flex"
 
+.. tip::
+   cusy Seminare:
+
+   * `Daten visualisieren mit Python
+     <https://cusy.io/de/unsere-schulungsangebote/daten-visualisieren-mit-python>`_
+   * `Datenvisualisierungen gestalten
+     <https://cusy.io/de/unsere-schulungsangebote/datenvisualisierungen-gestalten>`_
+   * `Dashboards erstellen
+     <https://cusy.io/de/unsere-schulungsangebote/dashboards-erstellen>`_
+
 .. toctree::
     :titlesonly:
     :hidden:
