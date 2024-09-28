@@ -31,6 +31,7 @@ docs = [
 dev = [
     "jupyter-tutorial-de[docs]",
     "pre-commit",
+    "codespell",
 ]
 
 [project.urls]
@@ -55,3 +56,6 @@ use_parentheses=true
 
 known_first_party="jupyter-tutorial-de"
 known_third_party=["Cython", "accounts_pb2", "accounts_pb2_grpc", "dataprep", "google", "grpc", "mpi4py", "numpy", "pandas", "pydantic", "pytest", "requests", "setuptools"]
+
+[tool.codespell]
+skip = "*.html, *.ipynb, *.rst, ./docs/_build/*, ./jupyter_tutorial_de.egg-info/*, ./styles/*"
