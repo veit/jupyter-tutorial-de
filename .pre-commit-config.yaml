@@ -38,3 +38,10 @@ repos:
     rev: v2.3.0
     hooks:
     - id: codespell
+  - repo: local
+    hooks:
+    - id: linkcheck
+      entry: sphinx-build -b linkcheck docs _build/html
+      name: linkcheck
+      language: system
+      files: $(git diff --staged --name-only "*")

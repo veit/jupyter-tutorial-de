@@ -52,8 +52,8 @@ Beliebte Widget-Bibliotheken sind
        ipysheet.ipynb
 
 ``ipydatagrid``
-    `ipydatagrid <https://github.com/bloomberg/ipydatagrid>`_ ist ein schnelles
-    und vielfältiges Datagrid-Widget.
+    `ipydatagrid <https://github.com/jupyter-widgets/ipydatagrid>`_ ist ein
+    schnelles und vielfältiges Datagrid-Widget.
 ``ipyvuetify``
     `Vuetify <https://v15.vuetifyjs.com/en/>`_-Widgets in Jupyter Notebooks
 

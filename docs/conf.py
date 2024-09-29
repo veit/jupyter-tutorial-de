@@ -163,7 +163,7 @@ intersphinx_mapping = {
     "pipenv": ("https://pipenv.pypa.io/en/latest/", None),
     "spack": ("https://spack-tutorial.readthedocs.io/en/latest/", None),
     "ipyparallel": ("https://ipyparallel.readthedocs.io/en/latest/", None),
-    "bokeh": ("https://docs.bokeh.org/en/latest/", None),
+    "bokeh": ("https://docs.bokeh.org/en/latest", None),
     "pandas": ("https://pandas.pydata.org/pandas-docs/stable/", None),
     "pyviz": ("https://pyviz-tutorial.readthedocs.io/de/latest/", None),
     "python-basics": (
@@ -175,6 +175,22 @@ intersphinx_mapping = {
         None,
     ),
 }
+
+# blog.jupyter.org delays crawling by 60 seconds.
+linkcheck_timeout = 60
+
+# All HTTP redirections from the source URI to the canonical URI will be treated# as "working".
+linkcheck_allowed_redirects = {
+    "ttps://docs.pyscript.net/latest/reference/faq.html": r"https://docs.pyscript.net/latest/faq/",
+}
+
+linkcheck_ignore = [
+    # 403 Client Error: Forbidden
+    r"https://jupyter-flex.danielfrg.com",
+    r"https://sourceforge.net/projects/*",
+    # Anchor not found
+    r"https://github.com/jupyter/nbviewer#extending-the-notebook-viewer",
+]
 
 
 def setup(app):

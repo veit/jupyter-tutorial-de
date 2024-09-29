@@ -180,9 +180,9 @@ Build
    latex`.
 
 #. Eine andere Alternative ist die Publikation auf `readthedocs.org
-   <https://readthedocs.org/>`_.
+   <https://about.readthedocs.com>`_.
 
-   Hierfür müsst ihr  zunächst ein Konto unter https://readthedocs.org/
+   Hierfür müsst ihr  zunächst ein Konto unter https://about.readthedocs.com
    erstellen und dann euer GitLab-, Github- oder Bitbucket-Konto verbinden.
 
 Markdown-Zellen

@@ -21,7 +21,6 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
 
    .. literalinclude:: fastAPI/main.py
       :caption: fastAPI/main.py
-      :name: fastAPI/main.py
       :linenos:
       :lines: 1-3, 5-7
 
@@ -55,7 +54,6 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
    ``pn.serve()`` unseren Bokeh-Server zu starten:
 
    .. literalinclude:: fastAPI/main.py
-      :caption: fastAPI/main.py
       :name: fastAPI/main.py
       :lineno-start: 22
       :lines: 22-
@@ -101,7 +99,6 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
 
    .. literalinclude:: fastAPI/main.py
       :caption: fastAPI/main.py
-      :name: fastAPI/main.py
       :lineno-start: 4
       :lines: 4
 

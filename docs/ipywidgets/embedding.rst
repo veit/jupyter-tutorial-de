@@ -118,4 +118,4 @@ folgenden Optionen:
         Alternativer Text, wenn das Widget nicht gerendert werden kann
 
 .. seealso::
-   `Options <https://jupyter-sphinx.readthedocs.io/en/latest/#configuration-options>`_
+   `Options <https://jupyter-sphinx.readthedocs.io/en/latest/options.html>`_

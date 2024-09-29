@@ -94,7 +94,7 @@ Verwenden auf der Kommandozeile
 
     Wir können :abbr:`z.B. (zum Beispiel)`
     `Python4DataScience/docs/workspace/ipython/mypackage/foo.ipynb
-    <https://github.com/veit/Python4DataScience/blob/main/docs/workspace/ipython/mypackage/foo.ipynb>`_
+    <https://github.com/cusyio/Python4DataScience/blob/main/docs/workspace/ipython/mypackage/foo.ipynb>`_
     in ein Python-Skript verwandeln mit:
 
     .. code-block:: console

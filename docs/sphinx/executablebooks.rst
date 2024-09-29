@@ -17,8 +17,8 @@ Jupyter Book
          <https://executablebooks.org/en/latest/gallery/>`_ ist eine Galerie von
          Jupyter-Books.
        * `github.com/executablebooks/jupyter-book
-         <https://github.com/executablebooks/jupyter-book>`_ ist das Repository
-         des Projekts.
+         <https://github.com/jupyter-book/jupyter-book>`_ ist das Repository des
+         Projekts.
 
 MyST
     ist eine erweiterbare, semantische Variante von Markdown, die für
@@ -31,8 +31,8 @@ MyST
        * `spec.mystmd.org <https://mystmd.org/spec>`_ beschreibt die
          MyST-Spezifikation.
        * `MyST Enhancement Proposals
-         <https://github.com/executablebooks/myst-enhancement-proposals>`_ ist
-         ein Prozess, um Änderungen an der MyST-Spezifikation vorzuschlagen und
+         <https://github.com/jupyter-book/myst-enhancement-proposals>`_ ist ein
+         Prozess, um Änderungen an der MyST-Spezifikation vorzuschlagen und
          darüber zu entscheiden.
 
 JupyterLab MyST Extension
@@ -41,5 +41,5 @@ JupyterLab MyST Extension
     Abbildungen, Tabs, Cards und Grids.
 
     .. seealso::
-       * `github.com/executablebooks/jupyterlab-myst
-         <https://github.com/executablebooks/jupyterlab-myst>`_
+       * `github.com/jupyter-book/jupyterlab-myst
+         <https://github.com/jupyter-book/jupyterlab-myst>`_

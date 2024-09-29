@@ -25,11 +25,11 @@ Beispiele
 
 .. figure:: data-scoring.png
    :alt: NBA scoring
-   :target: https://jupyter-flex.danielfrg.com/examples/nba-scoring.html
+   :target: https://jupyter-flex.danielfrg.com/examples/nba-scoring
 
 .. figure:: altair.png
    :alt: Altair plots
-   :target: https://jupyter-flex.danielfrg.com/examples/altair.html
+   :target: https://jupyter-flex.danielfrg.com/examples/altair
 
 Installation
 ------------

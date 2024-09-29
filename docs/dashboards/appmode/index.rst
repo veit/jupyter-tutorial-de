@@ -76,7 +76,7 @@ Client-seitige Konfiguration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Die UI-Elemente können auch client-seitig in der `custom.js
-<https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/JavaScript%20Notebook%20Extensions.html#custom.js>`_-Datei
+<https://jupyter-notebook.readthedocs.io/en/4.x/examples/Notebook/rstversions/JavaScript%20Notebook%20Extensions.html#custom-js>`_-Datei
 angepasst werden, :abbr:`z.B. (zum Beispiel)` mit:
 
 .. code-block:: Javascript

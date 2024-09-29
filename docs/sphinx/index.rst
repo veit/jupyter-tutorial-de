@@ -22,7 +22,7 @@ schreiben, Inhalte auszuführen und in euer Buch einzufügen.
    cusy Seminare:
 
    * `Software-Dokumentation mit Sphinx
-   <https://cusy.io/de/unsere-schulungsangebote/software-dokumentation-mit-sphinx>`_
+     <https://cusy.io/de/unsere-schulungsangebote/software-dokumentation-mit-sphinx>`_
    * `Technisches Schreiben
      <https://cusy.io/de/unsere-schulungsangebote/technisches-schreiben>`_
 
