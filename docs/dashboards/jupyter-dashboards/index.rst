@@ -9,7 +9,7 @@ können. Sie speichert die Informationen zum Layout direkt im Notebook, sodass
 andere Nutzer dieser Erweiterung das Notebook ebenfalls im entsprechenden
 Notebook angezeigt bekommen. Beispiele für Dashboards findet ihr in `Jupyter
 Dashboards Demos
-<https://github.com/jupyter-attic/dashboards/tree/master/etc/notebooks>`_.
+<https://github.com/jupyter/dashboards/tree/master/etc/notebooks>`_.
 
 Use Case
 --------
@@ -20,17 +20,17 @@ Die Jupyter Dashboards sollten folgendes Problem lösen:
 #. Alice ordnet die Notebook-Zellen in einem Raster- oder Report-Format an.
 #. Alice stellt das Dashboard auf einem Dashboard-Server bereit.
 #. Bob ruft das Dashboard auf dem `Jupyter Dashboards Server
-   <https://github.com/jupyter-attic/dashboards_server>`_ auf und interagiert
-   mit Alice Dashboard-Applikation.
+   <https://github.com/jupyter/dashboards_server>`_ auf und interagiert mit
+   Alice Dashboard-Applikation.
 #. Alice aktualisiert ihr Jupyter Notebook und stellt das Dashboard anschließend
    erneut auf dem Dashboard-Server bereit.
 
 .. note::
-    Für die Schritte 3–5 werden zusätzlich `Jupyter Dashboards Bundler
-    <https://github.com/jupyter-attic/dashboards_bundlers>`_ und `Jupyter
-    Dashboards Server <https://github.com/jupyter-attic/dashboards_server>`_
-    benötigt; beide sind jedoch mittlerweile in Status *retired*, sollten also
-    nicht weiter verwendet werden.
+   Für die Schritte 3–5 werden zusätzlich `Jupyter Dashboards Bundler
+   <https://github.com/jupyter/dashboards_bundlers>`_ und `Jupyter Dashboards
+   Server <https://github.com/jupyter/dashboards_server>`_
+   benötigt; beide sind jedoch mittlerweile in Status *retired*, sollten also
+   nicht weiter verwendet werden.
 
     Die Roadmap für das :ref:`Voila-Gridstack-Template <voila-gridstack>` sieht
     vor, die gesamte Spezifikation für die Jupyter-Dashboards zu unterstützen.

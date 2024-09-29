@@ -150,4 +150,4 @@ Eine vollständige Übersicht erhaltet ihr mit ``panel convert -u``.
     findet ihr in den
 
     * `Pyodide FAQ <https://pyodide.org/en/stable/usage/faq.html>`_
-    * `PyScript FAQ <https://docs.pyscript.net/latest/reference/faq.html>`_
+    * `PyScript FAQ <https://docs.pyscript.net/latest/faq/>`_
