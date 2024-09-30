@@ -130,7 +130,7 @@ Notebook-Erweiterungen.
 
     .. code-block:: python
 
-       c.CodeFoldingPreprocessor.remove_folded_code=True = True
+       c.CodeFoldingPreprocessor.remove_folded_code = True
 
     oder auf der Kommandozeile mit
 

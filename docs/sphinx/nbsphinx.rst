@@ -38,13 +38,13 @@ Sphinx konfigurieren
    .. code-block:: python
 
     extensions = [
-        ...
-        'nbsphinx',
+        "...",
+        "nbsphinx",
     ]
     ...
     exclude_patterns = [
-        ...
-        '**/.ipynb_checkpoints',
+        "...",
+        "**/.ipynb_checkpoints",
     ]
 
    Ein Beispiel findet ihr in der :download:`/conf.py`-Datei dieses
@@ -309,8 +309,8 @@ eingetragen werden:
 .. code-block:: python
 
     extensions = [
-       'nbsphinx',
-       'sphinx_gallery.load_style',
+        "nbsphinx",
+        "sphinx_gallery.load_style",
     ]
 
 Anschließend könnt ihr Sphinx-Gallery auf zwei verschiedene Arten nutzen:

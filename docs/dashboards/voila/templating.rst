@@ -140,8 +140,10 @@ Es enthält neben einem Beispiel-Widget eine Code-Zelle zum Beenden des Kernels:
 
     import os
 
+
     def kill_kernel(change):
         os._exit(0)
+
 
     button = widgets.Button(description="Kill Kernel")
     button.on_click(kill_kernel)
