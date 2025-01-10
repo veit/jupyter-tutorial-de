@@ -71,6 +71,14 @@ sind die beiden Standardansichten:
 - :py:class:`ipyparallel.DirectView`-Klasse für die explizite Adressierung
 - :py:class:`ipyparallel.LoadBalancedView`-Klasse für zielunabhängiges Scheduling
 
+Installation
+------------
+
+.. code-block:: console
+
+   $ uv add ipyparallel
+
+
 Starten
 -------
 
@@ -78,7 +86,7 @@ Starten
 
    .. code-block:: console
 
-    $ pipenv run ipcontroller
+    $ uv run ipcontroller
     [IPControllerApp] Hub listening on tcp://127.0.0.1:53847 for registration.
     [IPControllerApp] Hub using DB backend: 'DictDB'
     [IPControllerApp] hub::created hub
@@ -107,13 +115,13 @@ Starten
 
     .. code-block:: console
 
-        $ pipenv run ipcontroller --scheme=pure
+        $ uv run ipcontroller --scheme=pure
 
 #. Starten des IPython-Controller und der -Engines:
 
    .. code-block:: console
 
-    $ pipenv run ipcluster start
+    $ uv run ipcluster start
     [IPClusterStart] Starting ipcluster with [daemon=False]
     [IPClusterStart] Creating pid file: /Users/veit/.ipython/profile_default/pid/ipcluster.pid
     [IPClusterStart] Starting Controller with LocalControllerLauncher
@@ -132,7 +140,7 @@ Starten
 
     .. code-block:: console
 
-        $ pipenv run ipcluster start --engines=MPI
+        $ uv run ipcluster start --engines=MPI
 
     .. seealso:: :doc:`mpi`
 
@@ -140,7 +148,7 @@ Starten
 
    .. code-block:: console
 
-    $ pipenv run jupyter notebook
+    $ uv run jupyter notebook
     [I NotebookApp] Loading IPython parallel extension
     [I NotebookApp] [jupyter_nbextensions_configurator] enabled 0.4.1
     [I NotebookApp] Serving notebooks from local directory: /Users/veit//jupyter-tutorial

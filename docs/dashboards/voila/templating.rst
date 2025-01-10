@@ -32,7 +32,7 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install bqplot ipyvuetify voila-vuetify==voila-vuetify 0.0.1a8
+    $ uv add bqplot ipyvuetify voila-vuetify
 
 Verwendung
 ~~~~~~~~~~
@@ -85,7 +85,7 @@ Anschließend könnt ihr ein Layout erstellen :abbr:`z.B. (zum Beispiel)` mit:
 
 .. code-block:: console
 
-    $ pipenv run voila --template vuetify-default bqplot_vuetify_example.ipynb
+    $ uv run voila --template vuetify-default bqplot_vuetify_example.ipynb
 
 Anschließend öffnet sich euer Standardbrowser mit der URL
 ``http://localhost:8866/`` und zeigt euch die Plots im Responsive Material
@@ -101,54 +101,6 @@ Beispiel für Voilà-vuetify mit der Monitorauflösung eine iPhone X:
 .. image:: voila-vuetify-iphone.png
    :scale: 53%
 
-voila-debug
------------
-
-`voila-debug <https://github.com/voila-dashboards/voila-debug>`_ ist ein
-Template zum Anzeigen von Debug-Informationen bei der Arbeit an
-Voilà-Anwendungen.
-
-Installation
-~~~~~~~~~~~~
-
-.. code-block:: console
-
-    $ pipenv install voila-debug
-
-Verwendung
-~~~~~~~~~~
-
-Ihr könnt das Template :doc:`debug` nutzen mit:
-
-.. code-block:: console
-
-    $ pipenv run voila --template=debug --VoilaExporter.template_file=debug.tpl
-
-Dies öffnet euren Standardbrowser mit der URL ``localhost:8866``.
-
-In
-``http://localhost:8866/voila/render/docs/dashboards/voila/debug.ipynb``
-könnt ihr euch dann die Funktionsweise genauer anschauen.
-
-.. image:: voila-debug.png
-   :scale: 53%
-   :alt: Beispiel für Voilà-Debug
-
-Es enthält neben einem Beispiel-Widget eine Code-Zelle zum Beenden des Kernels:
-
-.. code-block:: python
-
-    import os
-
-
-    def kill_kernel(change):
-        os._exit(0)
-
-
-    button = widgets.Button(description="Kill Kernel")
-    button.on_click(kill_kernel)
-    button
-
 voila-reveal
 ------------
 
@@ -160,7 +112,7 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install voila-reveal
+    $ uv add voila-reveal
 
 Verwendung
 ~~~~~~~~~~
@@ -169,7 +121,7 @@ Ihr könnt das Template nutzen mit:
 
 .. code-block:: console
 
-    $ pipenv run voila --template=reveal reveal.ipynb
+    $ uv run voila --template=reveal reveal.ipynb
 
 Durch zusätzliche Optionen können die Standardeinstellungen überschrieben
 werden, :abbr:`z.B. (zum Beispiel)` um den Standardwert für den Übergang
@@ -177,7 +129,7 @@ werden, :abbr:`z.B. (zum Beispiel)` um den Standardwert für den Übergang
 
 .. code-block:: console
 
-    $ pipenv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" reveal.ipynb
+    $ uv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" reveal.ipynb
 
 Sollen Konfigurationsoptionen dauerhaft gespeichert werden, so kann eine Datei
 ``conf.json`` in ``share/jupyter/voila/templates/reveal/`` angelegt werden:

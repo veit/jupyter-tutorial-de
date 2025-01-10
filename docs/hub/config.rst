@@ -8,7 +8,7 @@ Konfigurationsdatei erstellen:
 
 .. code-block:: console
 
-    $  pipenv run jupyterhub --generate-config
+    $  uv run jupyterhub --generate-config
     Writing default config to: jupyterhub_config.py
 
 .. seealso::
@@ -25,18 +25,16 @@ System-Service für JupyterHub
 
    .. code-block:: console
 
-    $ cd ~/jupyter-tutorial
-    $ pipenv --venv
-    /srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91W
+    $ cd jupyterhub_env
+    $ pwd
+    /srv/jupyter/jupyterhub_env
 
 #. Konfigurieren des absoluten Pfades zu :file:`jupyterhub-singleuser` in der
    :file:`jupyterhub_config.py`-Datei:
 
    .. code-block:: python
 
-    c.Spawner.cmd = [
-        "/srv/jupyter/.local/share/virtualenvs/jupyter-tutorial-aFv4x91/bin/jupyterhub-singleuser"
-    ]
+    c.Spawner.cmd = ["/srv/jupyter/jupyterhub_env/.venv/bin/jupyterhub-singleuser"]
 
 #. Hinzufügen einer neuen systemd-Unit-Datei
    :file:`/etc/systemd/system/jupyterhub.service` mit dem Befehl :samp:`$ sudo
@@ -52,7 +50,7 @@ System-Service für JupyterHub
     [Service]
     User=root
     Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin"
-    ExecStart=/srv/jupyter/.local/share/virtualenvs/jupyterhub-aFv4x91W/bin/jupyterhub -f /srv/jupyter/jupyterhub_env/jupyterhub_config.py
+    ExecStart=/srv/jupyter//srv/jupyter/jupyterhub_env/.venv/bin/jupyterhub -f /srv/jupyter/jupyterhub_env/jupyterhub_config.py
 
     [Install]
     WantedBy=multi-user.target

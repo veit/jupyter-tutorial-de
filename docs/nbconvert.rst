@@ -9,7 +9,7 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install nbconvert
+    $ uv add nbconvert
 
 .. important::
     Um alle Funktionen von ``nbconvert`` nutzen zu können, sind Pandoc und TeX
@@ -99,34 +99,32 @@ Verwenden auf der Kommandozeile
 
     .. code-block:: console
 
-        $ pipenv run jupyter nbconvert --to script docs/basics/ipython/mypackage/foo.ipynb
-        [NbConvertApp] Converting notebook docs/basics/ipython/mypackage/foo.ipynb to script
-        [NbConvertApp] Writing 245 bytes to docs/basics/ipython/mypackage/foo.py
+       $ uv run jupyter nbconvert --to script docs/basics/ipython/mypackage/foo.ipynb
 
     Das Ergebnis ist dann :file:`foo.py` mit:
 
     .. code-block:: python
 
-        #!/usr/bin/env python
-        # coding: utf-8
+       #!/usr/bin/env python
+       # coding: utf-8
 
-        # # `foo.ipynb`
-
-
-        # In[1]:
-        def bar():
-            return "bar"
+       # # `foo.ipynb`
 
 
-        # In[2]:
-        def has_ip_syntax():
-            listing = get_ipython().getoutput("ls")
-            return listing
+       # In[1]:
+       def bar():
+           return "bar"
 
 
-        # In[3]:
-        def whatsmyname():
-            return __name__
+       # In[2]:
+       def has_ip_syntax():
+           listing = get_ipython().getoutput("ls")
+           return listing
+
+
+       # In[3]:
+       def whatsmyname():
+           return __name__
 
 .. note::
     Um eine Zuordnung von Notebook-Cells zu Slides festzulegen, solltet ihr
@@ -135,8 +133,8 @@ Verwenden auf der Kommandozeile
     Optionen: :menuselection:`Slide, Sub-Slide, Fragment, Skip, Notes`.
 
 .. note::
-    Für Vortragsnotizen ist eine lokale Kopie von ``reveal.js``
-    erforderlich. Damit ``nbconvert`` diese findet, kann folgende Option
+    Für Vortragsnotizen ist eine lokale Kopie von :file:`reveal.js`
+   erforderlich. Damit ``nbconvert`` diese findet, kann folgende Option
     angegeben werden: :samp:`--reveal-prefix {/PATH/TO/REVEAL.JS}`.
 
 Weitere Angaben für ``FORMAT`` sind ``asciidoc``, ``custom``, ``html``,

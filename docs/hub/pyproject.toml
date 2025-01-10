@@ -1,0 +1,25 @@
+[project]
+name = "hub"
+version = "25.1.0"
+description = "JupyterHub"
+authors = [
+    { name = "Veit Schiele", email = "veit@cusy.io" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "jupyter",
+    "jupyterhub",
+    "jupyterhub-systemdspawner",
+    "jupyterlab",
+    "ipyparallel",
+    "nbconvert",
+    "nb2xls",
+    "jupyter-contrib-nbextensions",
+    "jupyter-latex-envs",
+    "yapf",
+    "autopep8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

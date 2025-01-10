@@ -11,11 +11,7 @@ Installieren
 
 .. code-block:: console
 
-    $ pipenv install papermill
-    Installing papermill…
-    Adding papermill to Pipfile's [packages]…
-    ✔ Installation Succeeded
-    …
+   $ uv add papermill
 
 Verwenden
 ---------
@@ -28,11 +24,11 @@ Verwenden
 
 #. Überprüfen
 
-   Ihr könnt das Notebook inspizieren, z.B. mit
+   Ihr könnt das Notebook inspizieren, :abbr:`z.B. (zum Beispiel)` mit
 
    .. code-block:: console
 
-        $ pipenv run papermill --help-notebook docs/refactoring/parameterise/input.ipynb
+        $ uv run papermill --help-notebook docs/refactoring/parameterise/input.ipynb
         Usage: papermill [OPTIONS] NOTEBOOK_PATH [OUTPUT_PATH]
 
         Parameters inferred for notebook 'docs/refactoring/parameterise/input.ipynb':
@@ -44,14 +40,14 @@ Verwenden
 
    * … via Python API
 
-     Die Funktion  ``execute_notebook`` kann aufgerufen werden, um ein Notebook
-     mit einem dict von Parametern auszuführen:
+     Die Funktion  :func:`execute_notebook` kann aufgerufen werden, um ein
+     Notebook mit einem Dict von Parametern auszuführen:
 
      .. code-block:: python
 
         execute_notebook(INPUT_NOTEBOOK, OUTPUT_NOTEBOOK, DICTIONARY_OF_PARAMETERS)
 
-     z.B. für ``input.ipynb``:
+     :abbr:`z.B. (zum Beispiel)` für :file:`input.ipynb`:
 
      .. code-block:: ipython
 
@@ -63,7 +59,7 @@ Verwenden
                     parameters=dict(salutation="Hello", name="pythonistas"),
                 )
 
-     Das Ergebnis ist ``output.ipynb``:
+     Das Ergebnis ist :file:`output.ipynb`:
 
      .. code-block:: ipython
 
@@ -105,11 +101,10 @@ Verwenden
 
      .. code-block:: console
 
-        $ pipenv run papermill input.ipynb output.ipynb -p salutation 'Hello' -p name 'pythonistas'
+        $ uv run papermill input.ipynb output.ipynb -p salutation 'Hello' -p name 'pythonistas'
 
      Alternativ kann auch eine YAML-Datei mit den Parametern angegeben werden,
-     z.B.
-     ``params.yaml``:
+     :abbr:`z.B. (zum Beispiel)` :file:`params.yaml`:
 
      .. literalinclude:: params.yaml
         :caption: params.yaml
@@ -117,14 +112,14 @@ Verwenden
 
      .. code-block:: console
 
-        $ pipenv run papermill input.ipynb output.ipynb -f params.yaml
+        $ uv run papermill input.ipynb output.ipynb -f params.yaml
 
      Mit ``-b`` kann ein base64-kodierte YAML-String angegeben werden, die die
      Parameterwerte enthält:
 
      .. code-block:: console
 
-        $ pipenv run papermill input.ipynb output.ipynb -b c2FsdXRhdGlvbjogIkhlbGxvIgpuYW1lOiAiUHl0aG9uaXN0YXMi
+        $ uv run papermill input.ipynb output.ipynb -b c2FsdXRhdGlvbjogIkhlbGxvIgpuYW1lOiAiUHl0aG9uaXN0YXMi
 
      .. seealso::
         * `CLI reference
@@ -135,7 +130,7 @@ Verwenden
      .. code-block:: console
 
         $ dt=$(date '+%Y-%m-%d_%H:%M:%S')
-        $ pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
+        $ uv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
      Dies erzeugt eine Ausgabedatei, deren Dateiname einen Zeitstempel enthält,
      :abbr:`z.B. (zum Beispiel)` :download:`output_2023-06-26_15:57:33.ipynb`.
@@ -147,7 +142,7 @@ Verwenden
      .. code-block::
 
         dt=$(date '+%Y-%m-%d_%H:%M:%S')
-        0 0 1 * * cd ~/jupyter-notebook && pipenv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
+        0 0 1 * * cd ~/jupyter-notebook && uv run papermill input.ipynb output_$(date '+%Y-%m-%d_%H:%M:%S').ipynb -f params.yaml
 
 #. Speichern
 

@@ -12,7 +12,7 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install sphinx nbsphinx
+    $ uv add sphinx nbsphinx
 
 Requirements
 ~~~~~~~~~~~~
@@ -29,23 +29,25 @@ Sphinx konfigurieren
 
    .. code-block:: console
 
-    $ pipenv run python -m sphinx.cmd.quickstart
+    $ mkdir docs
+    $ cd docs
+    $ uv run python -m sphinx.cmd.quickstart
 
-#. Danach befindet sich im neu erstellten Verzeichnis die
-   Sphinx-Konfigurationsdatei :file:`conf.py`. In dieser  wird ``nbsphinx`` als
-   Erweiterung hinzugefügt und generierte Notebooks ausgeschlossen:
+#. Danach befindet sich in :file:`docs` die Sphinx-Konfigurationsdatei
+   :file:`conf.py`. In dieser  wird ``nbsphinx`` als Erweiterung hinzugefügt und
+   automatisch generierte Notebooks ausgeschlossen:
 
    .. code-block:: python
 
-    extensions = [
-        "...",
-        "nbsphinx",
-    ]
-    ...
-    exclude_patterns = [
-        "...",
-        "**/.ipynb_checkpoints",
-    ]
+      extensions = [
+          "...",
+          "nbsphinx",
+      ]
+      ...
+      exclude_patterns = [
+          "...",
+          "**/.ipynb_checkpoints",
+      ]
 
    Ein Beispiel findet ihr in der :download:`/conf.py`-Datei dieses
    Jupyter-Tutorials.
@@ -62,16 +64,16 @@ Timeout
 
     .. code-block:: json
 
-     {
-      "cells": [
        {
-        "cell_type": "markdown",
-        "nbsphinx": {
-          "timeout": 60
-        },
+        "cells": [
+         {
+          "cell_type": "markdown",
+          "nbsphinx": {
+            "timeout": 60
+          },
+         }
+        ],
        }
-      ],
-     }
 
     Soll das Timeout deaktiviert werden, kann ``-1`` angegeben werden.
 
@@ -86,12 +88,12 @@ Benutzerdefinierte Formate
 
     .. code-block:: python
 
-        import jupytext
+       import jupytext
 
 
-        nbsphinx_custom_formats = {
-            ".Rmd": lambda s: jupytext.reads(s, ".Rmd"),
-        }
+       nbsphinx_custom_formats = {
+           ".Rmd": lambda s: jupytext.reads(s, ".Rmd"),
+       }
 
 Zellen konfigurieren
 ~~~~~~~~~~~~~~~~~~~~
@@ -99,16 +101,16 @@ Zellen konfigurieren
 Zelle nicht anzeigen
     .. code-block:: json
 
-     {
-      "cells": [
        {
-        "cell_type": "markdown",
-        "metadata": {
-         "nbsphinx": "hidden"
-        },
+        "cells": [
+         {
+          "cell_type": "markdown",
+          "metadata": {
+           "nbsphinx": "hidden"
+          },
+         }
+        ],
        }
-      ],
-     }
 
 ``nbsphinx-toctree``
     Mit dieser Anweisung könnt ihr innerhalb einer Notebook-Zelle von Sphinx ein
@@ -116,27 +118,27 @@ Zelle nicht anzeigen
 
     .. code-block:: json
 
-     {
-      "cells": [
        {
-        "cell_type": "markdown",
-        "metadata": {
-         "nbsphinx-toctree": {
-           "maxdepth": 2
+        "cells": [
+         {
+          "cell_type": "markdown",
+          "metadata": {
+           "nbsphinx-toctree": {
+             "maxdepth": 2
+           }
+          "source": [
+           "Der folgende Titel wird als ``toctree caption`` gerendert.\n",
+           "\n",
+           "## Inhalt\n",
+           "\n",
+           "[Ein Notebook](ein-notebook.ipynb)\n",
+           "\n",
+           "[Ein externer HTML-Link](https://jupyter-tutorial.readthedocs.io/)\n",
+          ]
+          },
          }
-        "source": [
-         "Der folgende Titel wird als ``toctree caption`` gerendert.\n",
-         "\n",
-         "## Inhalt\n",
-         "\n",
-         "[Ein Notebook](ein-notebook.ipynb)\n",
-         "\n",
-         "[Ein externer HTML-Link](https://jupyter-tutorial.readthedocs.io/)\n",
-        ]
-        },
+        ],
        }
-      ],
-     }
 
     Weitere Optionen findet ihr in der :label:`Sphinx-Dokumentation
     <sphinx:toctree-directive>`.
@@ -150,25 +152,24 @@ Build
    <https://jupyter-tutorial.readthedocs.io/de/latest/_sources/notebook/testing/index.rst.txt>`_.
 
 #. Schließlich könnt ihr die Seiten generieren, :abbr:`z.B. (zum Beispiel)` HTML
-   mit :samp:`$ pipenv run python -m sphinx {SOURCE_DIR} {BUILD_DIR}` oder
-   :samp:`$ pipenv run python -m sphinx {SOURCE_DIR} {BUILD_DIR} -j
-   {NUMBER_OF_PROCESSES}`.
+   mit :samp:`$ uv run python -m sphinx {SOURCE_DIR} {BUILD_DIR}` oder :samp:`$
+   uv run python -m sphinx {SOURCE_DIR} {BUILD_DIR} -j {NUMBER_OF_PROCESSES}`,
 
    wobei ``-j`` die Zahl der Prozesse angibt, die parallel ausgeführt werden
    sollen.
 
-   Wenn ihr eine LaTeX-Datei erzeugen wollt, könnt ihr dies mit :samp:`$ pipenv
-   run python -m sphinx {SOURCE_DIR} {BUILD_DIR} -b latex}`.
+   Wenn ihr eine LaTeX-Datei erzeugen wollt, könnt ihr dies mit :samp:`$ uv run
+   python -m sphinx {SOURCE_DIR} {BUILD_DIR} -b latex}`.
 
 #. Alternativ könnt ihr euch mit ``sphinx-autobuild`` die Dokumentation auch
    automatisch generieren lassen. Es kann installiert werden mit
 
    .. code-block:: console
 
-    $ pipenv run python -m pip install sphinx-autobuild
+      $ uv add sphinx-autobuild
 
    Anschließend kann die automatische Erstellung gestartet werden mit :samp:`$
-   pipenv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR}`.
+   uv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR}`.
 
    Dadurch wird ein lokaler Webserver gestartet, der die generierten HTML-Seiten
    unter ``http://localhost:8000/`` bereitstellt. Und jedes Mal, wenn ihr
@@ -176,7 +177,7 @@ Build
    HTML-Seiten neu generiert und die Browseransicht aktualisiert.
 
    Ihr könnt dies auch nutzen, um die LaTeX-Ausgabe automatisch zu erstellen:
-   :samp:`$ pipenv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR} -b
+   :samp:`$ uv run python -m sphinx_autobuild {SOURCE_DIR} {BUILD_DIR} -b
    latex`.
 
 #. Eine andere Alternative ist die Publikation auf `readthedocs.org
@@ -194,20 +195,20 @@ Gleichungen
 
     .. code-block:: latex
 
-        $\text{e}^{i\pi} = -1$
+       $\text{e}^{i\pi} = -1$
 
     Und auch zeilenweise können Gleichungen ausgedrückt werden :abbr:`z.B. (zum
     Beispiel)`
 
     .. code-block:: latex
 
-        \begin{equation}
-        \int\limits_{-\infty}^\infty f(x) \delta(x - x_0) dx = f(x_0)
-        \end{equation}
+       \begin{equation}
+       \int\limits_{-\infty}^\infty f(x) \delta(x - x_0) dx = f(x_0)
+       \end{equation}
 
     .. seealso::
-        * `Equation Numbering
-          <https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/equation-numbering/readme.html>`_
+       * `Equation Numbering
+         <https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/equation-numbering/readme.html>`_
 
 Zitate
     ``nbsphinx`` unterstützt dieselbe Syntax für Zitate wie `nbconvert
@@ -215,7 +216,7 @@ Zitate
 
     .. code-block:: html
 
-        <cite data-cite="kluyver2016jupyter">Kluyver et al. (2016)</cite>
+       <cite data-cite="kluyver2016jupyter">Kluyver et al. (2016)</cite>
 
 Alarmierungsboxen
     .. code-block:: html
@@ -250,17 +251,17 @@ Alarmierungsboxen
 Links zu anderen Notebooks
     .. code-block:: md
 
-        a link to a notebook in a subdirectory](subdir/notebook-in-a-subdir.ipynb)
+       [a link to a notebook in a subdirectory](subdir/notebook-in-a-subdir.ipynb)
 
 Links zu :file:`*.rst`-Dateien
     .. code-block:: md
 
-        [reStructuredText file](rst-file.rst)
+       [reStructuredText file](rst-file.rst)
 
 Links zu lokalen Dateien
     .. code-block:: md
 
-        [Pipfile](Pipfile)
+       [pyproject.toml](pyproject.toml)
 
 Code-Zellen
 ~~~~~~~~~~~
@@ -271,11 +272,11 @@ Javascript
 
     .. code-block:: javascript
 
-        %%javascript
+       %%javascript
 
-        var text = document.createTextNode("Hello, I was generated with JavaScript!");
-        // Content appended to "element" will be visible in the output area:
-        element.appendChild(text);
+       var text = document.createTextNode("Hello, I was generated with JavaScript!");
+       // Content appended to "element" will be visible in the output area:
+       element.appendChild(text);
 
 Galerien
 --------
@@ -298,7 +299,7 @@ Sphinx-Gallery lässt sich für Sphinx ≥ 1.8.3 installieren mit
 
 .. code-block:: console
 
-    $ pipenv install sphinx-gallery
+   $ uv add sphinx-gallery
 
 Konfiguration
 ~~~~~~~~~~~~~
@@ -308,10 +309,10 @@ eingetragen werden:
 
 .. code-block:: python
 
-    extensions = [
-        "nbsphinx",
-        "sphinx_gallery.load_style",
-    ]
+   extensions = [
+       "nbsphinx",
+       "sphinx_gallery.load_style",
+   ]
 
 Anschließend könnt ihr Sphinx-Gallery auf zwei verschiedene Arten nutzen:
 

@@ -36,4 +36,4 @@ Installation
 
 .. code-block:: console
 
-    $ pipenv install jupyter-flex
+    $ uv add jupyter-flex

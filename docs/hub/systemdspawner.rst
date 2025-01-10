@@ -47,7 +47,7 @@ Ihr könnt systemdspawner installieren mit
 
 .. code-block:: console
 
-   $ pipenv install jupyterhub-systemdspawner
+   $ uv add jupyterhub-systemdspawner
 
 Anschließend kann er in der :file:`jupyterhub_config.py` aktiviert werden mit
 

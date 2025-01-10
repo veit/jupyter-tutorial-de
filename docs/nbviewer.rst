@@ -36,13 +36,13 @@ Installation
 
    .. code-block:: console
 
-      $ pipenv install nbviewer
+      $ uv add nbviewer
 
 #. Zum Testen kann der Server gestartet werden mit:
 
    .. code-block:: console
 
-      $ pipenv run python -m nbviewer --debug --no-cache
+      $ uv run python -m nbviewer --debug --no-cache
 
 Erweitern des Notebook-Viewers
 ------------------------------

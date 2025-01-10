@@ -8,9 +8,7 @@ voilà kann installiert werden mit:
 
 .. code-block:: console
 
-    $ pipenv install voila
-    Installing voila...
-    ...
+    $ uv add voila
 
 Starten
 -------
@@ -22,7 +20,7 @@ Ihr könnt die Installation überprüfen, :abbr:`z.B. (zum Beispiel)` mit:
 
 .. code-block:: console
 
-    $ pipenv run voila docs/dashboards/voila/bqplot_vuetify_example.ipynb
+    $ uv run voila docs/dashboards/voila/bqplot_vuetify_example.ipynb
     ...
     [Voila] Voilà is running at:
     http://localhost:8866/
@@ -38,8 +36,7 @@ enthaltenen Notebooks:
 
 .. code-block:: console
 
-    $ pipenv run voila docs/dashboards/voila/
-    ...
+    $ uv run voila docs/dashboards/voila/
 
 .. image:: voila-example-2.png
    :alt: Voilà-Beispiel für eine Verzeichnisansicht
@@ -48,8 +45,7 @@ Es ist auch möglich, sich den Quellcode anzeigen zu lassen mit:
 
 .. code-block:: console
 
-    $ pipenv run voila --strip_sources=False docs/dashboards/voila/bqplot_vuetify_example.ipynb
-    ...
+    $ uv run voila --strip_sources=False docs/dashboards/voila/bqplot_vuetify_example.ipynb
 
 .. note::
     Beachtet, dass der Code nur angezeigt wird. Voilà erlaubt Benutzern nicht,
@@ -63,8 +59,7 @@ Es ist auch möglich, sich den Quellcode anzeigen zu lassen mit:
 
 .. code-block:: console
 
-    $ pipenv run voila --theme=dark docs/dashboards/voila/bqplot_vuetify_example.ipynb
-    ...
+    $ uv run voila --theme=dark docs/dashboards/voila/bqplot_vuetify_example.ipynb
 
 … als Erweiterung des Jupyter-Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,8 +68,7 @@ Alternativ könnt ihr voilà auch als Erweiterung des Jupyter-Server starten:
 
 .. code-block:: console
 
-    $ pipenv run jupyter notebook
-    ...
+    $ uv run jupyter notebook
 
 Anschließend könnt ihr voilà aufrufen, :abbr:`z.B. (zum Beispiel)` unter der URL
 ``http://localhost:8888/voila``.

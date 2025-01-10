@@ -16,14 +16,14 @@ zu machen, solltet ihr ipykernel installieren:
 
 .. code-block:: console
 
-   $ pipenv install ipykernel
+   $ uv add --dev ipykernel
 
 Anschließend könnt ihr euren Kernel registrieren, :abbr:`z.B. (zum Beispiel)`
 mit
 
 .. code-block:: console
 
-   $ pipenv run python -m ipykernel install --prefix=/srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
+   $ uv run ipython kernel install --prefix=/srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
 
 :samp:`--prefix={/PATH/TO/KERNEL}`
     gibt den Pfad an, in dem der Jupyter-Kernel installiert werden soll.
@@ -38,17 +38,17 @@ aktuelle Python-Umgebung erstellt, :abbr:`z.B. (zum Beispiel)`:
 
 .. code-block:: json
 
-    {
-     "display_name": "My Kernel",
-     "language": "python"
-     "argv": [
-      "/srv/jupyter/.ipython/kernels/python311_kernel-7y9G693U/bin/python",
-      "-m",
-      "ipykernel_launcher",
-      "-f",
-      "{connection_file}"
-     ],
-    }
+   {
+    "display_name": "My Kernel",
+    "language": "python"
+    "argv": [
+     "/srv/jupyter/.ipython/kernels/python311_kernel-7y9G693U/bin/python",
+     "-m",
+     "ipykernel_launcher",
+     "-f",
+     "{connection_file}"
+    ],
+   }
 
 :samp:`display_name`
     Der Name des Kernels, wie er im Browser angezeigt werden soll. Im Gegensatz
@@ -72,18 +72,18 @@ aktuelle Python-Umgebung erstellt, :abbr:`z.B. (zum Beispiel)`:
 
     .. code-block:: json
 
-        {
-          "shell_port": 61656,
-          "iopub_port": 61657,
-          "stdin_port": 61658,
-          "control_port": 61659,
-          "hb_port": 61660,
-          "ip": "127.0.0.1",
-          "key": "a0436f6c-1916-498b-8eb9-e81ab9368e84"
-          "transport": "tcp",
-          "signature_scheme": "hmac-sha256",
-          "kernel_name": ""
-        }
+       {
+         "shell_port": 61656,
+         "iopub_port": 61657,
+         "stdin_port": 61658,
+         "control_port": 61659,
+         "hb_port": 61660,
+         "ip": "127.0.0.1",
+         "key": "a0436f6c-1916-498b-8eb9-e81ab9368e84"
+         "transport": "tcp",
+         "signature_scheme": "hmac-sha256",
+         "kernel_name": ""
+       }
 
 :samp:`interrupt_mode`
     Kann entweder ``signal`` oder ``message`` sein und gibt an, wie ein Client
@@ -112,21 +112,23 @@ Verfügbare Kernel anzeigen
 
 .. code-block:: console
 
-    $ pipenv run jupyter kernelspec list
-    Available kernels:
-      mykernel    /Users/veit/Library/Jupyter/kernels/mykernel
-      python2    /Users/veit/Library/Jupyter/kernels/python2
-      python3    /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/bin/../share/jupyter/kernels/python3
+   $ uv run jupyter kernelspec list
+   Available kernels:
+     mykernel   /Users/veit/Library/Jupyter/kernels/mykernel
+     python311  /Users/veit/Library/Jupyter/kernels/python311
+     python313  /Users/veit/Library/Jupyter/kernels/python313
 
 Kernel starten
 --------------
 
 .. code-block:: console
 
-    $ pipenv run jupyter console --kernel mykernel
-    Jupyter console 6.0.0
-    Python 2.7.15 (default, Oct 22 2018, 19:33:46)
-    ...
+    $ iuv run --with jupyter jupyter console --kernel mykernel
+    Jupyter console 6.6.3
+
+    Python 3.13.0 (main, Oct  7 2024, 23:47:22) [Clang 18.1.8 ]
+    Type 'copyright', 'credits' or 'license' for more information
+    IPython 8.29.0 -- An enhanced Interactive Python. Type '?' for help.
 
     In [1]:
 
@@ -137,7 +139,7 @@ Kernel löschen
 
 .. code-block:: console
 
-   $ pipenv run jupyter kernelspec uninstall mykernel
+   $ uv run jupyter kernelspec uninstall mykernel
 
 Starndard-Kernel deinstallieren
 -------------------------------
@@ -147,7 +149,7 @@ Sofern noch nicht geschehen, kann eine Konfigurationsdatei erstellt werden,
 
 .. code-block:: console
 
-   $ pipenv run jupyter lab --generate-config
+   $ uv run jupyter lab --generate-config
 
 Anschließend könnt ihr in dieser Konfigurationsdatei folgende Zeile einfügen:
 
