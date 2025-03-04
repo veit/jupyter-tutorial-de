@@ -2,7 +2,12 @@ Voilà
 =====
 
 `Voilà <https://github.com/voila-dashboards/voila>`_ wurde von `QuantStack
-<https://quantstack.net/>`_ entwickelt.
+<https://quantstack.net/>`_ entwickelt als Dashboard-Lösung auf Basis von
+Jupyter Notebooks und :doc:`/ipywidgets/index`. Es zeigt die Ausgabe aller
+Notebook-Zellen an.
+
+.. seealso::
+   `And voilà! <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93>`_
 
 Features
 --------
@@ -20,8 +25,7 @@ Features
   funktioniert mit jedem :doc:`Jupyter-Kernel </kernels/index>`: C++, Python,
   Julia. Dies macht es zu einem sprachunabhängigen Dashboard-System.
 * Voilà ist erweiterbar. Es enthält ein flexibles :doc:`Template
-  <templating>`-System zur Erstellung
-  umfangreicher Layouts.
+  <templating>`-System zur Erstellung umfangreicher Layouts.
 
 Ausführungsmodell
 -----------------
@@ -93,13 +97,6 @@ angegeben werden kann, welcher Code vom Backend ausgeführt wird. Sofern mit der
 Option ``--strip-sources=False`` nicht anders angegeben, gelangt der Quellcode
 des gerenderten Notizbuchs noch nicht einmal an das Frontend. Die Voilà-Instanz
 des ``jupyter_server`` erlaubt standardmäßig keine Ausführungsanforderungen.
-
-.. warning::
-   Die aktuelle Version von Voilà antwortet auf den ersten ``GET``-Request
-   erst, wenn alle Zellen ausgeführt wurden. Dies kann länger dauern. Es wird
-   jedoch daran gearbeitet, progressives Rendern zu ermöglichen, :abbr:`s.
-   (siehe)` `feat: progressive cell rendering
-   <https://github.com/maartenbreddels/voila/commit/cfd0204231313ebe5dd110c488a5cc6254c85a65>`_.
 
 .. seealso::
 

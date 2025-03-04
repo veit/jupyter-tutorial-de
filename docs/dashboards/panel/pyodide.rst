@@ -29,12 +29,12 @@ sind:
 Beispiel
 --------
 
-In folgenden Beispiel werden wir das :doc:`overview`-Notebook in eine
+In folgenden Beispiel werden wir das :doc:`deploy`-Notebook in eine
 eigenständige HTML-Seite konvertieren mit
 
 .. code-block:: console
 
-    $ panel convert overview.ipynb --out pyodide
+    $ uv run panel convert deploy.ipynb --out pyodide
     Column
         [0] Column
             [0] FloatSlider(end=3.0, name='frequency', start=-1.0, value=1.0)
@@ -50,7 +50,7 @@ auszuprobieren:
 .. figure:: pyodide-example.png
    :alt: Pyodide-Beispiel
 
-Ihr könnt nun die Datei :download:`pyodide/overview.html` in eure Github-Seiten
+Ihr könnt nun die Datei :download:`pyodide/deploy.html` in eure Github-Seiten
 :abbr:`o.ä. (oder ähnliches)` einfügen – es ist kein separater Server
 erforderlich.
 
@@ -125,13 +125,13 @@ Im Folgenden erläutere ich einige der Optionen von ``panel convert``.
 
        .. code-block:: console
 
-          $ panel convert overview.ipynb --out pyodide --requirements pandas matplotlib
+          $ uv run panel convert deploy.ipynb --out pyodide --requirements pandas matplotlib
 
        Alternativ könnt ihr auch eine ``requirements.txt``-Datei bereitstellen:
 
        .. code-block:: console
 
-          $ panel convert overview.ipynb --out pyodide --requirements requirements.txt
+          $ uv run panel convert deploy.ipynb --out pyodide --requirements requirements.txt
 
 ``--watch``
     Beobachten der Quelldateien.
