@@ -64,6 +64,14 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
    ``address``, ``port``
        Adresse und Port, an dem der Server auf Anfragen lauscht; in unserem Fall
        also ``http://127.0.0.1:5000``.
+
+       :abbr:`Ggf. (Gegebenenfalls)` muss noch die Umgebungsvariable
+       ``BOKEH_ALLOW_WS_ORIGIN`` gesetzt werden mit:
+
+       .. code-block:: console
+
+          $ export BOKEH_ALLOW_WS_ORIGIN=127.0.0.1:5000
+
    ``show=False``
        sorgt dafür, dass der Bokeh-Server zwar gestartet wird, jedoch nicht
        unmittelbar im Browser angezeigt wird.
@@ -118,7 +126,7 @@ Ihr könnt den Server nun starten mit:
 
 .. code-block:: console
 
-    $ bin/uvicorn main:app --reload
+    $ uv run uvicorn main:app --reload
     INFO:     Will watch for changes in these directories: ['/srv/jupyter/jupyter-tutorial/docs/web/dashboards/panel/fastAPI']
     INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
     INFO:     Started reloader process [218214] using StatReload

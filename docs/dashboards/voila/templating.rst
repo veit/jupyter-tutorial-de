@@ -14,7 +14,8 @@ Touch-Geräten.
 
 Das Gridstack-Voilà-Template verwendet die Metadaten der Notebook-Zellen, um das
 Layout des Notebooks zu gestalten. Es soll die gesamte Spezifikation für die
-veralteten :doc:`../jupyter-dashboards/index` unterstützen.
+veralteten `Jupyter Dashboards Layout Extension
+<https://jupyter-dashboards-layout.readthedocs.io/en/latest/>`_` unterstützen.
 
 .. image:: voila-gridstack.png
    :scale: 53%
@@ -32,7 +33,7 @@ Installation
 
 .. code-block:: console
 
-    $ uv add bqplot ipyvuetify voila-vuetify
+   $ uv add voila-vuetify
 
 Verwendung
 ~~~~~~~~~~
@@ -42,7 +43,7 @@ Um ``voila-vuetify`` in einem Notebook zu verwenden, müsst ihr zunächst
 
 .. code-block:: python
 
-    import ipyvuetify as v
+   import ipyvuetify as v
 
 Anschließend könnt ihr ein Layout erstellen :abbr:`z.B. (zum Beispiel)` mit:
 
@@ -85,7 +86,7 @@ Anschließend könnt ihr ein Layout erstellen :abbr:`z.B. (zum Beispiel)` mit:
 
 .. code-block:: console
 
-    $ uv run voila --template vuetify-default bqplot_vuetify_example.ipynb
+   $ uv run voila --template vuetify-default 'bqplot_vuetify_example.ipynb'
 
 Anschließend öffnet sich euer Standardbrowser mit der URL
 ``http://localhost:8866/`` und zeigt euch die Plots im Responsive Material
@@ -105,14 +106,8 @@ voila-reveal
 ------------
 
 `voila-reveal <https://github.com/voila-dashboards/voila-reveal>`_ ist ein
-Template für Slideshows basierend auf `RevealJS <https://revealjs.com/>`_.
-
-Installation
-~~~~~~~~~~~~
-
-.. code-block:: console
-
-    $ uv add voila-reveal
+Template für Slideshows basierend auf `RevealJS <https://revealjs.com/>`_. Es
+wird bereits mit voilà installiert.
 
 Verwendung
 ~~~~~~~~~~
@@ -121,7 +116,7 @@ Ihr könnt das Template nutzen mit:
 
 .. code-block:: console
 
-    $ uv run voila --template=reveal reveal.ipynb
+   $ uv run voila --template=reveal 'reveal.ipynb'
 
 Durch zusätzliche Optionen können die Standardeinstellungen überschrieben
 werden, :abbr:`z.B. (zum Beispiel)` um den Standardwert für den Übergang
@@ -129,10 +124,11 @@ werden, :abbr:`z.B. (zum Beispiel)` um den Standardwert für den Übergang
 
 .. code-block:: console
 
-    $ uv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" reveal.ipynb
+   $ uv run voila --template=reveal --VoilaConfiguration.resources="{'reveal': {'transition': 'zoom'}}" 'reveal.ipynb'
 
 Sollen Konfigurationsoptionen dauerhaft gespeichert werden, so kann eine Datei
-``conf.json`` in ``share/jupyter/voila/templates/reveal/`` angelegt werden:
+``conf.json`` in ``./.venv/share/jupyter/nbconvert/templates/reveal/`` angelegt
+werden:
 
 .. code-block:: javascript
 
@@ -168,9 +164,9 @@ Notebooks schreiben in :menuselection:`Edit --> Edit Notebook Metadata`:
 
 .. code-block:: javascript
 
-    "rise": {
-        "autolaunch": true
-    }
+   "rise": {
+       "autolaunch": true
+   }
 
 Ihr könnt ebenfalls das `chalkboard reveal-Plugin
 <https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard>`_
@@ -178,9 +174,9 @@ verwenden wenn Ihr die Metadaten des Notebooks erweitert um:
 
 .. code-block:: javascript
 
-    "rise": {
-      "enable_chalkboard": true
-    }
+   "rise": {
+     "enable_chalkboard": true
+   }
 
 Eigene Templates erstellen
 --------------------------
@@ -191,19 +187,19 @@ Folgendes enthält:
 
 .. code-block:: console
 
-    /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/share/jupyter/voila/templates/mytheme
-    ├── conf.json
-    ├── nbconvert_templates
-    │   └── voila.tpl
-    ├── static
-    │   ├── mytheme.js
-    │   └── mytheme.css
-    └── templates
-        ├── 404.html
-        ├── browser-open.html
-        ├── error.html
-        ├── page.html
-        └── tree.html
+   /Users/veit/.local/share/virtualenvs/jupyter-tutorial--q5BvmfG/share/jupyter/voila/templates/mytheme
+   ├── conf.json
+   ├── nbconvert_templates
+   │   └── voila.tpl
+   ├── static
+   │   ├── mytheme.js
+   │   └── mytheme.css
+   └── templates
+       ├── 404.html
+       ├── browser-open.html
+       ├── error.html
+       ├── page.html
+       └── tree.html
 
 ``conf.json``
     Konfigurationsdatei, die :abbr:`z.B. (zum Beispiel)` auf das Basis-Template
@@ -211,7 +207,7 @@ Folgendes enthält:
 
     .. code-block:: json
 
-        {"base_template": "default"}
+       {"base_template": "default"}
 
 ``nbconvert_templates``
     Benutzerdefinierte Templates für :doc:`/nbconvert`.
