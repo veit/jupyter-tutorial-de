@@ -6,10 +6,10 @@ Kernel installieren
 
 Kernel werden :abbr:`z.B. (zum Beispiel)` in folgenden Verzeichnissen gesucht:
 
-* :samp:`/srv/jupyter/.local/share/jupyter/kernels`
-* :samp:`/usr/local/share/jupyter/kernels`
-* :samp:`/usr/share/jupyter/kernels`
-* :samp:`/srv/jupyter/.ipython/kernels`
+* :file:`/srv/jupyter/.local/share/jupyter/kernels`
+* :file:`/usr/local/share/jupyter/kernels`
+* :file:`/usr/share/jupyter/kernels`
+* :file:`/srv/jupyter/.ipython/kernels`
 
 Um eure neue Umgebung in einem der Verzeichnisse als Jupyter Kernel verfügbar
 zu machen, solltet ihr ipykernel installieren:
@@ -23,44 +23,44 @@ mit
 
 .. code-block:: console
 
-   $ uv run ipython kernel install --prefix=/srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
+   $ uv run ipython kernel install --user --env VIRTUAL_ENV $(pwd)/.venv --prefix /srv/jupyter/.ipython/kernels --name python311 --display-name 'Python 3.11 Kernel'
 
-:samp:`--prefix={/PATH/TO/KERNEL}`
-    gibt den Pfad an, in dem der Jupyter-Kernel installiert werden soll.
 :samp:`--user`
     installiert den Kernel für den aktuellen Nutzer und nicht systemweit.
+:samp:`--env {ENV} {VALUE}`
+    detzt die Umgebungsvariable für den Kernel.
+:samp:`--prefix={/PATH/TO/KERNEL}`
+    gibt den Pfad an, in dem der Jupyter-Kernel installiert werden soll.
 :samp:`name {NAME}`
     gibt einen Namen für die ``kernelspec`` an. Dieser wird benötigt, um
     mehrere IPython-Kernel gleichzeitig verwenden zu können.
+:samp:`display-name {DISPLAY_NAME}`
+    gibt den Anzeigenamen für die ``kernelspec`` an.
 
-Mit ``ipykernel install`` wird eine ``kernelspec``-Datei im JSON-Format für die
-aktuelle Python-Umgebung erstellt, :abbr:`z.B. (zum Beispiel)`:
+Mit ``ipython kernel install`` wird eine ``kernelspec``-Datei im JSON-Format für
+die aktuelle Python-Umgebung erstellt, :abbr:`z.B. (zum Beispiel)`:
 
 .. code-block:: json
 
-   {
-    "display_name": "My Kernel",
-    "language": "python"
-    "argv": [
-     "/srv/jupyter/.ipython/kernels/python311_kernel-7y9G693U/bin/python",
-     "-m",
-     "ipykernel_launcher",
-     "-f",
-     "{connection_file}"
-    ],
-   }
+    {
+     "argv": [
+      "/srv/jupyter/.ipython/kernels/python311/.venv/bin/python",
+      "-Xfrozen_modules=off",
+      "-m",
+      "ipykernel_launcher",
+      "-f",
+      "{connection_file}"
+     ],
+     "display_name": "project",
+     "language": "python",
+     "metadata": {
+      "debugger": true
+     },
+     "env": {
+      "VIRTUAL_ENV": "/srv/jupyter/.ipython/kernels/python311/.venv"
+     }
+    }
 
-:samp:`display_name`
-    Der Name des Kernels, wie er im Browser angezeigt werden soll. Im Gegensatz
-    zum in der API verwendeten Kernelnamen kann dieser beliebige Unicode-Zeichen
-    enthalten.
-:samp:`language`
-    Der Name der Sprache des Kernels. Wenn beim Laden von Notebooks kein
-    passender ``kernelspec``-Schlüssel gefunden wird, wird ein Kernel mit einer
-    passenden Sprache verwendet. Auf diese Weise kann ein für ein Python- oder
-    Julia-Kernel geschriebenes Notebook mit dem Python- oder Julia-Kernel des
-    Benutzers verknüpft werden, auch wenn dieser nicht demselben Namen wie der
-    des Autors hat.
 :samp:`argv`
     Eine Liste von Befehlszeilenargumenten, die zum Starten des Kernels
     verwendet werden.
@@ -84,6 +84,18 @@ aktuelle Python-Umgebung erstellt, :abbr:`z.B. (zum Beispiel)`:
          "signature_scheme": "hmac-sha256",
          "kernel_name": ""
        }
+
+:samp:`display_name`
+    Der Name des Kernels, wie er im Browser angezeigt werden soll. Im Gegensatz
+    zum in der API verwendeten Kernelnamen kann dieser beliebige Unicode-Zeichen
+    enthalten.
+:samp:`language`
+    Der Name der Sprache des Kernels. Wenn beim Laden von Notebooks kein
+    passender ``kernelspec``-Schlüssel gefunden wird, wird ein Kernel mit einer
+    passenden Sprache verwendet. Auf diese Weise kann ein für ein Python- oder
+    Julia-Kernel geschriebenes Notebook mit dem Python- oder Julia-Kernel des
+    Benutzers verknüpft werden, auch wenn dieser nicht demselben Namen wie der
+    des Autors hat.
 
 :samp:`interrupt_mode`
     Kann entweder ``signal`` oder ``message`` sein und gibt an, wie ein Client
