@@ -135,7 +135,7 @@ Kernel starten
 
 .. code-block:: console
 
-    $ iuv run --with jupyter jupyter console --kernel mykernel
+    $ uv run --with jupyter jupyter console --kernel mykernel
     Jupyter console 6.6.3
 
     Python 3.13.0 (main, Oct  7 2024, 23:47:22) [Clang 18.1.8 ]
