@@ -28,15 +28,15 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
    definieren den Pfad zum Vorlagenverzeichnis:
 
    .. literalinclude:: fastAPI/main.py
-      :lineno-start: 10
-      :lines: 10-11
+      :lineno-start: 9
+      :lines: 9-10
 
 #. Nun erstellen wir unsere erste Routine über eine asynchrone Funktion und
    verweisen sie an unseren Bokeh-Server:
 
    .. literalinclude:: fastAPI/main.py
-      :lineno-start: 14
-      :lines: 14-19
+      :lineno-start: 13
+      :lines: 13-18
 
 #. Wie ihr dem Code ansehen könnt, wird ein `Jinja2
    <https://fastapi.tiangolo.com/advanced/templates/#using-jinja2templates>`_-Template
