@@ -52,7 +52,6 @@ Notebook-Erweiterungen.
 
        from notebook.services.config import ConfigManager
 
-
        cm = ConfigManager().update("notebook", {"limit_output": 1000})
 
 `Nbextensions edit menu item <https://github.com/Jupyter-contrib/jupyter_nbextensions_configurator>`_
@@ -70,7 +69,6 @@ Notebook-Erweiterungen.
     .. code-block:: python
 
        from notebook.services.config import ConfigManager
-
 
        ip = get_ipython()
        cm = ConfigManager(parent=ip)
