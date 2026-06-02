@@ -1,7 +1,10 @@
 [project]
 name = "jupyter-tutorial-de"
 version = "24.1.0"
-description = "Schulungsmaterialen für den Aufbau und die Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks: https://cusy.io/de/seminare"
+description = """\
+  Schulungsmaterialen für den Aufbau und die Nutzung einer Forschungsinfrastruktur auf Basis von Jupyter Notebooks: \
+  https://cusy.io/de/seminare\
+  """
 readme = "README.rst"
 license = "BSD-3-Clause"
 license-files = [ "LICENSE" ]
@@ -18,10 +21,9 @@ classifiers = [
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
 ]
-dependencies = [  ]
-
+dependencies = []
 urls."Bug Tracker" = "https://github.com/veit/jupyter-tutorial-de/issues"
-urls."Homepage" = "https://github.com/veit/jupyter-tutorial-de/"
+urls.Homepage = "https://github.com/veit/jupyter-tutorial-de/"
 
 [dependency-groups]
 dev = [
@@ -47,37 +49,10 @@ docs = [
 ]
 
 [tool.setuptools]
-packages = [  ]
+packages = []
 
 [tool.black]
 line-length = 79
-
-[tool.isort]
-atomic = true
-force_grid_wrap = 0
-include_trailing_comma = true
-lines_after_imports = 2
-lines_between_types = 1
-multi_line_output = 3
-not_skip = "__init__.py"
-use_parentheses = true
-
-known_first_party = "jupyter-tutorial-de"
-known_third_party = [
-  "Cython",
-  "accounts_pb2",
-  "accounts_pb2_grpc",
-  "dataprep",
-  "google",
-  "grpc",
-  "mpi4py",
-  "numpy",
-  "pandas",
-  "pydantic",
-  "pytest",
-  "requests",
-  "setuptools",
-]
 
 [tool.codespell]
 skip = "*.html, *.ipynb, *.rst, ./docs/_build/*, ./jupyter_tutorial_de.egg-info/*, ./styles/*, docs/hub/jupyterhub_config.py"

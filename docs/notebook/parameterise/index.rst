@@ -86,7 +86,6 @@ Verwenden
 
         import papermill as pm
 
-
         pm.execute_notebook(
             "PATH/TO/INPUT_NOTEBOOK.ipynb",
             "PATH/TO/OUTPUT_NOTEBOOK.ipynb",
