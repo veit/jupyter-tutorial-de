@@ -22,21 +22,21 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
    .. literalinclude:: fastAPI/main.py
       :caption: fastAPI/main.py
       :linenos:
-      :lines: 1-3, 5-7
+      :lines: 1-2, 4-6
 
 #. Als nächstes definieren wir ``app`` als Instanz von ``FastAPI`` und
    definieren den Pfad zum Vorlagenverzeichnis:
 
    .. literalinclude:: fastAPI/main.py
-      :lineno-start: 9
-      :lines: 9-10
+      :lineno-start: 8
+      :lines: 8-9
 
 #. Nun erstellen wir unsere erste Routine über eine asynchrone Funktion und
    verweisen sie an unseren Bokeh-Server:
 
    .. literalinclude:: fastAPI/main.py
-      :lineno-start: 13
-      :lines: 13-18
+      :lineno-start: 12
+      :lines: 12-17
 
 #. Wie ihr dem Code ansehen könnt, wird ein `Jinja2
    <https://fastapi.tiangolo.com/advanced/templates/#using-jinja2templates>`_-Template
@@ -55,8 +55,8 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
 
    .. literalinclude:: fastAPI/main.py
       :name: fastAPI/main.py
-      :lineno-start: 22
-      :lines: 22-
+      :lineno-start: 21
+      :lines: 21-
 
    ``createApp``
        ruft in diesem Beispiel unsere Panel-App auf, die jedoch erst im nächsten
@@ -107,8 +107,8 @@ beginnen, müssen wir einige der grundlegenden Konfigurationen in
 
    .. literalinclude:: fastAPI/main.py
       :caption: fastAPI/main.py
-      :lineno-start: 4
-      :lines: 4
+      :lineno-start: 3
+      :lines: 3
 
 Die Dateistruktur sollte nun folgendermaßen aussehen:
 

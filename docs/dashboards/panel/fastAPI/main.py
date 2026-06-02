@@ -1,5 +1,4 @@
 import panel as pn
-
 from bokeh.embed import server_document
 from sliders.pn_app import createApp
 

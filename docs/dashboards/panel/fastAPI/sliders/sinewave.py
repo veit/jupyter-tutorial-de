@@ -1,6 +1,5 @@
 import numpy as np
 import param
-
 from bokeh.models import ColumnDataSource
 from bokeh.plotting import figure
 
