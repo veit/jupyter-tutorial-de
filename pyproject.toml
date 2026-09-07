@@ -55,4 +55,6 @@ packages = []
 line-length = 79
 
 [tool.codespell]
-skip = "*.html, *.ipynb, *.rst, ./docs/_build/*, ./jupyter_tutorial_de.egg-info/*, ./styles/*, docs/hub/jupyterhub_config.py"
+skip = """\
+  *.html, *.ipynb, *.rst, ./docs/_build/*, ./jupyter_tutorial_de.egg-info/*, ./styles/*, docs/hub/jupyterhub_config.py\
+  """
